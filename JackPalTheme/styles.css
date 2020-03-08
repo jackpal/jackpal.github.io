@@ -80,7 +80,7 @@ h2 {
 h3 {
     margin: 20px 0;
 }
-    
+
 ol li {
     margin-left: 20px;
 }
@@ -94,6 +94,10 @@ ol {
 }
 
 ul {
+    margin-bottom: 10px;
+}
+
+table {
     margin-bottom: 10px;
 }
 
@@ -196,7 +200,7 @@ footer {
         padding: 40px 20px;
     }
 }
-  
+
 /**
  *  Example CSS file that can be used to style Splash HTML output
  *  Copyright (c) John Sundell 2018
