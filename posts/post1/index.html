@@ -1,147 +1,147 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="og:site_name" content="GrammerJack"/><link rel="canonical" href="https://jackpal.github.io/posts/post1"/><meta name="twitter:url" content="https://jackpal.github.io/posts/post1"/><meta name="og:url" content="https://jackpal.github.io/posts/post1"/><title>Building an image board browser using SwiftUI and Combine | GrammerJack</title><meta name="twitter:title" content="Building an image board browser using SwiftUI and Combine | GrammerJack"/><meta name="og:title" content="Building an image board browser using SwiftUI and Combine | GrammerJack"/><meta name="description" content="Building an image board browser using SwiftUI and Combine."/><meta name="twitter:description" content="Building an image board browser using SwiftUI and Combine."/><meta name="og:description" content="Building an image board browser using SwiftUI and Combine."/><meta name="twitter:card" content="summary"/><link rel="stylesheet" href="/styles.css" type="text/css"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/images/favicon.png" type="image/png"/><link rel="alternate" href="/feed.rss" type="application/rss+xml" title="Subscribe to GrammerJack"/></head><body class="item-page"><header><div class="wrapper"><a class="site-name" href="/">GrammerJack</a></div></header><div class="wrapper"><article><div class="content"><h1>Building an image board browser using SwiftUI and Combine</h1><p>As a hobby project, I've been writing an imageboard browser app to learn the SwiftUI and Combine libraries.</p><p>SwiftUI and Combine are available on many Apple platforms. So far I've gotten my imageboard browser working well on iPhone and iPad, and this weekend I got it working on Apple TV.</p><p>The iPhone and iPad run the same "Universal" app, which provides a vertical scrolling list and navigation stack UI that works well for both iPhone:</p><img src="KleeneStariPhone.jpg" alt="iPhone Screenshot"/><p>and iPad: <img src="KleeneStariPad.jpg" alt="iPad Screenshot"/></p><p>The AppleTV app looks and acts quite differently:</p><img src="KleeneStarTV.jpg" alt="AppleTV Screenshot"/><p>The AppleTV app has a "lean back" UI. The core feature of the AppleTV app is a slideshow mode. You start the app, use the remote to pick an image board, and then the app plays a slideshow of all the images on that board. There can be thousands of images on some of the more active boards. The slideshow repeats, picking up any updated content each time through.</p><p>I used an elaborate Combine pipeline to fetch the images. This is the heart of the pipeline:</p><pre><code>/// Combine Pipeline for Image Board Slideshow
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="og:site_name" content="GrammerJack"/><link rel="canonical" href="https://jackpal.github.io/posts/post1"/><meta name="twitter:url" content="https://jackpal.github.io/posts/post1"/><meta name="og:url" content="https://jackpal.github.io/posts/post1"/><title>Building an image board browser using SwiftUI and Combine | GrammerJack</title><meta name="twitter:title" content="Building an image board browser using SwiftUI and Combine | GrammerJack"/><meta name="og:title" content="Building an image board browser using SwiftUI and Combine | GrammerJack"/><meta name="description" content="Building an image board browser using SwiftUI and Combine."/><meta name="twitter:description" content="Building an image board browser using SwiftUI and Combine."/><meta name="og:description" content="Building an image board browser using SwiftUI and Combine."/><meta name="twitter:card" content="summary"/><link rel="stylesheet" href="/styles.css" type="text/css"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/images/favicon.png" type="image/png"/><link rel="alternate" href="/feed.rss" type="application/rss+xml" title="Subscribe to GrammerJack"/></head><body class="item-page"><header><div class="wrapper"><a class="site-name" href="/">GrammerJack</a></div></header><div class="wrapper"><article><div class="content"><h1>Building an image board browser using SwiftUI and Combine</h1><p>As a hobby project, I've been writing an imageboard browser app to learn the SwiftUI and Combine libraries.</p><p>SwiftUI and Combine are available on many Apple platforms. So far I've gotten my imageboard browser working well on iPhone and iPad, and this weekend I got it working on Apple TV.</p><p>The iPhone and iPad run the same "Universal" app, which provides a vertical scrolling list and navigation stack UI that works well for both iPhone:</p><img src="KleeneStariPhone.jpg" alt="iPhone Screenshot"/><p>and iPad: <img src="KleeneStariPad.jpg" alt="iPad Screenshot"/></p><p>The AppleTV app looks and acts quite differently:</p><img src="KleeneStarTV.jpg" alt="AppleTV Screenshot"/><p>The AppleTV app has a "lean back" UI. The core feature of the AppleTV app is a slideshow mode. You start the app, use the remote to pick an image board, and then the app plays a slideshow of all the images on that board. There can be thousands of images on some of the more active boards. The slideshow repeats, picking up any updated content each time through.</p><p>I used an elaborate Combine pipeline to fetch the images. This is the heart of the pipeline:</p><pre><code><span class="classPrefixcomment">/// Combine Pipeline for Image Board Slideshow</span>
 
- public extension Publisher {
+ <span class="classPrefixkeyword">public extension</span> <span class="classPrefixtype">Publisher</span> {
   
-  /// Perform requests after a delay.
-  func slowRequest(delay: DispatchQueue.SchedulerTimeType.Stride)
-    -&gt; AnyPublisher&lt;Self.Output, Self.Failure&gt; {
-    var firstItem = true
-    let serialQueue = DispatchQueue(label: "slowRequest")
+  <span class="classPrefixcomment">/// Perform requests after a delay.</span>
+  <span class="classPrefixkeyword">func</span> slowRequest(delay: <span class="classPrefixtype">DispatchQueue</span>.<span class="classPrefixtype">SchedulerTimeType</span>.<span class="classPrefixtype">Stride</span>)
+    -&gt; <span class="classPrefixtype">AnyPublisher</span>&lt;<span class="classPrefixtype">Self</span>.<span class="classPrefixtype">Output</span>, <span class="classPrefixtype">Self</span>.<span class="classPrefixtype">Failure</span>&gt; {
+    <span class="classPrefixkeyword">var</span> firstItem = <span class="classPrefixkeyword">true
+    let</span> serialQueue = <span class="classPrefixtype">DispatchQueue</span>(label: <span class="classPrefixstring">"slowRequest"</span>)
 
-    return self
-    .flatMap(maxPublishers: .max(1)) { (item: Self.Output)
-      -&gt; AnyPublisher&lt;Self.Output, Self.Failure&gt; in
-      if firstItem {
-        firstItem = false
-        return Just(item)
-          .setFailureType(to: Self.Failure.self).eraseToAnyPublisher()
+    <span class="classPrefixkeyword">return self</span>
+    .<span class="classPrefixcall">flatMap</span>(maxPublishers: .<span class="classPrefixcall">max</span>(<span class="classPrefixnumber">1</span>)) { (item: <span class="classPrefixtype">Self</span>.<span class="classPrefixtype">Output</span>)
+      -&gt; <span class="classPrefixtype">AnyPublisher</span>&lt;<span class="classPrefixtype">Self</span>.<span class="classPrefixtype">Output</span>, <span class="classPrefixtype">Self</span>.<span class="classPrefixtype">Failure</span>&gt; <span class="classPrefixkeyword">in
+      if</span> firstItem {
+        firstItem = <span class="classPrefixkeyword">false
+        return</span> <span class="classPrefixtype">Just</span>(item)
+          .<span class="classPrefixcall">setFailureType</span>(to: <span class="classPrefixtype">Self</span>.<span class="classPrefixtype">Failure</span>.<span class="classPrefixkeyword">self</span>).<span class="classPrefixcall">eraseToAnyPublisher</span>()
       }
-      return Just(item)
-        .setFailureType(to: Self.Failure.self)
-        .delay(for: delay, scheduler:serialQueue).eraseToAnyPublisher()
+      <span class="classPrefixkeyword">return</span> <span class="classPrefixtype">Just</span>(item)
+        .<span class="classPrefixcall">setFailureType</span>(to: <span class="classPrefixtype">Self</span>.<span class="classPrefixtype">Failure</span>.<span class="classPrefixkeyword">self</span>)
+        .<span class="classPrefixcall">delay</span>(for: delay, scheduler:serialQueue).<span class="classPrefixcall">eraseToAnyPublisher</span>()
     }
-    .eraseToAnyPublisher()
+    .<span class="classPrefixcall">eraseToAnyPublisher</span>()
   }
   
-  /// Repeat the upstream publisher count times.
-  func repeating(_ count: Int) -&gt; AnyPublisher&lt;Self.Output, Self.Failure&gt; {
-    Publishers.Sequence(sequence: 0..&lt;count)
-      .flatMap(maxPublishers: .max(1)) { (_: Int)
-        -&gt; AnyPublisher&lt;Self.Output, Self.Failure&gt; in
-        return self
-      .eraseToAnyPublisher()
+  <span class="classPrefixcomment">/// Repeat the upstream publisher count times.</span>
+  <span class="classPrefixkeyword">func</span> repeating(<span class="classPrefixkeyword">_</span> count: <span class="classPrefixtype">Int</span>) -&gt; <span class="classPrefixtype">AnyPublisher</span>&lt;<span class="classPrefixtype">Self</span>.<span class="classPrefixtype">Output</span>, <span class="classPrefixtype">Self</span>.<span class="classPrefixtype">Failure</span>&gt; {
+    <span class="classPrefixtype">Publishers</span>.<span class="classPrefixtype">Sequence</span>(sequence: <span class="classPrefixnumber">0</span>..&lt;count)
+      .<span class="classPrefixcall">flatMap</span>(maxPublishers: .<span class="classPrefixcall">max</span>(<span class="classPrefixnumber">1</span>)) { (_: <span class="classPrefixtype">Int</span>)
+        -&gt; <span class="classPrefixtype">AnyPublisher</span>&lt;<span class="classPrefixtype">Self</span>.<span class="classPrefixtype">Output</span>, <span class="classPrefixtype">Self</span>.<span class="classPrefixtype">Failure</span>&gt; <span class="classPrefixkeyword">in
+        return self</span>
+      .<span class="classPrefixcall">eraseToAnyPublisher</span>()
     }
-    .eraseToAnyPublisher()
+    .<span class="classPrefixcall">eraseToAnyPublisher</span>()
   }
   
 }
 
-// Publishes all the images in a board.
-  func publisher(board:BoardName, targetLength: CGFloat) -&gt; AnyPublisher&lt;UIImage?, Never&gt; {
-    FourChanService.shared.posts(board:board)
-    .filter { post in
-      // Filter out posts that don't have renderable images.
-      guard let size = post.renderableImageSize else {
-        return false
+<span class="classPrefixcomment">// Publishes all the images in a board.</span>
+  <span class="classPrefixkeyword">func</span> publisher(board:<span class="classPrefixtype">BoardName</span>, targetLength: <span class="classPrefixtype">CGFloat</span>) -&gt; <span class="classPrefixtype">AnyPublisher</span>&lt;<span class="classPrefixtype">UIImage</span>?, <span class="classPrefixtype">Never</span>&gt; {
+    <span class="classPrefixtype">FourChanService</span>.<span class="classPrefixproperty">shared</span>.<span class="classPrefixcall">posts</span>(board:board)
+    .<span class="classPrefixcall">filter</span> { post <span class="classPrefixkeyword">in</span>
+      <span class="classPrefixcomment">// Filter out posts that don't have renderable images.</span>
+      <span class="classPrefixkeyword">guard let</span> size = post.<span class="classPrefixproperty">renderableImageSize</span> <span class="classPrefixkeyword">else</span> {
+        <span class="classPrefixkeyword">return false</span>
       }
-      // Filter out posts where the renderable image is too small
-      return min(size.width, size.height) &gt;= targetLength/8
+      <span class="classPrefixcomment">// Filter out posts where the renderable image is too small</span>
+      <span class="classPrefixkeyword">return</span> <span class="classPrefixcall">min</span>(size.<span class="classPrefixproperty">width</span>, size.<span class="classPrefixproperty">height</span>) &gt;= targetLength/<span class="classPrefixnumber">8</span>
     }
-    // When we get to the end of the stream, repeat.
-    .repeating(Int.max)
-    // Slow down requests to the slideshow rate.
-    .slowRequest(delay: 5)
-    .flatMap(maxPublishers: .max(1)) { post in
-        FourChanService.shared.dataPublisher(endpoint:post.image!)
-        .map {
-          ImageDataInContext(post:post, imageData:$0)
+    <span class="classPrefixcomment">// When we get to the end of the stream, repeat.</span>
+    .<span class="classPrefixcall">repeating</span>(<span class="classPrefixtype">Int</span>.<span class="classPrefixproperty">max</span>)
+    <span class="classPrefixcomment">// Slow down requests to the slideshow rate.</span>
+    .<span class="classPrefixcall">slowRequest</span>(delay: <span class="classPrefixnumber">5</span>)
+    .<span class="classPrefixcall">flatMap</span>(maxPublishers: .<span class="classPrefixcall">max</span>(<span class="classPrefixnumber">1</span>)) { post <span class="classPrefixkeyword">in</span>
+        <span class="classPrefixtype">FourChanService</span>.<span class="classPrefixproperty">shared</span>.<span class="classPrefixcall">dataPublisher</span>(endpoint:post.<span class="classPrefixproperty">image</span>!)
+        .<span class="classPrefixcall">map</span> {
+          <span class="classPrefixtype">ImageDataInContext</span>(post:post, imageData:$0)
         }
     }
-    .tryMap {
-      if let image = downsample(imageData:$0.imageData, to: targetLength) {
-        return image
+    .<span class="classPrefixcall">tryMap</span> {
+      <span class="classPrefixkeyword">if let</span> image = <span class="classPrefixcall">downsample</span>(imageData:$0.<span class="classPrefixproperty">imageData</span>, to: targetLength) {
+        <span class="classPrefixkeyword">return</span> image
       }
-      throw ImageLoaderError.couldNotDecodeImage
+      <span class="classPrefixkeyword">throw</span> <span class="classPrefixtype">ImageLoaderError</span>.<span class="classPrefixproperty">couldNotDecodeImage</span>
     }
-    .map { Optional($0) }
-    .replaceError(with: nil)
-    .receive(on: DispatchQueue.main)
-    .eraseToAnyPublisher()
+    .<span class="classPrefixcall">map</span> { <span class="classPrefixtype">Optional</span>($0) }
+    .<span class="classPrefixcall">replaceError</span>(with: <span class="classPrefixkeyword">nil</span>)
+    .<span class="classPrefixcall">receive</span>(on: <span class="classPrefixtype">DispatchQueue</span>.<span class="classPrefixproperty">main</span>)
+    .<span class="classPrefixcall">eraseToAnyPublisher</span>()
   }
 }
-</code></pre><p>This single animated view displays the slideshow:</p><pre><code>A SwiftUI Slideshow View
-struct TVSlideshowView : View {
-  let publisher : AnyPublisher&lt;UIImage?, Never&gt;
+</code></pre><p>This single animated view displays the slideshow:</p><pre><code><span class="classPrefixtype">A SwiftUI Slideshow View</span>
+<span class="classPrefixkeyword">struct</span> TVSlideshowView : <span class="classPrefixtype">View</span> {
+  <span class="classPrefixkeyword">let</span> publisher : <span class="classPrefixtype">AnyPublisher</span>&lt;<span class="classPrefixtype">UIImage</span>?, <span class="classPrefixtype">Never</span>&gt;
   
-  @State private var uiImageA: UIImage? = nil
-  @State private var uiImageB: UIImage? = nil
-  @State private var imageAHasPriority: Bool = true
+  <span class="classPrefixkeyword">@State private var</span> uiImageA: <span class="classPrefixtype">UIImage</span>? = <span class="classPrefixkeyword">nil
+  @State private var</span> uiImageB: <span class="classPrefixtype">UIImage</span>? = <span class="classPrefixkeyword">nil
+  @State private var</span> imageAHasPriority: <span class="classPrefixtype">Bool</span> = <span class="classPrefixkeyword">true
   
-  var body: some View {
-    ZStack {
-      decorate(uiImage: uiImageA, isImageA: true)
-      decorate(uiImage: uiImageB, isImageA: false)
+  var</span> body: <span class="classPrefixkeyword">some</span> <span class="classPrefixtype">View</span> {
+    <span class="classPrefixtype">ZStack</span> {
+      <span class="classPrefixcall">decorate</span>(uiImage: uiImageA, isImageA: <span class="classPrefixkeyword">true</span>)
+      <span class="classPrefixcall">decorate</span>(uiImage: uiImageB, isImageA: <span class="classPrefixkeyword">false</span>)
     }
-    .onAppear() {
-      UIApplication.shared.isIdleTimerDisabled = true
+    .<span class="classPrefixcall">onAppear</span>() {
+      <span class="classPrefixtype">UIApplication</span>.<span class="classPrefixproperty">shared</span>.<span class="classPrefixproperty">isIdleTimerDisabled</span> = <span class="classPrefixkeyword">true</span>
     }
-    .onDisappear() {
-      UIApplication.shared.isIdleTimerDisabled = false
+    .<span class="classPrefixcall">onDisappear</span>() {
+      <span class="classPrefixtype">UIApplication</span>.<span class="classPrefixproperty">shared</span>.<span class="classPrefixproperty">isIdleTimerDisabled</span> = <span class="classPrefixkeyword">false</span>
     }
-    .onReceive(publisher) { uiImage in
-      self.updateImages(uiImage:uiImage)
+    .<span class="classPrefixcall">onReceive</span>(publisher) { uiImage <span class="classPrefixkeyword">in
+      self</span>.<span class="classPrefixcall">updateImages</span>(uiImage:uiImage)
     }
   }
   
-  func decorate(uiImage: UIImage?, isImageA: Bool) -&gt; some View {
-    Group {
-      if uiImage != nil {
-        decorate(uiImage: uiImage!, isImageA: isImageA)
+  <span class="classPrefixkeyword">func</span> decorate(uiImage: <span class="classPrefixtype">UIImage</span>?, isImageA: <span class="classPrefixtype">Bool</span>) -&gt; <span class="classPrefixkeyword">some</span> <span class="classPrefixtype">View</span> {
+    <span class="classPrefixtype">Group</span> {
+      <span class="classPrefixkeyword">if</span> uiImage != <span class="classPrefixkeyword">nil</span> {
+        <span class="classPrefixcall">decorate</span>(uiImage: uiImage!, isImageA: isImageA)
       }
     }
   }
   
-  func decorate(uiImage: UIImage, isImageA: Bool) -&gt; some View {
-    GeometryReader { proxy in
-      Image(uiImage:uiImage)
-        .renderingMode(.original)
-        .resizable()
-        .aspectRatio(contentMode: .fill)
-        .frame(width:proxy.size.width, height:proxy.size.height)
-        .animation(nil)
-        .opacity(self.imageAHasPriority == isImageA ? 1.0 : 0.0)
-        .animation(.easeOut(duration:0.6))
+  <span class="classPrefixkeyword">func</span> decorate(uiImage: <span class="classPrefixtype">UIImage</span>, isImageA: <span class="classPrefixtype">Bool</span>) -&gt; <span class="classPrefixkeyword">some</span> <span class="classPrefixtype">View</span> {
+    <span class="classPrefixtype">GeometryReader</span> { proxy <span class="classPrefixkeyword">in</span>
+      <span class="classPrefixtype">Image</span>(uiImage:uiImage)
+        .<span class="classPrefixcall">renderingMode</span>(.<span class="classPrefixdotAccess">original</span>)
+        .<span class="classPrefixcall">resizable</span>()
+        .<span class="classPrefixcall">aspectRatio</span>(contentMode: .<span class="classPrefixdotAccess">fill</span>)
+        .<span class="classPrefixcall">frame</span>(width:proxy.<span class="classPrefixproperty">size</span>.<span class="classPrefixproperty">width</span>, height:proxy.<span class="classPrefixproperty">size</span>.<span class="classPrefixproperty">height</span>)
+        .<span class="classPrefixcall">animation</span>(<span class="classPrefixkeyword">nil</span>)
+        .<span class="classPrefixcall">opacity</span>(<span class="classPrefixkeyword">self</span>.<span class="classPrefixproperty">imageAHasPriority</span> == isImageA ? <span class="classPrefixnumber">1.0</span> : <span class="classPrefixnumber">0.0</span>)
+        .<span class="classPrefixcall">animation</span>(.<span class="classPrefixcall">easeOut</span>(duration:<span class="classPrefixnumber">0.6</span>))
     }
   }
   
-  func updateImages(uiImage: UIImage?) {
-    if uiImage != nil {
-      imageAHasPriority.toggle()
-      if imageAHasPriority {
+  <span class="classPrefixkeyword">func</span> updateImages(uiImage: <span class="classPrefixtype">UIImage</span>?) {
+    <span class="classPrefixkeyword">if</span> uiImage != <span class="classPrefixkeyword">nil</span> {
+      imageAHasPriority.<span class="classPrefixcall">toggle</span>()
+      <span class="classPrefixkeyword">if</span> imageAHasPriority {
         uiImageA = uiImage
-      } else {
+      } <span class="classPrefixkeyword">else</span> {
         uiImageB = uiImage
       }
     }
   }
 }
-</code></pre><h1>Issues</h1><p>Although the code looks fairly clean now, I ran into some tricky problems while writing this code.</p><h2>Combine request throttling</h2><p>The slideshow makes multiple nested asynchronous requests to collect the image URLs:</p><pre><code> repeatedly:
-   request all the threads in the image board:
-     for each thread, request all the posts in the thread:
-       for each post, if it is an image post, request the image data:
-         decode the image data into a UIImage
-</code></pre><p>I ran into a problem where the earlier steps were not throttled, and so the image data was accumulating at a prodigious rate. I quickly exceeded the 2 GB memory limit for AppleTV apps.</p><p>Interestingly, if I displayed the images as quickly as possible, everything worked fine -- I ran the app for 20 minutes, displaying a new image every quarter of a second. Things only backed up when I changed the pipeline to work like this:</p><pre><code> repeatedly:
-   request all the threads in the image board:
-     for each thread, request all the posts in the thread:
-       for each post, if it is an image post:
+</code></pre><h1>Issues</h1><p>Although the code looks fairly clean now, I ran into some tricky problems while writing this code.</p><h2>Combine request throttling</h2><p>The slideshow makes multiple nested asynchronous requests to collect the image URLs:</p><pre><code>  repeatedly:
+   request all the threads <span class="classPrefixkeyword">in</span> the image board:
+     <span class="classPrefixkeyword">for</span> each thread, request all the posts <span class="classPrefixkeyword">in</span> the thread:
+       <span class="classPrefixkeyword">for</span> each post, if it <span class="classPrefixkeyword">is</span> an image post, request the image data:
+         decode the image data into a <span class="classPrefixtype">UIImage</span>
+</code></pre><p>I ran into a problem where the earlier steps were not throttled, and so the image data was accumulating at a prodigious rate. I quickly exceeded the 2 GB memory limit for AppleTV apps.</p><p>Interestingly, if I displayed the images as quickly as possible, everything worked fine -- I ran the app for 20 minutes, displaying a new image every quarter of a second. Things only backed up when I changed the pipeline to work like this:</p><pre><code>  repeatedly:
+   request all the threads <span class="classPrefixkeyword">in</span> the image board:
+     <span class="classPrefixkeyword">for</span> each thread, request all the posts <span class="classPrefixkeyword">in</span> the thread:
+       <span class="classPrefixkeyword">for</span> each post, if it <span class="classPrefixkeyword">is</span> an image post:
          request the image data:
-           delay for 5 seconds:
-             decode the image data into a UIImage
+           delay <span class="classPrefixkeyword">for</span> <span class="classPrefixnumber">5</span> seconds:
+             decode the image data into a <span class="classPrefixtype">UIImage</span>
 </code></pre><p>In this pipeline, the image data accumulated in RAM, and that ended up killing the app.</p><p>Now Combine has the concept of back-pressure, and it's supposed to be possible to set up Combine pipelines so that this problem can be avoided. But unfortunately I couldn't get the backpressure to work in this pipeline. It might be due to my limited understanding, but it could also be due to a bug in Combine.</p><p>Luckily, I was able to work-around the issue by changing my pipeline to this:</p><pre><code>repeatedly:
-  request all the threads in the image board:
-    for each thread, request all the posts in the thread:
-      for each post, if it is an image post:
-        delay for 5 seconds:
+  request all the threads <span class="classPrefixkeyword">in</span> the image board:
+    <span class="classPrefixkeyword">for</span> each thread, request all the posts <span class="classPrefixkeyword">in</span> the thread:
+      <span class="classPrefixkeyword">for</span> each post, if it <span class="classPrefixkeyword">is</span> an image post:
+        delay <span class="classPrefixkeyword">for</span> <span class="classPrefixnumber">5</span> seconds:
           request the image data:
-            decode the image data into a UIImage
+            decode the image data into a <span class="classPrefixtype">UIImage</span>
 </code></pre><p>By moving the "delay for 5 seconds" step before the "request the image data" step, I avoided backing up the pipeline.</p><h2>Image crossfading</h2><p>SwiftUI has an extensive animation system, but it isn't well documented, and it has bugs and limitations. I wasn't able to do exactly what I wanted, but I was at least able to get something working.</p><p>The effect I wanted was: Each time a new image is received, fade it in in front of the previous image. Ideally the opacity of the old image stays at 100%, while the new image's opacity animates from 0% (transparent) to 100% (opaque).</p><p>The effect I was able to achieve was: Each time a new image is received, fade it in in front of the previous image, while simultaneously fading the old image from 100% opacity to 0% opacity.</p><p>This works, but has the drawback that in the middle of the transition, both the old and new images are partially transparent, and so the background color shows through.</p><p>I tried a number of approaches to work around this problem, but I just couldn't get things to work.</p><p>Now that I've got basic crossfading working, I'm tempted to add "Ken Burns" style pan-and-zoom animation, as well as effects like the old AppleTV Photos screensaver.</p><h1>Conclusion</h1><p>For what it's worth, Apple's Instruments tool tells me there's some memory leaks when running the pipeline. These are genuine leaks, rather than retain cycles. The leaked objects appear to be internal to the SwiftUI implementation. Luckily the leaks are on the order of a few kilobytes per second, so it's not too much of a problem in practice.</p><p>I think Combine and SwiftUI are still "beta" quality software. Hopefully things will improve with iOS 14.</p></div><span>Tagged with: </span><ul class="tag-list"><li><a href="/tags/swiftui">SwiftUI</a></li><li><a href="/tags/combine">Combine</a></li></ul></article></div><footer><p><a href="/feed.rss">RSS feed</a></p></footer></body></html>
