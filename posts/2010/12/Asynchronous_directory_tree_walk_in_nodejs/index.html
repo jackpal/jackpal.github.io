@@ -1,50 +1,50 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="og:site_name" content="GrammerJack"/><link rel="canonical" href="https://jackpal.github.io/posts/2010/12/Asynchronous_directory_tree_walk_in_nodejs"/><meta name="twitter:url" content="https://jackpal.github.io/posts/2010/12/Asynchronous_directory_tree_walk_in_nodejs"/><meta name="og:url" content="https://jackpal.github.io/posts/2010/12/Asynchronous_directory_tree_walk_in_nodejs"/><title>Asynchronous directory tree walk in node.js | GrammerJack</title><meta name="twitter:title" content="Asynchronous directory tree walk in node.js | GrammerJack"/><meta name="og:title" content="Asynchronous directory tree walk in node.js | GrammerJack"/><meta name="description" content="Jack Palevich's Essays"/><meta name="twitter:description" content="Jack Palevich's Essays"/><meta name="og:description" content="Jack Palevich's Essays"/><meta name="twitter:card" content="summary"/><link rel="stylesheet" href="/styles.css" type="text/css"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/images/favicon.png" type="image/png"/><link rel="alternate" href="/feed.rss" type="application/rss+xml" title="Subscribe to GrammerJack"/></head><body class="item-page"><header><div class="wrapper"><a class="site-name" href="/">GrammerJack</a></div></header><div class="wrapper"><article><div class="content"><h1>Asynchronous directory tree walk in node.js</h1><p>I wrote an asynchronous directory tree walker in <a href="http://nodejs.org/">node.js</a>. Note the use of Continuation Passing Style in the fileCb callback. That allows the callback to perform its own asynchronous operations before continuing the directory walk.</p><p>(This code is provided under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache Licence 2.0</a>.)</p><pre><code><span class="comment">// asynchronous tree walk
-// root - root path
-// fileCb - callback function (file, next) called for each file
-// -- the callback must call next(falsey) to continue the iteration,
-//    or next(truthy) to abort the iteration.
-// doneCb - callback function (err) called when iteration is finished
-// or an error occurs.
-//
-// example:
-//
-// forAllFiles('~/',
-//     function (file, next) { sys.log(file); next(); },
-//     function (err) { sys.log("done: " + err); });</span>
-function <span class="call">forAllFiles</span>(root, fileCb, doneCb) {
-    fs.<span class="call">readdir</span>(root, function <span class="call">processDir</span>(err, files) {
-        <span class="keyword">if</span> (err) {
-            <span class="call">fileCb</span>(err);
-        } <span class="keyword">else</span> {
-            <span class="keyword">if</span> (files.<span class="property">length</span> &gt; <span class="number">0</span>) {
-                <span class="keyword">var</span> file = root + '/' + files.<span class="call">shift</span>();
-                fs.<span class="call">stat</span>(file, function <span class="call">processStat</span>(err, stat) {
-                    <span class="keyword">if</span> (err) {
-                        <span class="call">doneCb</span>(err);
-                    } <span class="keyword">else</span> {
-                        <span class="keyword">if</span> (stat.<span class="call">isFile</span>()) {
-                            <span class="call">fileCb</span>(file, <span class="call">function</span>(err) {
-                                <span class="keyword">if</span> (err) {
-                                    <span class="call">doneCb</span>(err);
-                                } <span class="keyword">else</span> {
-                                    <span class="call">processDir</span>(<span class="keyword">false</span>, files);
-                                }
-                            });
-                        } <span class="keyword">else</span> {
-                            <span class="call">forAllFiles</span>(file, fileCb, <span class="call">function</span>(err) {
-                                <span class="keyword">if</span> (err) {
-                                    <span class="call">doneCb</span>(err);
-                                } <span class="keyword">else</span> {
-                                    <span class="call">processDir</span>(<span class="keyword">false</span>, files);
-                                }
-                            });
-                        }
-                    }
-                });
-            } <span class="keyword">else</span> {
-                <span class="call">doneCb</span>(<span class="keyword">false</span>);
-            }
-        }
-    });
-}
-</code></pre></div><span>Tagged with: </span><ul class="tag-list"><li><a href="/tags/nodejs">node.js</a></li></ul></article></div><footer><p><a href="/feed.rss">RSS feed</a></p></footer></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="og:site_name" content="GrammerJack"/><link rel="canonical" href="https://jackpal.github.io/posts/2010/12/Asynchronous_directory_tree_walk_in_nodejs"/><meta name="twitter:url" content="https://jackpal.github.io/posts/2010/12/Asynchronous_directory_tree_walk_in_nodejs"/><meta name="og:url" content="https://jackpal.github.io/posts/2010/12/Asynchronous_directory_tree_walk_in_nodejs"/><title>Asynchronous directory tree walk in node.js | GrammerJack</title><meta name="twitter:title" content="Asynchronous directory tree walk in node.js | GrammerJack"/><meta name="og:title" content="Asynchronous directory tree walk in node.js | GrammerJack"/><meta name="description" content="Jack Palevich's Essays"/><meta name="twitter:description" content="Jack Palevich's Essays"/><meta name="og:description" content="Jack Palevich's Essays"/><meta name="twitter:card" content="summary"/><link rel="stylesheet" href="/styles.css" type="text/css"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/images/favicon.png" type="image/png"/><link rel="alternate" href="/feed.rss" type="application/rss+xml" title="Subscribe to GrammerJack"/></head><body class="item-page"><header><div class="wrapper"><a class="site-name" href="/">GrammerJack</a></div></header><div class="wrapper"><article><div class="content"><h1>Asynchronous directory tree walk in node.js</h1><p>I wrote an asynchronous directory tree walker in <a href="http://nodejs.org/">node.js</a>. Note the use of Continuation Passing Style in the fileCb callback. That allows the callback to perform its own asynchronous operations before continuing the directory walk.</p><p>(This code is provided under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache Licence 2.0</a>.)</p><pre><code><div class="highlight"><span></span><span class="c1">// asynchronous tree walk</span>
+<span class="c1">// root - root path</span>
+<span class="c1">// fileCb - callback function (file, next) called for each file</span>
+<span class="c1">// -- the callback must call next(falsey) to continue the iteration,</span>
+<span class="c1">//    or next(truthy) to abort the iteration.</span>
+<span class="c1">// doneCb - callback function (err) called when iteration is finished</span>
+<span class="c1">// or an error occurs.</span>
+<span class="c1">//</span>
+<span class="c1">// example:</span>
+<span class="c1">//</span>
+<span class="c1">// forAllFiles(&#39;~/&#39;,</span>
+<span class="c1">//     function (file, next) { sys.log(file); next(); },</span>
+<span class="c1">//     function (err) { sys.log(&quot;done: &quot; + err); });</span>
+<span class="kd">function</span> <span class="nx">forAllFiles</span><span class="p">(</span><span class="nx">root</span><span class="p">,</span> <span class="nx">fileCb</span><span class="p">,</span> <span class="nx">doneCb</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">fs</span><span class="p">.</span><span class="nx">readdir</span><span class="p">(</span><span class="nx">root</span><span class="p">,</span> <span class="kd">function</span> <span class="nx">processDir</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">files</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">fileCb</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">files</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kd">var</span> <span class="nx">file</span> <span class="o">=</span> <span class="nx">root</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="nx">files</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span>
+                <span class="nx">fs</span><span class="p">.</span><span class="nx">stat</span><span class="p">(</span><span class="nx">file</span><span class="p">,</span> <span class="kd">function</span> <span class="nx">processStat</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">stat</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="nx">doneCb</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+                    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="nx">stat</span><span class="p">.</span><span class="nx">isFile</span><span class="p">())</span> <span class="p">{</span>
+                            <span class="nx">fileCb</span><span class="p">(</span><span class="nx">file</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+                                <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+                                    <span class="nx">doneCb</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+                                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                                    <span class="nx">processDir</span><span class="p">(</span><span class="kc">false</span><span class="p">,</span> <span class="nx">files</span><span class="p">);</span>
+                                <span class="p">}</span>
+                            <span class="p">});</span>
+                        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                            <span class="nx">forAllFiles</span><span class="p">(</span><span class="nx">file</span><span class="p">,</span> <span class="nx">fileCb</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+                                <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+                                    <span class="nx">doneCb</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+                                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                                    <span class="nx">processDir</span><span class="p">(</span><span class="kc">false</span><span class="p">,</span> <span class="nx">files</span><span class="p">);</span>
+                                <span class="p">}</span>
+                            <span class="p">});</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+                <span class="p">});</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="nx">doneCb</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+</div></code></pre></div><span>Tagged with: </span><ul class="tag-list"><li><a href="/tags/nodejs">node.js</a></li></ul></article></div><footer><p><a href="/feed.rss">RSS feed</a></p></footer></body></html>
