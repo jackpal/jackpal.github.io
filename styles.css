@@ -64,6 +64,12 @@ img {
     box-shadow:         12px 12px 29px #555;
 }
 
+article img {
+    max-width: 90%;
+    margin: none;
+    box-shadow: none;
+}
+
 nav {
     margin-top: 20px;
 }
