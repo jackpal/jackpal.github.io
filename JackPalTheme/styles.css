@@ -23,7 +23,9 @@ a:hover{
 body {
     background: #fff;
     color: #000;
-    font-family: Verdana;
+    font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.8em;
     text-align: center;
 }
 
@@ -78,7 +80,6 @@ nav li a.selected {
 
 h1 {
     margin-bottom: 20px;
-    font-size: 2em;
 }
 
 h2 {
@@ -149,7 +150,7 @@ a {
 .tag-list li,
 .tag {
     display: inline-block;
-    background-color: #000;
+    background-color: #004;
     color: #ddd;
     padding: 4px 6px;
     border-radius: 5px;
@@ -167,6 +168,11 @@ a {
 
 .content {
     margin-bottom: 40px;
+    
+}
+
+.content a {
+  text-decoration: underline;
 }
 
 .browse-all {
