@@ -12,10 +12,18 @@
     box-sizing: border-box;
 }
 
+a {
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
 body {
     background: #fff;
     color: #000;
-    font-family: Helvetica, Arial;
+    font-family: Verdana;
     text-align: center;
 }
 
