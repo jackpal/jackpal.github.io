@@ -38,7 +38,8 @@ body {
 }
 
 header {
-    background-color: #eee;
+  background-color: #26619c;
+  color: #fff;
 }
 
 header .wrapper {
@@ -53,7 +54,6 @@ header a {
 
 header .site-name {
     font-size: 1.5em;
-    color: #000;
     font-weight: bold;
 }
 
@@ -156,7 +156,7 @@ a {
 .tag-list li,
 .tag {
     display: inline-block;
-    background-color: #004;
+    background-color: #26619c;
     color: #ddd;
     padding: 4px 6px;
     border-radius: 5px;
