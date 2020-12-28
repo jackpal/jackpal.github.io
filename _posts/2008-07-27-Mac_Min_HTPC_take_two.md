@@ -1,9 +1,9 @@
+
 ---
 date: 2008-07-27 12:38
 tags: htpc,mac mini
+title: Mac Min HTPC take two
 ---
-
-# Mac Min HTPC take two
 
 I just bought another Mac Mini to use as a HTPC (home theater PC). I tried
 this a year ago, but was not happy with the results. But since then I've

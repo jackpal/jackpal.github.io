@@ -1,9 +1,9 @@
+
 ---
 date: 2007-10-14 17:05
 tags: Microsoft, Google, Tools
+title: Comparing the Microsoft and Google tool chains circa 2007
 ---
-
-# Comparing the Microsoft and Google tool chains circa 2007
 
 About six months ago I left Microsoft for Google. One of the big differences
 between the two companies is the tool chains that they use. Microsoft mostly

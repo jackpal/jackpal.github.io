@@ -1,11 +1,11 @@
+
 ---
 date: 2017-08-06 03:16
 description: My son and I competed as team "Blue Iris" in the ICFP 2017 programming contest.
 image: pizza.jpg
 tags: Contests, ICFP
+title: Team Blue Iris ICFP 2017 Programming Contest Postmortem
 ---
-
-# Team Blue Iris ICFP 2017 Programming Contest Postmortem
 
 My son and I competed as team "Blue Iris" in the [ICFP 2017 programming contest](https://icfpcontest2017.github.io/).
 

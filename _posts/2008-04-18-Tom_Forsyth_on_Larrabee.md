@@ -1,9 +1,9 @@
+
 ---
 date: 2008-04-18 16:49
 tags: Larrabee
+title: Tom Forsyth on Larrabee
 ---
-
-# Tom Forsyth on Larrabee
 
 Tom Forsyth, who recently left RAD to work at Intel on the Larrabee project,
 has posted to his tech blog explaining that Larrabee is going to be primarily

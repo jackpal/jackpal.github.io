@@ -1,9 +1,9 @@
+
 ---
 date: 2017-06-03 05:16
 tags: Home computing,Desktop PC,NVIDIA,Windows,Machine Learning
+title: On-the-cheap Machine Learning computer
 ---
-
-# On-the-cheap Machine Learning computer
 
 I recently put together a cheap-and-cheerful machine-learning-capable PC.
 

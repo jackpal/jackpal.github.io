@@ -1,9 +1,9 @@
+
 ---
 date: 2009-11-26 23:09
 tags: 3d graphics,android
+title: 3D toolchain musings
 ---
-
-# 3D toolchain musings
 
 I'm writing a skinning sample for a future Android SDK. This has prompted me
 to construct a toolchain to get skinned animated models into Android

@@ -1,9 +1,9 @@
+
 ---
 date: 2017-09-01 22:51
 tags: Home computing, iPhone, Windows, Planning
+title: Family Computers, 2017 Edition
 ---
-
-# Family Computers, 2017 Edition
 
 A quick update on my family's computers, as we start the 2017-2018 school year
 

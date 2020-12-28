@@ -1,9 +1,9 @@
+
 ---
 date: 2009-11-25 08:33
 tags: JavaScript
+title: Two very good talks on ECMAScript 4, 5, and 6
 ---
-
-# Two very good talks on ECMAScript 4, 5, and 6
 
 Yahoo continues to be a source of excellent information on recent and future
 versions of JavaScript / ECMAScript. Here are two very good talks from

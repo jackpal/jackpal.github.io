@@ -1,9 +1,9 @@
+
 ---
 date: 2008-04-18 16:53
 tags: Hardware, Sony
+title: Wow, TVs are complicated
 ---
-
-# Wow, TVs are complicated
 
 Check out this
 [teardown of a Sony OLED TV](http://www.bunniestudios.com/blog/?p=243).

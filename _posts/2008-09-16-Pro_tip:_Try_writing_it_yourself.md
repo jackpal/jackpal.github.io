@@ -1,9 +1,9 @@
+
 ---
 date: 2008-09-16 14:28
 tags: productivity
+title: Pro tip: Try writing it yourself
 ---
-
-# Pro tip: Try writing it yourself
 
 Sometimes I need to get a feature into the project I'm working on, but the
 developer who owns the feature is too busy to implement it. A trick that seems

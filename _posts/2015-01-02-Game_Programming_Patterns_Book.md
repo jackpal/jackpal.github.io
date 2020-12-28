@@ -1,9 +1,9 @@
+
 ---
 date: 2015-01-02 20:39
 tags: Book review,game development
+title: Game Programming Patterns Book
 ---
-
-# Game Programming Patterns Book
 
 I've been reading [Game Programming Patterns](http://gameprogrammingpatterns.com/) by Bob Nystrom.
 

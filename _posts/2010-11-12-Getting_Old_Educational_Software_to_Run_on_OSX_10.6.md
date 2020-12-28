@@ -1,9 +1,9 @@
+
 ---
 date: 2010-11-12 23:25
 tags: pc,educational,OSX
+title: Getting Old Educational Software to Run on OSX 10.6
 ---
-
-# Getting Old Educational Software to Run on OSX 10.6
 
 My kids' favorite piece of educational software is
 "[Clifford The Big Red Dog Thinking Adventures](http://www.google.com/search?q=Clifford+thinking+adventures)" by

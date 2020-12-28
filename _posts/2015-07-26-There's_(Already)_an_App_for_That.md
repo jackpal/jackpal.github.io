@@ -1,9 +1,9 @@
+
 ---
 date: 2015-07-26 16:31
 tags: Hobby hacking,iPhone
+title: There's (Already) an App for That
 ---
-
-# There's (Already) an App for That
 
 Story of my hobby hacking life these days:
 

@@ -1,9 +1,9 @@
+
 ---
 date: 2009-06-28 18:41
 tags: ICFP,Python
+title: ICFP 2009 contest blog - Team Blue Iris
 ---
-
-# ICFP 2009 contest blog - Team Blue Iris
 
 I just threw in the towel on the
 [ICFP 2009 Programming Contest](http://icfpcontest.org/).

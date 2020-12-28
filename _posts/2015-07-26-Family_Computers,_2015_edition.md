@@ -1,9 +1,9 @@
+
 ---
 date: 2015-07-26 17:38
 tags: Home computing,planning
+title: Family Computers, 2015 edition
 ---
-
-# Family Computers, 2015 edition
 
 As summer draws to a close, I am planning my family's computer use for the
 2015-2016 school year.

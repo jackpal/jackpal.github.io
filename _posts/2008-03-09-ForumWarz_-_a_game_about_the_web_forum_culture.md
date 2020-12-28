@@ -1,9 +1,9 @@
+
 ---
 date: 2008-03-09 17:46
 tags: gaming
+title: ForumWarz - a game about the web forum culture
 ---
-
-# ForumWarz - a game about the web forum culture
 
 This is an interesting role-playing-game set in current-day web forum culture:
 

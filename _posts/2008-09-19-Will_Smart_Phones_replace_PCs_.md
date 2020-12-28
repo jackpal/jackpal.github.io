@@ -1,9 +1,9 @@
+
 ---
 date: 2008-09-19 14:01
 tags: mobile phones,android,predictions
+title: Will Smart Phones replace PCs?
 ---
-
-# Will Smart Phones replace PCs?
 
 That's the question
 [Dean Kent asks over at Real World Tech](http://www.realworldtech.com/forums/index.cfm?action=detail&id=93355&threadid=93355&roomid=2)'s

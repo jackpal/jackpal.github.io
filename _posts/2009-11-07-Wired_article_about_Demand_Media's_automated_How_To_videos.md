@@ -1,9 +1,9 @@
+
 ---
 date: 2009-11-07 19:23
 tags: Future Shock
+title: Wired article about Demand Media's automated How To videos
 ---
-
-# Wired article about Demand Media's automated How To videos
 
 Man, the web really does change everything!
 

@@ -1,9 +1,9 @@
+
 ---
 date: 2010-01-23 13:27
 tags: go,BitTorrent,python
+title: Looking at the original BitTorrent client
 ---
-
-# Looking at the original BitTorrent client
 
 I wanted to learn more about how the original BitTorrent client implemented
 "choking", so I downloaded the source to the original Python-based BitTorrent

@@ -1,9 +1,9 @@
+
 ---
 date: 2010-01-23 02:17
 tags: 3d graphics,Xbox 360,Project Natal
+title: Some details on Xbox Project Natal
 ---
-
-# Some details on Xbox Project Natal
 
 From Scientific American:
 [Binary Body Double: Microsoft Reveals the Science Behind Project Natal](http://www.scientificamerican.com/article.cfm?id=microsoft-project-natal)

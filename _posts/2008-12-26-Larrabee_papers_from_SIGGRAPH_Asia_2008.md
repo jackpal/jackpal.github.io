@@ -1,9 +1,9 @@
+
 ---
 date: 2008-12-26 02:51
 tags: Larrabee,3d
+title: Larrabee papers from SIGGRAPH Asia 2008
 ---
-
-# Larrabee papers from SIGGRAPH Asia 2008
 
 ...as seen on the [Beyond3D GPGPU
 forum](http://forum.beyond3d.com/showthread.php?p=1251413#post1251413), here

@@ -1,9 +1,9 @@
+
 ---
 date: 2015-01-02 22:27
 tags: strategy,predictions,mobile,iOS,Android
+title: Letting go of the Web and Embracing Mobile
 ---
-
-# Letting go of the Web and Embracing Mobile
 
 When I started working on Android in 2007, I had never owned a mobile phone.
 When Andy Rubin heard this, he looked at me, grinned, and said "man, you're on

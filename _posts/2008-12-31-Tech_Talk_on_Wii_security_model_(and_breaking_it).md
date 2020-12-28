@@ -1,9 +1,9 @@
+
 ---
 date: 2008-12-31 14:33
 tags: Wii,gaming,security
+title: Tech Talk on Wii security model (and breaking it)
 ---
-
-# Tech Talk on Wii security model (and breaking it)
 
 A very thorough talk describing the Nintendo Wii game console security model
 and the bugs and weaknesses that allowed the Wii to be compromised:

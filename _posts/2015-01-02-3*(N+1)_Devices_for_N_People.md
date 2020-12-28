@@ -1,10 +1,10 @@
+
 ---
 date: 2015-01-02 23:03
 description: At my house we are trending towards having N+1 laptops for N people.
 tags: Home computing, planning
+title: 3*(N+1) Devices for N People
 ---
-
-# 3*(N+1) Devices for N People
 
 At my house we are trending towards having N+1 laptops for N people, because
 (a) I need to keep my work laptop separate from my home laptop, and (b)

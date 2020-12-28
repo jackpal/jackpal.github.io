@@ -1,9 +1,9 @@
+
 ---
 date: 2007-12-29 18:10
 tags: Hacking, Wii
+title: Nintendo Wii security defeated by the Tweezer Attack
 ---
-
-# Nintendo Wii security defeated by the Tweezer Attack
 
 According to a presentation at the [24th Chaos Communication
 Congress](http://events.ccc.de/congress/2007/Fahrplan/track/Hacking/2279.en.html),

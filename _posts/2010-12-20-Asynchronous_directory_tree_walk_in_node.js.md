@@ -1,9 +1,9 @@
+
 ---
 date: 2010-12-20 15:08
 tags: node.js
+title: Asynchronous directory tree walk in node.js
 ---
-
-# Asynchronous directory tree walk in node.js
 
 I wrote an asynchronous directory tree walker in
 [node.js](http://nodejs.org/). Note the use of Continuation Passing Style in

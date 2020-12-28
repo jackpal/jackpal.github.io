@@ -1,9 +1,9 @@
+
 ---
 date: 2008-05-14 03:29
 tags: dynamic languages,Yegge,rants
+title: Yegge's rant on dynamic languages
 ---
-
-# Yegge's rant on dynamic languages
 
 Another superb rant by Steve Yegge on dynamic languages:
 

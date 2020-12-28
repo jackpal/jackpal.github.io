@@ -1,9 +1,9 @@
+
 ---
 date: 2016-08-07 18:47
 tags: Home computing,planning,iPhone
+title: Family Computers, 2016 edition
 ---
-
-# Family Computers, 2016 edition
 
 As the summer of 2016 draws to an end, it's time to plan my family's IT setup
 for the 2016-2017 school year.

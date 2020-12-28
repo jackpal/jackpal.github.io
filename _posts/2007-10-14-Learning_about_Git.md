@@ -1,9 +1,9 @@
+
 ---
 date: 2007-10-14 01:24
 tags: git
+title: Learning about Git
 ---
-
-# Learning about Git
 
 Lately I've been learning the git source code control system. It's a
 distributed version control system, which means there is no central

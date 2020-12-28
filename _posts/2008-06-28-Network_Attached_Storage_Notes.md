@@ -1,9 +1,9 @@
+
 ---
 date: 2008-06-28 19:03
 tags: NAS,Linux,Home computing
+title: Network Attached Storage Notes
 ---
-
-# Network Attached Storage Notes
 
 I just bought a
 [Buffalo LinkStation Mini 500GB](http://www.buffalotech.com/products/network-storage/linkstation/linkstation-mini/)

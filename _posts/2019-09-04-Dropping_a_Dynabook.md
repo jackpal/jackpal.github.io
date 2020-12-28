@@ -1,11 +1,11 @@
+
 ---
 date: 2019-09-04 03:53
 description: A prescient comic from the early days of modern computers.
 image: detail.png
 tags: Science Fiction, Dynabook, MIT
+title: Dropping a Dynabook: A comic that turned from Science Fiction to Science Fact
 ---
-
-# Dropping a Dynabook: A comic that turned from Science Fiction to Science Fact
 
 Some time around 1982, I saw an amazing comic on the wall of a [Xerox
 Alto](https://en.wikipedia.org/wiki/Xerox_Alto) computer room at the [MIT AI
@@ -52,27 +52,4 @@ T+12.000 Dynabook turns on an emergency locator beacon.
 
 T+12.816 Dynabook smashes into the rocks at the bottom of Half Dome.
 
---------=====--------
-
-When I first read this comic, probably a few years after it was created, it
-was total Science Fiction:
-
-* Laptops weighed 25 pounds, contained miniature CRT monitors, and had to be plugged in to operate.
-* Personal computers had single cores and no environmental sensors.
-* Mobile phones weighted multiple pounds and didn't have cellular modems. Yosemite Valley didn't have cell service.
-* Simply connecting to the Internet (then called the ARPANET) took over 30 seconds.
-* Data flowed at a blistering 1440 bytes per second.
-* Nobody in their right mind would take a fragile laptop to the top of Half Dome.
-* Commercial use of the Internet was prohibited. While hobbyists bought and sold stuff,  large companies, even computer makers, were not set up to allow products to be ordered over the Internet.
-
-Over the years, each time I remembered this comic, I realized that it was
-becoming more and more science fact. By now, 40 years later, almost all of the
-events mentioned in this comic could actually happen as described.
-
-To my mind the only unlikely events are:
-
-* In 1979 frame buffers were a significant fraction (more than 75%) of a computer's RAM, so it made sense to turn off the display to save memory. Today we would still turn off the display, but we would do it to save power.
-* In 1979 Moore's Law hadn't been in effect as long. A multi-core CPU had to be made out of separate CPU chips, such that one or more cores could plausibly be damaged without destroying all the chips. Today we _do_ use multiple cores (indeed, typically 6-8), but they are all on one giant chip.
-
-The only remaining Science Fiction idea is the rescue beacon.
-[But Apple is rumored to be implementing that this year.](https://9to5mac.com/2019/09/03/apple-glasses-explained-and-how-iphone-connected-item-trackers-will-work/)
+--------=====-----

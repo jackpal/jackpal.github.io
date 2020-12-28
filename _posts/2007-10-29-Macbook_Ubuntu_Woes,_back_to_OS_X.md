@@ -1,9 +1,9 @@
+
 ---
 date: 2007-10-29 03:01
 tags: Linux, MacOS
+title: Macbook Ubuntu Woes, back to OS X
 ---
-
-# Macbook Ubuntu Woes, back to OS X
 
 Well, for what it's worth, I've switched my MacBook from Ubuntu Linux back to
 OS X. Ubuntu Linux worked, but had lots of little problems:

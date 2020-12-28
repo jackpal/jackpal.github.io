@@ -1,9 +1,9 @@
+
 ---
 date: 2015-07-26 18:14
 tags: Home computing,product reviews
+title: Happiest recent purchases
 ---
-
-# Happiest recent purchases
 
 A few products that made my summer family travels happier:
 

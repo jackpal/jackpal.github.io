@@ -1,9 +1,9 @@
+
 ---
 date: 2007-12-23 11:50
 tag: Alternative languages, productivity
+title: Alternative language blues
 ---
-
-# Alternative language blues
 
 I've spent roughly 4 years of midnight-engineering time looking into the cool
 languages to see if they would make game programming easier or more fun.

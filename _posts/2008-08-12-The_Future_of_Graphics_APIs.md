@@ -1,9 +1,9 @@
+
 ---
 date: 2008-08-12 14:48
 tags: 3d,OpenGL,game consoles,predictions
+title: The Future of Graphics APIs
 ---
-
-# The Future of Graphics APIs
 
 The OpenGL 3.0 spec was released this week, just in time for SigGraph. It
 turns out to be a fairly minor update to OpenGL, little more than a

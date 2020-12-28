@@ -1,9 +1,9 @@
+
 ---
 date: 2007-11-21 20:34
 tags: Restaurant Reviews
+title: Had brunch at Salty's
 ---
-
-# Had brunch at Salty's
 
 I had a very nice birthday brunch at [Salty's on
 Alki](http://maps.google.com/?q=Salty%27s%20Alki).

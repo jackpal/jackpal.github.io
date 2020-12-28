@@ -1,9 +1,9 @@
+
 ---
 date: 2007-10-21 18:58
 tags: Linux, Macbook
+title: Customizing Ubuntu 7.10 on Macbook
 ---
-
-# Customizing Ubuntu 7.10 on Macbook
 
 I've been tearing down and reinstalling Ubuntu 7.10 all weekend, trying to get
 wireless video playback to work well. Here's my list of tweaks, all of which

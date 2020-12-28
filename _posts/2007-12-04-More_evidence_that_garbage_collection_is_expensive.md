@@ -1,9 +1,9 @@
+
 ---
 date: 2007-12-04 17:58
 tags: gc
+title: More evidence that garbage collection is expensive
 ---
-
-# More evidence that garbage collection is expensive
 
 As seen on [Lambda the Ultimate.org](http://lambda-the-ultimate.org/node/2552)
 

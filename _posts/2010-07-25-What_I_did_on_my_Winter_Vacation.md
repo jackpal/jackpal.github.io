@@ -1,9 +1,9 @@
+
 ---
 date: 2010-07-25 21:00
 tags: Trip report,Taiwan
+title: What I did on my Winter Vacation
 ---
-
-# What I did on my Winter Vacation
 
 I just returned to the US after eight months living in Taiwan. The trip was
 great fun for me and my family. But more than that, it was a very productive

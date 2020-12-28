@@ -1,9 +1,9 @@
+
 ---
 date: 2009-07-23 17:56
 tags: hardware,workstations
+title: Nehalem machines are very fast
 ---
-
-# Nehalem machines are very fast
 
 I've just had a chance to use a Nehalem HP Z600 workstation with 2 Xeon E5520
 CPUs. The machine has 8 cores, 16 hardware threads, and an absurd 12 GB of

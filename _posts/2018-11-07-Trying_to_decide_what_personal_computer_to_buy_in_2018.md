@@ -1,9 +1,9 @@
+
 ---
 date: 2018-11-07 15:09
 tags: PC, Laptop, Mac, Home computing
+title: Trying to decide what personal computer to buy in 2018
 ---
-
-# Trying to decide what personal computer to buy in 2018
 
 I'm thinking of buying a new personal computer. I'm writing this essay to
 crystalize my thoughts on what to buy.

@@ -1,9 +1,9 @@
+
 ---
 date: 2018-05-20 18:19
 tags: Home computing, Machine Learning, Collab
+title: On-the-cheap Machine Learning, revisited
 ---
-
-# On-the-cheap Machine Learning, revisited
 
 A short update on my
 [On the Cheap Machine Learning](https://jackpal.github.io/posts/2017/06/On-the-cheap_Machine_Learning_computer/)

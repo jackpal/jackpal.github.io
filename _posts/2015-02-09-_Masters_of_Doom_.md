@@ -1,9 +1,9 @@
+
 ---
 date: 2015-02-09 03:52
 tags: games,Carmack,3D,Doom
+title: "Masters of Doom"
 ---
-
-# "Masters of Doom"
 
 I've been reading the book [Masters of Doom](http://books.google.com/books/about/Masters_of_Doom.html?id=yyaxyKjyp2YC)
 about the careers of John Carmack and John Romero. I have ported their games

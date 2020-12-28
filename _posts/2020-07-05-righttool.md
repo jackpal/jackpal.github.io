@@ -1,10 +1,10 @@
+
 ---
 date: 2020-07-05 15:48
 description: Picking the right tool for the job. Helping my daughter write a model rocketry data collection app.
 tags: Google Sheets, Swift UI, Web
+title: Picking the Right Tool for the Job
 ---
-
-# Picking the Right Tool for the Job
 
 Over the past few months I have been coaching one of my daughters as she writes a data collection application for her model rocketry team.
 

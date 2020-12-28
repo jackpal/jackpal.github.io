@@ -1,9 +1,9 @@
+
 ---
 date: 2009-09-23 13:24
 tags: Larrabee,3d
+title: IDF 2009 Larrabee demo
 ---
-
-# IDF 2009 Larrabee demo
 
 Intel [showed their new Larrabee GPU publicly for the first time](http://www.semiaccurate.com/2009/09/22/larrabee-breaks-cover-last/) at
 their annual developer conference. They showed [Larrabee running a ray tracer that was rendering QuakeWars geometry](http://www.youtube.com/watch?v=b5TGA-

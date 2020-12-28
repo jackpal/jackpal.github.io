@@ -1,9 +1,9 @@
+
 ---
 date: 2017-12-31 00:08
 tags: Year in Review
+title: What I learned in 2017
 ---
-
-# What I learned in 2017
 
 ## Shipping an Audio Pipeline
 

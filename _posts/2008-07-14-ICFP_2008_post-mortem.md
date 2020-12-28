@@ -1,9 +1,9 @@
+
 ---
 date: 2008-07-14 13:07
 tags: icfp,contest,Blue Iris,Python
+title: ICFP 2008 post-mortem
 ---
-
-# ICFP 2008 post-mortem
 
 This year's [ICFP](http://www.icfpcontest.org/)[
 contest](http://www.icfpcontest.org/) was a traditional one: Write some code

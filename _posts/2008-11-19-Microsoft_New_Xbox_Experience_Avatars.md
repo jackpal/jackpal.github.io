@@ -1,9 +1,9 @@
+
 ---
 date: 2008-11-19 18:17
 tags: Xbox 360,Avatars
+title: Microsoft New Xbox Experience Avatars
 ---
-
-# Microsoft New Xbox Experience Avatars
 
 ![](http://avatar.xboxlive.com/avatar/Grammerjack/avatar-
 body.png)

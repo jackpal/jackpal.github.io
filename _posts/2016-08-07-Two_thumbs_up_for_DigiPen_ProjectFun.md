@@ -1,9 +1,9 @@
+
 ---
 date: 2016-08-07 15:34
 tags: Computer camps,DigiPen ProjectFun
+title: Two thumbs up for DigiPen ProjectFun
 ---
-
-# Two thumbs up for DigiPen ProjectFun
 
 I sent my kids to the [DigiPen ProjectFun](https://projectfun.digipen.edu/)
 summer camp this year.

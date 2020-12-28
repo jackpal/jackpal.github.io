@@ -1,9 +1,9 @@
+
 ---
 date: 2008-09-24 14:46
 tags: ICFP,Contest,Python,Team Blue Iris
+title: Woot! I'm 19th place in the ICFP 2008 Programming Contest
 ---
-
-# Woot! I'm 19th place in the ICFP 2008 Programming Contest
 
 Team Blue Iris (that's me and my kids!) took 19th place, the top finish for a
 Python-based entry! Check out the

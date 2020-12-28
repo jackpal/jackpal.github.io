@@ -1,9 +1,9 @@
+
 ---
 date: 2010-01-20 07:34
 tags: go,bittorrent,Taipei-Torrent
+title: A Taipei-Torrent postmortem: Writing a BitTorrent client in Go
 ---
-
-# A Taipei-Torrent postmortem: Writing a BitTorrent client in Go
 
 _This is a BitTorrent client. There are many like it, but this one is mine._
 

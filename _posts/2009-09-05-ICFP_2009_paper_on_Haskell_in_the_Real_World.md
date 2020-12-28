@@ -1,9 +1,9 @@
+
 ---
 date: 2009-09-05 17:05
 tags: Haskell, Erlang, Ruby
+title: ICFP 2009 paper on Haskell in the Real World
 ---
-
-# ICFP 2009 paper on Haskell in the Real World
 
 Here's a good paper on using Haskell to write a commercial application. The
 authors are practical commercial programmers who tried Haskell to see if it

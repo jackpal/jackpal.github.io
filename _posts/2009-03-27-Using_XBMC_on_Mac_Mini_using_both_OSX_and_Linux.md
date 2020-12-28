@@ -1,9 +1,9 @@
+
 ---
 date: 2009-03-27 15:23
 tags: xbmc,Linux,Mac
+title: Using XBMC on Mac Mini using both OSX and Linux
 ---
-
-# Using XBMC on Mac Mini using both OSX and Linux
 
 The Xbox Media Center (XBMC) is a nifty open-source application for watching
 videos. It was originally designed for use on modified Xbox video game

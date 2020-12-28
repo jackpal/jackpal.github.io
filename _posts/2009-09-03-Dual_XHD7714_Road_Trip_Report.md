@@ -1,9 +1,9 @@
+
 ---
 date: 2009-09-03 02:12
 tags: car audio,gadgets,trip report
+title: Dual XHD7714 Road Trip Report
 ---
-
-# Dual XHD7714 Road Trip Report
 
 After a month of using the [Dual XHD7714](https://jackpal.github.io/posts/2009/07/Too_Many_Words_about_Car_Stereos/),
 during which my family and I took a 4000 mile road trip, I have

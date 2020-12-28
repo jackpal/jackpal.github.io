@@ -1,9 +1,9 @@
+
 ---
 date: 2008-09-19 13:55
 tags: games
+title: Peter Moore on Xbox
 ---
-
-# Peter Moore on Xbox
 
 [Peter Moore on Xbox](http://www.guardian.co.uk/technology/gamesblog/2008/sep/11/playstation.microsoft1?gusrc=rss&feed=technology)
 

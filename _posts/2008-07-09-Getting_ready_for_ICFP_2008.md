@@ -1,9 +1,9 @@
+
 ---
 date: 2008-07-09 10:47
 tags: ICFP,contest,Blue Iris
+title: Getting ready for ICFP 2008
 ---
-
-# Getting ready for ICFP 2008
 
 The rules for this year's [ICFP contest](http://www.icfpcontest.org/) have
 just been posted. Although the actual problem won't be posted until Friday

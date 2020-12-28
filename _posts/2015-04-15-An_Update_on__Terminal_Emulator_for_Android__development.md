@@ -1,9 +1,9 @@
+
 ---
 date: 2015-04-15 14:46
 tags: Android,Android Terminal Emulator,decluttering
+title: An Update on "Terminal Emulator for Android" development
 ---
-
-# An Update on "Terminal Emulator for Android" development
 
 I am shutting down "[Terminal Emulator for Android](https://play.google.com/store/apps/details?id=jackpal.androidterm&hl=en)"
 [development](https://github.com/jackpal/Android-Terminal-Emulator) again.

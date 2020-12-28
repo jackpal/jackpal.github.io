@@ -1,9 +1,9 @@
+
 ---
 date: 2009-02-17 05:25
 tags: Larrabee
+title: Future GPU.org for cryptic Larrabee news
 ---
-
-# Future GPU.org for cryptic Larrabee news
 
 Phil Taylor, a long-time Microsoft graphics and gaming evangelist is now
 working for Intel on graphics tools evangelism. He started a blog, called

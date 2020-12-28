@@ -1,9 +1,9 @@
+
 ---
 date: 2011-09-12 04:10
 tags: Picasa Web Albums,Google+,Python
+title: A script to upload files to Picasa Web Albums
 ---
-
-# A script to upload files to Picasa Web Albums
 
 Today I backed up all my family pictures and videos to Picasa Web Albums.
 

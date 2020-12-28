@@ -1,9 +1,9 @@
+
 ---
 date: 2015-02-13 04:20
 tags: Minecraft,Docker,MacOS
+title: Run a Minecraft Server on OSX Boot2Docker
 ---
-
-# Run a Minecraft Server on OSX Boot2Docker
 
 ##  Run a Minecraft Server on OSX Boot2Docker
 

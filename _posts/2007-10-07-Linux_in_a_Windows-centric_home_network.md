@@ -1,9 +1,9 @@
+
 ---
 date: 2007-10-07 16:19
 tags: Linux
+title: Linux in a Windows-centric home network
 ---
-
-# Linux in a Windows-centric home network
 
 I was a happy Microsoft employee for many years, and as a result, I run
 multiple Windows Vista machines at home. My family and I are happy with the

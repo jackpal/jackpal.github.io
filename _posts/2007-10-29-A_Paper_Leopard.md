@@ -1,9 +1,9 @@
+
 ---
 date: 2007-10-29 02:30
 tags: MacOS, software review
+title: A Paper Leopard
 ---
-
-# A Paper Leopard
 
 I am disappointed by the new version of Apple OS X that was released this
 weekend. The UI has gone backwards in several areas. In particular, the

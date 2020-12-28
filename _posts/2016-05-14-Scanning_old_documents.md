@@ -1,9 +1,9 @@
+
 ---
 date: 2016-05-14 15:38
 tags: Home computing,scanning,Fuji ScanSnap ix500
+title: Scanning old documents
 ---
-
-# Scanning old documents
 
 > _That which is resisted, persists._
 

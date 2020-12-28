@@ -1,9 +1,9 @@
+
 ---
 date: 2010-03-06 20:17
 tags: contests,go,C++,JavaScript
+title: Google AI Challenge 2010
 ---
-
-# Google AI Challenge 2010
 
 [Team Blue Iris](http://csclub.uwaterloo.ca/contest/profile.php?user_id=1515)
 (that's me!) placed 77th out of 708 in the

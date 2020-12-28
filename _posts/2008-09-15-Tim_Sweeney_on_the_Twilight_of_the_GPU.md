@@ -1,9 +1,9 @@
+
 ---
 date: 2008-09-15 13:19
 tags: 3d graphics,Larrabee
+title: Tim Sweeney on the Twilight of the GPU
 ---
-
-# Tim Sweeney on the Twilight of the GPU
 
 Ars Technica published an excellent interview with Tim Sweeney on the
 [Twilight of the GPU](http://arstechnica.com/articles/paedia/gpu-sweeney-interview.ars).

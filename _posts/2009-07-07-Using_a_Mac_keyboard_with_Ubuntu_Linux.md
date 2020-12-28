@@ -1,9 +1,9 @@
+
 ---
 date: 2009-07-07 18:31
 tags: Ubuntu,Linux,Mac
+title: Using a Mac keyboard with Ubuntu Linux
 ---
-
-# Using a Mac keyboard with Ubuntu Linux
 
 I frequently switch between Mac and Linux, and it's been troublesome to
 remember to type Command-whatever on the Mac, but Control-whatever on Linux.

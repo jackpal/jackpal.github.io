@@ -1,9 +1,9 @@
+
 ---
 date: 2007-10-14 15:59
 tags: Apple, Laptops
+title: Laptop buying advice
 ---
-
-# Laptop buying advice
 
 A friend recently asked me for advice on buying a laptop for a college
 student. Here's the advice I gave them: These days laptops from different

@@ -1,9 +1,9 @@
+
 ---
 date: 2009-09-03 02:31
 tags: planning
+title: Technology Trends I'm Keeping an Eye On
 ---
-
-# Technology Trends I'm Keeping an Eye On
 
 In no particular order, here's what I've been studying lately:
 

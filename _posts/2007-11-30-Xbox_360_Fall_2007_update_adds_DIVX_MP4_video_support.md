@@ -1,9 +1,9 @@
+
 ---
 date: 2007-11-30 18:27
 tags: Xbox 360
+title: Xbox 360 Fall 2007 update adds DIVX/MP4 video support
 ---
-
-# Xbox 360 Fall 2007 update adds DIVX/MP4 video support
 
 The Fall 2007 Xbox 360 dashboard update (coming December 4th) will add support
 for DivX and MP4 playback.

@@ -1,9 +1,9 @@
+
 ---
 date: 2007-12-04 16:31
 tags: ebay, craigslist, economics
+title: The Economics of Selling a MacBook on Craig's List vs. Ebay
 ---
-
-# The Economics of Selling a MacBook on Craig's List vs. Ebay
 
 I just sold my MacBook over the web. I sold it on [Craig's
 List](http://www.craigslist.org/). I also considered using

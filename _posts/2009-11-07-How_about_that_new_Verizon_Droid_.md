@@ -1,9 +1,9 @@
+
 ---
 date: 2009-11-07 19:37
 tags: droid,android
+title: How about that new Verizon Droid?
 ---
-
-# How about that new Verizon Droid?
 
 I've been working part time on the "Droid" project for the last year, and it
 finally shipped today. I wrote some of the graphics libraries.

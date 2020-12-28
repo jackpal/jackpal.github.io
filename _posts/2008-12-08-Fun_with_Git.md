@@ -1,9 +1,9 @@
+
 ---
 date: 2008-12-08 18:35
 tags: git,hobby programming
+title: Fun with Git
 ---
-
-# Fun with Git
 
 This weekend I reorganize my home source code projects. I have a number of
 machines, and over the years each one had accumulated several small source-

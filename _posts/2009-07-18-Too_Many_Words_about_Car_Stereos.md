@@ -1,9 +1,9 @@
+
 ---
 date: 2009-07-18 14:09
 tags: gadgets,car stero
+title: Too Many Words about Car Stereos
 ---
-
-# Too Many Words about Car Stereos
 
 The other day my wife said to me, "Jack, we're going on a road trip soon. Is
 there any way we could hook up our MP3 player to the car stereo, so that the

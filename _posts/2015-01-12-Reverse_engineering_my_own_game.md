@@ -1,11 +1,11 @@
+
 ---
 date: 2015-01-12 05:55
 description: Using an emulator to remember details of my old Atari game Dandy.
 image: dandy-emulator-screen-shot.png
 tags: games,Atari,Dandy,iOS
+title: Reverse engineering my own game
 ---
-
-# Reverse engineering my own game
 
 I've long-since misplaced the source code to my Atari 800 game Dandy Dungeon.
 But thanks to the [Atari800MacX](http://www.atarimac.com/atari800macx.php)

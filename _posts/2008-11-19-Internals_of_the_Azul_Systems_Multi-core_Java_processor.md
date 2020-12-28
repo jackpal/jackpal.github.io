@@ -1,9 +1,9 @@
+
 ---
 date: 2008-11-19 13:24
 tags: Java,Hardware,Azul Systems
+title: Internals of the Azul Systems Multi-core Java processor
 ---
-
-# Internals of the Azul Systems Multi-core Java processor
 
 I'm a big fan of CPU architectures. Here's a conversation between David Moon
 formerly of Symbolics Lisp Machines and Cliff Click Jr. of Azule Systems. They

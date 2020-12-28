@@ -1,9 +1,9 @@
+
 ---
 date: 2007-12-29 17:28
 tags: Wayback Machine, souce code repos
+title: Searching for old web pages: The Wayback machine is cool!
 ---
-
-# Searching for old web pages: The Wayback machine is cool!
 
 I was searching for information on LINJ, a Lisp language that compiles into
 human-readable Java code. Unfortunately, the LINJ web site

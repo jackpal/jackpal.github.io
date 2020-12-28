@@ -1,9 +1,9 @@
+
 ---
 date: 2007-12-23 11:57
 tag: Mac, Windows, Home computing
+title: Back to Mac
 ---
-
-# Back to Mac
 
 This week I converted my family's main computer from Vista to OS X. (It's a
 Mac Mini).

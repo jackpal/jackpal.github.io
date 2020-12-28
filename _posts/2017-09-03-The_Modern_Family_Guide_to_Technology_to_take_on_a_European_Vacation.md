@@ -1,10 +1,10 @@
+
 ---
 date: 2017-09-03 05:13
 image: IMG_4574.JPG
 tags: Trip report, Home computing, iPhone, Android, Europe, Travel
+title: The Modern Family's Guide to Technology to take on a European Vacation
 ---
-
-# The Modern Family's Guide to Technology to take on a European Vacation
 
 This summer I took my Seattle-based family of five for a three-week trip to
 Europe. We had been promising the trip to our kids since they were little, and

@@ -1,9 +1,9 @@
+
 ---
 date: 2008-01-07 14:13
 tags: Java,F#,Lisp,Python,Web scraping
+title: Web scraping in Java, F#, Python, and not Lisp
 ---
-
-# Web scraping in Java, F#, Python, and not Lisp
 
 Yesterday I wrote a web scraper. A web scraper is a program that crawls over a
 set of web pages, following links and collecting data. Another name for this

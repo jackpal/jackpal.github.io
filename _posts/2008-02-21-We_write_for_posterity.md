@@ -1,9 +1,9 @@
+
 ---
 date: 2008-02-21 14:38
 tags: introspection
+title: We write for posterity
 ---
-
-# We write for posterity
 
 The Google Analytics numbers for this blog are dismal. (Hi Mom! Hi Friends!) I
 think it's because right now I don't have much to say that's both unique and

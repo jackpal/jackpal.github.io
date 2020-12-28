@@ -1,9 +1,9 @@
+
 ---
 date: 2008-06-05 20:34
 tags: Hardware review,Linux
+title: Thoughts on In-Flight Entertainment systems
 ---
-
-# Thoughts on In-Flight Entertainment systems
 
 I recently spent a lot of time using two different in-flight entertainment
 systems: one on Eva Air, and another on Virgin Atlantic. For people who

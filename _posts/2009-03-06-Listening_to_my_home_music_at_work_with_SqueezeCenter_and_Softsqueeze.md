@@ -1,9 +1,9 @@
+
 ---
 date: 2009-03-06 18:50
 tags: Home computing,audio streaming, Linux
+title: Listening to my home music at work with SqueezeCenter and Softsqueeze
 ---
-
-# Listening to my home music at work with SqueezeCenter and Softsqueeze
 
 For some time I've wanted to listen to my home music collection on my computer
 at work. I tried a bunch of different approaches, and finally came up with one

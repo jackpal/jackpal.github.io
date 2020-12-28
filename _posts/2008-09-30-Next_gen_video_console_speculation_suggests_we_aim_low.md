@@ -1,9 +1,9 @@
+
 ---
 date: 2008-09-30 17:01
 tags: game consoles, Playstation 4, Xbox 4, Wii 2
+title: Next gen video console speculation suggests we aim low
 ---
-
-# Next gen video console speculation suggests we aim low
 
 The next generation of video game consoles should start in 2011. (Give or take
 a year). It takes about three years to develop a video game console, so work

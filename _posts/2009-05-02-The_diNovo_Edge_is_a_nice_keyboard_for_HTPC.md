@@ -1,9 +1,9 @@
+
 ---
 date: 2009-05-02 14:21
 tags: Linux,Mac,htpc,hardware review
+title: The diNovo Edge is a nice keyboard for HTPC
 ---
-
-# The diNovo Edge is a nice keyboard for HTPC
 
 I just bought a [Logitech diNovo Edge Mac Edition](http://www.logitech.com/index.cfm/keyboards/keyboard/devices/4741&cl=us,en)
 keyboard for my Mac Mini HTPC. I bought the diNovo instead of the Apple

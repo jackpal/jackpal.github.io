@@ -1,9 +1,9 @@
+
 ---
 date: 2008-03-16 05:03
 tags: 3D, DX 10, prediction
+title: Tim Sweeney Too - DX 10 last relevant graphics API
 ---
-
-# Tim Sweeney Too - DX 10 last relevant graphics API
 
 A good, three-part interview with Tim Sweeney (the other FPS graphics guru):
 

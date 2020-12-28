@@ -1,9 +1,9 @@
+
 ---
 date: 2008-06-08 03:14
 tags: Space Wars,retro gaming,gaming,PDP-1
+title: I saw the original Spacewar! on a PDP-1 today
 ---
-
-# I saw the original Spacewar! on a PDP-1 today
 
 I went to the [Computer History Museum](http://www.computerhistory.org/)
 today. I saw the Visual Storage exhibit, which is a collection of famous

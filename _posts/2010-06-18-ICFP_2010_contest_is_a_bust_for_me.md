@@ -1,9 +1,9 @@
+
 ---
 date: 2010-06-18 12:54
 tags: ICFP,contest
+title: ICFP 2010 contest is a bust for me
 ---
-
-# ICFP 2010 contest is a bust for me
 
 [The ICFP 2010 contest rules](http://icfpcontest.org/2010/) have been posted,
 and I am quite disappointed by this year's contest.

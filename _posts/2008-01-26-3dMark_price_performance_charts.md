@@ -1,9 +1,9 @@
+
 ---
 date: 2008-01-26 02:54
 tags: PC hardware
+title: 3dMark price/performance charts
 ---
-
-# 3dMark price/performance charts
 
 3DMark is a GPU/CPU benchmark used by PC gamers to measure system performance.
 Here are some great charts showing

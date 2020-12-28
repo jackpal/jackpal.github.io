@@ -1,9 +1,9 @@
+
 ---
 date: 2007-12-28 03:51
 tags: Lisp, social evolution
+title: Why the Farmers won
 ---
-
-# Why the Farmers won
 
 I've been thinking about Lisp lately. A powerful language, with many excellent
 features, but not hugely successful. And I thought of one reason why:

@@ -1,9 +1,9 @@
+
 ---
 date: 2009-03-25 21:37
 tags: Larrabee
+title: Intel describes Larrabee instruction set
 ---
-
-# Intel describes Larrabee instruction set
 
 Perhaps in preparation for Friday's GDC talks by Michael Abrash and Tom
 Forsyth, Intel has described the Larrabee instruction set:

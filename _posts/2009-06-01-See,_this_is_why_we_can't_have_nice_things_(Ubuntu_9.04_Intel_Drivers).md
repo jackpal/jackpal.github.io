@@ -1,9 +1,9 @@
+
 ---
 date: 2009-06-01 03:43
 tags: Linux
+title: See, this is why we can't have nice things (Ubuntu 9.04 Intel Drivers)
 ---
-
-# See, this is why we can't have nice things (Ubuntu 9.04 Intel Drivers)
 
 A few years ago I tried Ubuntu and predicted it would become a serious
 challenger to Windows, in about 18 months.

@@ -1,9 +1,9 @@
+
 ---
 date: 2008-03-26 15:10
 tags: trip report, year in review
+title: One year at Google!
 ---
-
-# One year at Google!
 
 Happy Anniversary to me! Google's automated HR script just emailed me its
 congratulations.

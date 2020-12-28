@@ -1,9 +1,9 @@
+
 ---
 date: 2010-01-22 10:55
 tags: go,bittorrent,Taipei-Torrent
+title: 800 lines of code for a bencode serializer?!
 ---
-
-# 800 lines of code for a bencode serializer?!
 
 > Wow, my Taipei-Torrent post made it to Hacker News and
 reddit.com/r/programming. I'm thrilled!

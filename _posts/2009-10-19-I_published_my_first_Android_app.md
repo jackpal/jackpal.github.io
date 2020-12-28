@@ -1,9 +1,9 @@
+
 ---
 date: 2009-10-19 00:30
 tags: Java,android,Android Terminal Emulator
+title: I published my first Android app
 ---
-
-# I published my first Android app
 
 Now that the Android Native Development Kit has been released, I was finally
 able to publish the sources and binary to my [Android Terminal Emulator](http://code.google.com/p/androidterm/).

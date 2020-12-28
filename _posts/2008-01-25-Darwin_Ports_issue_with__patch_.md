@@ -1,9 +1,9 @@
+
 ---
 date: 2008-01-25 05:25
 tags: Mac, Darwin Ports,bug
+title: Darwin Ports issue with "patch"
 ---
-
-# Darwin Ports issue with "patch"
 
 Ever since I've upgraded to Apple Macintosh OS X 10.5 Leopard, I've run into
 problems using the Darwinports "port" command to install new software.

@@ -1,9 +1,9 @@
+
 ---
 date: 2018-07-31 18:24
 tags: Education, Girls Who Code, iPhone
+title: Girls Who Code iPhone App Development Course Review
 ---
-
-# Girls Who Code iPhone App Development Course Review
 
 One of my daughters recently took the [Girls Who Code iPhone App Development](https://girlswhocode.com/campus-iphone/)
 course.

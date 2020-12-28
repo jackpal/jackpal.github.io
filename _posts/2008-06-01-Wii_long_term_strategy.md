@@ -1,9 +1,9 @@
+
 ---
 date: 2008-06-01 00:20
 tags: Wii,strategy
+title: Wii long term strategy
 ---
-
-# Wii long term strategy
 
 Here's a very long, quite good post on Nintendo's strategy with the Wii:
 [

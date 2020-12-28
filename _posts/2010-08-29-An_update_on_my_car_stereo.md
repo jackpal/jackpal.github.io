@@ -1,9 +1,9 @@
+
 ---
 date: 2010-08-29 15:47
 tags: Hardware review,car stereo
+title: An update on my car stereo
 ---
-
-# An update on my car stereo
 
 It's been a year since
 [I bought my fancy car stereo](/assets/posts/2010-08-29-An_update_on_my_car_stereo-Too_Many_Words_about_Car_Stereos.html).

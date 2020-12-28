@@ -1,9 +1,9 @@
+
 ---
 date: 2009-06-01 03:56
 tags: Ubuntu,Linux,OSX
+title: Living La Vida Linux at Work
 ---
-
-# Living La Vida Linux at Work
 
 Android system-level development can be done on either Linux or OSX. For the
 past few years I've been using OSX, but recently I've switched over to using

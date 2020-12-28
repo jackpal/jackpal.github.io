@@ -1,9 +1,9 @@
+
 ---
 date: 2018-11-22 18:50
 tags: Swift, Games, Botanicula
+title: Solving the anemone puzzle in Botanicula
 ---
-
-# Solving the anemone puzzle in Botanicula
 
 [Botanicula](https://en.wikipedia.org/wiki/Botanicula) is a whimsical
 graphical adventure game for the iPad and other computers. One of the puzzles

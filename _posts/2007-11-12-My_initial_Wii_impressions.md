@@ -1,9 +1,9 @@
+
 ---
 date: 2007-11-12 11:34
 tags: games, Wii
+title: My initial Wii impressions
 ---
-
-# My initial Wii impressions
 
 I finally got a Nintendo Wii this weekend. Wii's are in fairly short supply
 right now, so I couldn't find one at a reasonable price on-line. If you live

@@ -1,9 +1,9 @@
+
 ---
 date: 2007-10-19 04:26
 tags: Linux, Macbook
+title: I've Installed Ubuntu 7.10 Final on my Macbook
 ---
-
-# I've Installed Ubuntu 7.10 Final on my Macbook
 
 I was up early this morning to get the Ubuntu 7.10 final release. I used the
 Ubuntu torrent (1700 downloaders) to download the file, and had the ISO image

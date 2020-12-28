@@ -1,9 +1,9 @@
+
 ---
 date: 2007-10-22 04:01
 tags: Linux, Doctors
+title: Never trust a Doctor on how easy it is to use Linux
 ---
-
-# Never trust a Doctor on how easy it is to use Linux
 
 I recently read a positive review of Linux by a man who said he was a doctor,
 not a programmer, and that he found Linux very easy to set up and use.

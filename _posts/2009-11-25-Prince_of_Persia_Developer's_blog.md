@@ -1,9 +1,9 @@
+
 ---
 date: 2009-11-25 03:20
 tags: games,Computer history
+title: Prince of Persia Developer's blog
 ---
-
-# Prince of Persia Developer's blog
 
 In the late 1980's Jordan Mechner single-handedly designed and programmed the
 original Apple II version of

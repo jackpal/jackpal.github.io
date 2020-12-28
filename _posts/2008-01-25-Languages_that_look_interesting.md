@@ -1,9 +1,9 @@
+
 ---
 date: 2008-01-25 05:36
 tags: Python,Boo,Erlang,Typed Scheme
+title: Languages that look interesting
 ---
-
-# Languages that look interesting
 
 Currently I'm reading up on the following computer languages:
 

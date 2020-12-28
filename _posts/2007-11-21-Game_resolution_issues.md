@@ -1,9 +1,9 @@
+
 ---
 date: 2007-11-21 20:39
 tags: Wii, gaming
+title: Game resolution issues
 ---
-
-# Game resolution issues
 
 This morning I fired up Mario Galaxy 64 on my new Wii for some early-morning
 platforming. I happened to sit closer to the screen than I normally do. Yuck!

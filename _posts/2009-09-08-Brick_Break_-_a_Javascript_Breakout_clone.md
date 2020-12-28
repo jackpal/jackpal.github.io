@@ -1,3 +1,4 @@
+
 ---
 date: 2009-09-08 03:58
 description: This weekend I wrote a Javascript clone of the old Atari "Breakout" game.
@@ -5,10 +6,8 @@ Thanks to the "Canvas" tag it was very easy to write, but I did run into a few
 problems...
 image: brickbreak.png
 tags: games,JavaScript
-
+title: Brick Break - a Javascript Breakout clone
 ---
-
-# Brick Break - a Javascript Breakout clone
 
 [[!](/assets/posts/2009-09-08-Brick_Break_-_a_Javascript_Breakout_clone-brickbreak.png]](/assets/posts/2009-09-08-Brick_Break_-_a_Javascript_Breakout_clone-brickbreak.html)
 

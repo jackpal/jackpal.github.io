@@ -1,10 +1,10 @@
+
 ---
 date: 2020-01-20 20:36
 image: toy-path-tracer.jpg
 tags: Swift, Colab, 3D
+title: Porting a Toy Path Tracer to Swift
 ---
-
-# Porting a Toy Path Tracer to Swift
 
 I ported a [toy path tracer](https://github.com/jackpal/colabraytracing) to
 Swift.

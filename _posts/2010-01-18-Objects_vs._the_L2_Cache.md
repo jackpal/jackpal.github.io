@@ -1,9 +1,9 @@
+
 ---
 date: 2010-01-18 06:18
 tags: 3d graphics
+title: Objects vs. the L2 Cache
 ---
-
-# Objects vs. the L2 Cache
 
 An excellent little performance optimization presentation that shows how
 important memory layout is for today's processors:

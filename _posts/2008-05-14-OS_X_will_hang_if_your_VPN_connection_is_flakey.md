@@ -1,8 +1,8 @@
+
 ---
 date: 2008-05-14 07:04
+title: OS X will hang if your VPN connection is flakey
 ---
-
-# OS X will hang if your VPN connection is flakey
 
 OS X is by and large a good OS, but once you get past the sexy UI you find a
 lot of rough edges.

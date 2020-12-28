@@ -1,9 +1,9 @@
+
 ---
 date: 2008-03-12 22:53
 tags: Carmack, 3d
+title: Carmack speaks on real next-gen graphics
 ---
-
-# Carmack speaks on real next-gen graphics
 
 John Carmack is experimenting with a "sparse octree" data structure for
 accelerating 3D graphics rendering:

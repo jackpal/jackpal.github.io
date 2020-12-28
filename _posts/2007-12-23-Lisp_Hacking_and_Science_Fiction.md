@@ -1,9 +1,9 @@
+
 ---
 date: 2007-12-23 11:13
 tags: Lisp, Science Fiction
+title: Lisp Hacking and Science Fiction
 ---
-
-# Lisp Hacking and Science Fiction
 
 I've been poking around with Lisp and Scheme again, and am reminded of some of
 my favorite science fiction books (warning, plot spoilers follow):
