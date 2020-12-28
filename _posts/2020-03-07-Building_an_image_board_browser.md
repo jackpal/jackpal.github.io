@@ -24,6 +24,8 @@ The AppleTV app looks and acts quite differently:
 
 ![AppleTV Screenshot](/assets/posts/2020-03-07-Building_an_image_board_browser-KleeneStarTV.jpg)
 
+<!--more-->
+
 The AppleTV app has a "lean back" UI. The core feature of the AppleTV app is a slideshow mode. You start the app, use the
 remote to pick an image board, and then the app plays a slideshow of all the images on that board. There can be thousands of
 images on some of the more active boards. The slideshow repeats, picking up any updated content each time through.

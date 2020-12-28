@@ -37,3 +37,5 @@ sidebar_home_link:  true
 
 # Based on Hydeout
 remote_theme: fongandrew/hydeout
+
+excerpt_separator: <!--more-->
