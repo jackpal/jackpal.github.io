@@ -2,7 +2,7 @@
 date: 2020-06-14 12:03
 description: Static site generation using John Sundell's Publish Site Generator.
 tags: swift web
-title: Publish Swift-based Site Generator
+title: "Publish: A Swift-based Site Generator"
 ---
 
 I've been using John Sundell's [Publish](https://github.com/JohnSundell/Publish) static site generator to create this web site.
@@ -13,3 +13,7 @@ The best resources I've found (besides reading the source) are:
 
 + [Ordinary Coding - Generating a static web site](https://ordinarycoding.com/articles/generating-static-website/)
 + [Source to site https://www.staskus.io](https://github.com/nitesuit/Blog)
+
+<p class="message">
+Note from 2020-12-27: I have since switched to using Jekyll.
+</p>
