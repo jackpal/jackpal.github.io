@@ -1,12 +1,13 @@
 # Dependencies
-markdown:         kramdown
-highlighter:      rouge
+remote_theme: fongandrew/hydeout
+markdown: kramdown
+highlighter: rouge
 
 # Setup
-title:            GrammerJack
-tagline:          'A mind forever voyaging'
-description:      'Another damn programmer's blog.'
-url:              https://jackpal.github.io
+title: GrammerJack
+tagline: 'A mind forever voyaging'
+description: 'Another damn programmer's blog.'
+url: https://jackpal.github.io
 # baseurl:          '/hydeout'
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
@@ -15,10 +16,10 @@ url:              https://jackpal.github.io
                   # sidebar_blog_link below.
 
 author:
-  name:           'Jack Palevich'
-  url:            https://twitter.com/palevich
+  name: 'Jack Palevich'
+  url: https://twitter.com/palevich
 
-paginate:         5
+paginate: 5
 # paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
 
@@ -28,9 +29,8 @@ plugins:
   - jekyll-paginate
 
 # Sidebar link settings
-sidebar_home_link:  true
+sidebar_home_link: true
 # sidebar_blog_link:  '/blog'   # By default, your home page is your blog
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
-remote_theme: fongandrew/hydeout
