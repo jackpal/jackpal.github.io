@@ -1,6 +1,6 @@
 ---
 date: 2009-10-02 02:48
-tags: opengl es,quake,opengl,android
+tags: opengl es quake opengl android
 title: GLES Quake - a port of Quake to the Android platform
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 2015-12-24 21:52
-tags: Home computing,planning
+tags: Home computing planning
 title: Family IT Information, end-of-year edition
 ---
 

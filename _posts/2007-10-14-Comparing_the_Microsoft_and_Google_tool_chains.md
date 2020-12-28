@@ -1,6 +1,6 @@
 ---
 date: 2007-10-14 17:05
-tags: Microsoft, Google, Tools
+tags: Microsoft  Google  Tools
 title: Comparing the Microsoft and Google tool chains circa 2007
 ---
 

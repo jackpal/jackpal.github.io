@@ -1,6 +1,6 @@
 ---
 date: 2009-03-27 15:23
-tags: xbmc,Linux,Mac
+tags: xbmc Linux Mac
 title: Using XBMC on Mac Mini using both OSX and Linux
 ---
 

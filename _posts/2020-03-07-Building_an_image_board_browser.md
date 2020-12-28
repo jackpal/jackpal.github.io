@@ -2,7 +2,7 @@
 date: 2020-03-07 12:03
 description: Building an image board browser using SwiftUI and Combine.
 image: KleeneStariPad.jpg
-tags: SwiftUI, Combine
+tags: SwiftUI  Combine
 title: Building an image board browser using SwiftUI and Combine
 ---
 

@@ -3,7 +3,7 @@ date: 2010-05-08 02:56
 description: Happy Mother's Day everyone! This year I wrote an Android app
 for my wife for Mother's Day. How geeky is that?
 image: wordgame.jpg
-tags: android,JavaScript,phonegap,games
+tags: android JavaScript phonegap games
 title: Writing an Android application in JavaScript and HTML5
 ---
 

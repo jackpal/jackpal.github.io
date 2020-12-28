@@ -1,6 +1,6 @@
 ---
 date: 2010-06-18 12:54
-tags: ICFP,contest
+tags: ICFP contest
 title: ICFP 2010 contest is a bust for me
 ---
 

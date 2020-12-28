@@ -1,6 +1,6 @@
 ---
 date: 2007-12-29 18:10
-tags: Hacking, Wii
+tags: Hacking  Wii
 title: Nintendo Wii security defeated by the Tweezer Attack
 ---
 

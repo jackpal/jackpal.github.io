@@ -1,6 +1,6 @@
 ---
 date: 2008-07-09 10:47
-tags: ICFP,contest,Blue Iris
+tags: ICFP contest Blue Iris
 title: Getting ready for ICFP 2008
 ---
 

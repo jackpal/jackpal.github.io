@@ -1,6 +1,6 @@
 ---
 date: 2015-07-26 17:38
-tags: Home computing,planning
+tags: Home computing planning
 title: Family Computers, 2015 edition
 ---
 

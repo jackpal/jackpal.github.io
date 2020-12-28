@@ -1,6 +1,6 @@
 ---
 date: 2015-01-02 22:27
-tags: strategy,predictions,mobile,iOS,Android
+tags: strategy predictions mobile iOS Android
 title: Letting go of the Web and Embracing Mobile
 ---
 

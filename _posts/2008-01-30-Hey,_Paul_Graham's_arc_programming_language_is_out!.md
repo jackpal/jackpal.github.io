@@ -1,6 +1,6 @@
 ---
 date: 2008-01-30 03:24
-tags: Lisp, Arc
+tags: Lisp  Arc
 title: Hey, Paul Graham's arc programming language is out!
 ---
 

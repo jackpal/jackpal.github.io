@@ -1,6 +1,6 @@
 ---
 date: 2009-11-26 23:09
-tags: 3d graphics,android
+tags: 3d graphics android
 title: 3D toolchain musings
 ---
 

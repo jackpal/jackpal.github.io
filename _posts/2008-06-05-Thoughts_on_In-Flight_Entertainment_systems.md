@@ -1,6 +1,6 @@
 ---
 date: 2008-06-05 20:34
-tags: Hardware review,Linux
+tags: Hardware review Linux
 title: Thoughts on In-Flight Entertainment systems
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 2016-08-07 18:47
-tags: Home computing,planning,iPhone
+tags: Home computing planning iPhone
 title: Family Computers, 2016 edition
 ---
 

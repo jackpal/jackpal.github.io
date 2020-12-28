@@ -1,6 +1,6 @@
 ---
 date: 2008-01-25 05:25
-tags: Mac, Darwin Ports,bug
+tags: Mac  Darwin Ports bug
 title: Darwin Ports issue with "patch"
 ---
 

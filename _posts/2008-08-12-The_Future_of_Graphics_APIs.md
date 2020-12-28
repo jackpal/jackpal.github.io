@@ -1,6 +1,6 @@
 ---
 date: 2008-08-12 14:48
-tags: 3d,OpenGL,game consoles,predictions
+tags: 3d OpenGL game consoles predictions
 title: The Future of Graphics APIs
 ---
 

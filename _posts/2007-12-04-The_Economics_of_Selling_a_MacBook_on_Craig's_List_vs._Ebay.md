@@ -1,6 +1,6 @@
 ---
 date: 2007-12-04 16:31
-tags: ebay, craigslist, economics
+tags: ebay  craigslist  economics
 title: The Economics of Selling a MacBook on Craig's List vs. Ebay
 ---
 

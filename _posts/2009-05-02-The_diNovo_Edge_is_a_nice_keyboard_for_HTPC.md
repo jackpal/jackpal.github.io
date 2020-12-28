@@ -1,6 +1,6 @@
 ---
 date: 2009-05-02 14:21
-tags: Linux,Mac,htpc,hardware review
+tags: Linux Mac htpc hardware review
 title: The diNovo Edge is a nice keyboard for HTPC
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 2007-10-29 02:30
-tags: MacOS, software review
+tags: MacOS  software review
 title: A Paper Leopard
 ---
 

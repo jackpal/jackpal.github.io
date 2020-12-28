@@ -1,6 +1,6 @@
 ---
 date: 2010-03-06 20:17
-tags: contests,go,C++,JavaScript
+tags: contests go C++ JavaScript
 title: Google AI Challenge 2010
 ---
 

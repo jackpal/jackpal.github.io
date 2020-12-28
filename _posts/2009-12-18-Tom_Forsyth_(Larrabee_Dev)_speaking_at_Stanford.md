@@ -1,6 +1,6 @@
 ---
 date: 2009-12-18 06:33
-tags: Larrabee,3d graphics
+tags: Larrabee 3d graphics
 title: Tom Forsyth (Larrabee Dev) speaking at Stanford
 ---
 

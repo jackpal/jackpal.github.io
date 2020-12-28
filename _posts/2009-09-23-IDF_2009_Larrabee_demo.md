@@ -1,6 +1,6 @@
 ---
 date: 2009-09-23 13:24
-tags: Larrabee,3d
+tags: Larrabee 3d
 title: IDF 2009 Larrabee demo
 ---
 

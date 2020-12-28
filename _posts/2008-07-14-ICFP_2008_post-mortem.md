@@ -1,6 +1,6 @@
 ---
 date: 2008-07-14 13:07
-tags: icfp,contest,Blue Iris,Python
+tags: icfp contest Blue Iris Python
 title: ICFP 2008 post-mortem
 ---
 

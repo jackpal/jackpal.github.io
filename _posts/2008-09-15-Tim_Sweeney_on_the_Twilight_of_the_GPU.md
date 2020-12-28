@@ -1,6 +1,6 @@
 ---
 date: 2008-09-15 13:19
-tags: 3d graphics,Larrabee
+tags: 3d graphics Larrabee
 title: Tim Sweeney on the Twilight of the GPU
 ---
 

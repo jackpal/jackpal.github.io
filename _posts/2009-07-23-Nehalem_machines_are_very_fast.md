@@ -1,6 +1,6 @@
 ---
 date: 2009-07-23 17:56
-tags: hardware,workstations
+tags: hardware workstations
 title: Nehalem machines are very fast
 ---
 
