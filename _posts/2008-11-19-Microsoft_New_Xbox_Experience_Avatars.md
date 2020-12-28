@@ -1,6 +1,6 @@
 ---
 date: 2008-11-19 18:17
-tags: Xbox 360 Avatars
+tags: Xbox_360 Avatars
 title: Microsoft New Xbox Experience Avatars
 ---
 

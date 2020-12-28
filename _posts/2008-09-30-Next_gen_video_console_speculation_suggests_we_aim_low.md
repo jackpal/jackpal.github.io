@@ -1,6 +1,6 @@
 ---
 date: 2008-09-30 17:01
-tags: game consoles  Playstation 4  Xbox 4  Wii 2
+tags: game_consoles Playstation_4 Xbox_4 Wii_2
 title: Next gen video console speculation suggests we aim low
 ---
 

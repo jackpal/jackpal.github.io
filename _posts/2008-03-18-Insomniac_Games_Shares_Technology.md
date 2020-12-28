@@ -1,6 +1,6 @@
 ---
 date: 2008-03-18 16:44
-tags: GDC  open source
+tags: GDC open_source
 title: Insomniac Games Shares Technology
 ---
 

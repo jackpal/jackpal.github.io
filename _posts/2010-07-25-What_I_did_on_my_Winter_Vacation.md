@@ -1,6 +1,6 @@
 ---
 date: 2010-07-25 21:00
-tags: Trip report Taiwan
+tags: Trip_report Taiwan
 title: What I did on my Winter Vacation
 ---
 

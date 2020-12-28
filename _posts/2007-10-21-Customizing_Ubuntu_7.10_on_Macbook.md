@@ -1,6 +1,6 @@
 ---
 date: 2007-10-21 18:58
-tags: Linux  Macbook
+tags: Linux Macbook
 title: Customizing Ubuntu 7.10 on Macbook
 ---
 

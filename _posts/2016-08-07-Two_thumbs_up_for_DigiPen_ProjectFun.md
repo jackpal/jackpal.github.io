@@ -1,6 +1,6 @@
 ---
 date: 2016-08-07 15:34
-tags: Computer camps DigiPen ProjectFun
+tags: Computer_camps DigiPen_ProjectFun
 title: Two thumbs up for DigiPen ProjectFun
 ---
 

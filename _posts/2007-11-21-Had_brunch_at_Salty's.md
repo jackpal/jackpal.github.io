@@ -1,6 +1,6 @@
 ---
 date: 2007-11-21 20:34
-tags: Restaurant Reviews
+tags: Restaurant_Reviews
 title: Had brunch at Salty's
 ---
 

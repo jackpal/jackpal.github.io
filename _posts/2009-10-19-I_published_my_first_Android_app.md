@@ -1,6 +1,6 @@
 ---
 date: 2009-10-19 00:30
-tags: Java android Android Terminal Emulator
+tags: Java android Android_Terminal_Emulator
 title: I published my first Android app
 ---
 

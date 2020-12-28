@@ -1,6 +1,6 @@
 ---
 date: 2015-01-02 20:39
-tags: Book review game development
+tags: Book_review game_development
 title: Game Programming Patterns Book
 ---
 

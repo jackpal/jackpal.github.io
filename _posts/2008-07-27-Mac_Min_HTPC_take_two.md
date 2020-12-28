@@ -1,6 +1,6 @@
 ---
 date: 2008-07-27 12:38
-tags: htpc mac mini
+tags: htpc mac_mini
 title: Mac Min HTPC take two
 ---
 

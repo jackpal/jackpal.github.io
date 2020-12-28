@@ -1,7 +1,7 @@
 ---
 date: 2008-09-16 14:28
 tags: productivity
-title: Pro tip:\ Try writing it yourself
+title: "Pro tip: Try writing it yourself"
 ---
 
 Sometimes I need to get a feature into the project I'm working on, but the

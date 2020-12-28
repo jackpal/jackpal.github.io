@@ -1,6 +1,6 @@
 ---
 date: 2009-07-18 14:09
-tags: gadgets car stero
+tags: gadgets car_stero
 title: Too Many Words about Car Stereos
 ---
 

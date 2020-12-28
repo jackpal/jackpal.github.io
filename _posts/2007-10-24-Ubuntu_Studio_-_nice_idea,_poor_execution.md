@@ -1,6 +1,6 @@
 ---
 date: 2007-10-24 00:57
-tags: Ubuntu  Linux  software review
+tags: Ubuntu Linux software_review
 title: Ubuntu Studio - nice idea, poor execution
 ---
 

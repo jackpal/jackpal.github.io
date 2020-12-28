@@ -1,6 +1,6 @@
 ---
 date: 2010-08-29 15:47
-tags: Hardware review car stereo
+tags: Hardware_review car_stereo
 title: An update on my car stereo
 ---
 

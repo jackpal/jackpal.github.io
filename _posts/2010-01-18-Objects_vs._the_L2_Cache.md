@@ -1,6 +1,6 @@
 ---
 date: 2010-01-18 06:18
-tags: 3d graphics
+tags: 3d_graphics
 title: Objects vs. the L2 Cache
 ---
 

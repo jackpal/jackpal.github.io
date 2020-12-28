@@ -1,6 +1,6 @@
 ---
 date: 2008-03-26 15:10
-tags: trip report  year in review
+tags: trip_report year_in_review
 title: One year at Google!
 ---
 

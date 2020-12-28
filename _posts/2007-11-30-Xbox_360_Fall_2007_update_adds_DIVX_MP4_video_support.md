@@ -1,6 +1,6 @@
 ---
 date: 2007-11-30 18:27
-tags: Xbox 360
+tags: Xbox_360
 title: Xbox 360 Fall 2007 update adds DIVX/MP4 video support
 ---
 

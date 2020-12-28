@@ -1,6 +1,6 @@
 ---
 date: 2008-09-19 14:01
-tags: mobile phones android predictions
+tags: mobile_phones android predictions
 title: Will Smart Phones replace PCs?
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 2009-09-03 02:12
-tags: car audio gadgets trip report
+tags: car_audio gadgets trip_report
 title: Dual XHD7714 Road Trip Report
 ---
 

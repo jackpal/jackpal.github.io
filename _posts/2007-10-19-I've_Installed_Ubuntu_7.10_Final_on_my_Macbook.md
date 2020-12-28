@@ -1,6 +1,6 @@
 ---
 date: 2007-10-19 04:26
-tags: Linux  Macbook
+tags: Linux Macbook
 title: I've Installed Ubuntu 7.10 Final on my Macbook
 ---
 

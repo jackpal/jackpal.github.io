@@ -1,6 +1,6 @@
 ---
 date: 2015-07-26 18:14
-tags: Home computing product reviews
+tags: Home_computing product_reviews
 title: Happiest recent purchases
 ---
 
