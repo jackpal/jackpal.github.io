@@ -1,6 +1,6 @@
 ---
 date: 2018-05-20 18:19
-tags: Home_computing Machine_Learning Collab
+tags: home_computing machine_learning collab
 title: On-the-cheap Machine Learning, revisited
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 2017-06-03 05:16
-tags: Home_computing Desktop_PC NVIDIA Windows Machine_Learning
+tags: home_computing desktop_pc nvidia windows machine_learning
 title: On-the-cheap Machine Learning computer
 ---
 

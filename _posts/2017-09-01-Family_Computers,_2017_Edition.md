@@ -1,6 +1,6 @@
 ---
 date: 2017-09-01 22:51
-tags: Home_computing iPhone Windows Planning
+tags: home_computing iphone windows planning
 title: Family Computers, 2017 Edition
 ---
 

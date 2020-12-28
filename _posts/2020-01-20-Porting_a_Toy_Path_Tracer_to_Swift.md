@@ -1,7 +1,7 @@
 ---
 date: 2020-01-20 20:36
 image: toy-path-tracer.jpg
-tags: Swift Colab 3D
+tags: swift colab 3d
 title: Porting a Toy Path Tracer to Swift
 ---
 

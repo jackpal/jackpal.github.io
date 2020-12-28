@@ -1,6 +1,6 @@
 ---
 date: 2010-01-23 02:17
-tags: 3d_graphics Xbox_360 Project_Natal
+tags: 3d_graphics xbox_360 project_natal
 title: Some details on Xbox Project Natal
 ---
 

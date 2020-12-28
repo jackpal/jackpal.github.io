@@ -1,6 +1,6 @@
 ---
 date: 2008-11-19 13:24
-tags: Java Hardware Azul_Systems
+tags: java hardware azul_systems
 title: Internals of the Azul Systems Multi-core Java processor
 ---
 

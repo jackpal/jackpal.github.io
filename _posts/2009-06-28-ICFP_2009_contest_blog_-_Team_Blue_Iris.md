@@ -1,6 +1,6 @@
 ---
 date: 2009-06-28 18:41
-tags: ICFP Python
+tags: icfp python
 title: ICFP 2009 contest blog - Team Blue Iris
 ---
 

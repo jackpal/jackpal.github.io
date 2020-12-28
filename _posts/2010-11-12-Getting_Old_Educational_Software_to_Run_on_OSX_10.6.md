@@ -1,6 +1,6 @@
 ---
 date: 2010-11-12 23:25
-tags: pc educational OSX
+tags: pc educational osx
 title: Getting Old Educational Software to Run on OSX 10.6
 ---
 

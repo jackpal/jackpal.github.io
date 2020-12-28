@@ -1,6 +1,6 @@
 ---
 date: 2016-05-14 15:38
-tags: Home_computing scanning Fuji_ScanSnap_ix500
+tags: home_computing scanning fuji_scansnap_ix500
 title: Scanning old documents
 ---
 

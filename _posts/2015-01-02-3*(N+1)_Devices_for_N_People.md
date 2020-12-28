@@ -1,7 +1,7 @@
 ---
 date: 2015-01-02 23:03
 description: At my house we are trending towards having N+1 laptops for N people.
-tags: Home_computing planning
+tags: home_computing planning
 title: 3*(N+1) Devices for N People
 ---
 

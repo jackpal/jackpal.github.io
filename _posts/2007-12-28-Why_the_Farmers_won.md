@@ -1,6 +1,6 @@
 ---
 date: 2007-12-28 03:51
-tags: Lisp social_evolution
+tags: lisp social_evolution
 title: Why the Farmers won
 ---
 

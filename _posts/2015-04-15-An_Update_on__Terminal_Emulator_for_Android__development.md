@@ -1,6 +1,6 @@
 ---
 date: 2015-04-15 14:46
-tags: Android Android_Terminal_Emulator decluttering
+tags: android android_terminal_emulator decluttering
 title: An Update on "Terminal Emulator for Android" development
 ---
 

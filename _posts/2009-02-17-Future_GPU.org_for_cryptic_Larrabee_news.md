@@ -1,6 +1,6 @@
 ---
 date: 2009-02-17 05:25
-tags: Larrabee
+tags: larrabee
 title: Future GPU.org for cryptic Larrabee news
 ---
 

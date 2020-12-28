@@ -1,6 +1,6 @@
 ---
 date: 2018-11-07 15:17
-tags: Computer_History iPhone
+tags: computer_history iphone
 title: Computer History Museum Oral Histories
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 2009-03-25 21:37
-tags: Larrabee
+tags: larrabee
 title: Intel describes Larrabee instruction set
 ---
 

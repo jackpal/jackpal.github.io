@@ -1,6 +1,6 @@
 ---
 date: 2008-06-08 03:14
-tags: Space_Wars retro_gaming gaming PDP-1
+tags: space_wars retro_gaming gaming pdp-1
 title: I saw the original Spacewar! on a PDP-1 today
 ---
 

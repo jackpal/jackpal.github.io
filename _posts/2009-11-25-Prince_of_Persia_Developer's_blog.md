@@ -1,6 +1,6 @@
 ---
 date: 2009-11-25 03:20
-tags: games Computer_history
+tags: games computer_history
 title: Prince of Persia Developer's blog
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 2008-04-06 17:56
-tags: Java Retro_computing
+tags: java retro_computing
 title: Dusty Decks
 ---
 

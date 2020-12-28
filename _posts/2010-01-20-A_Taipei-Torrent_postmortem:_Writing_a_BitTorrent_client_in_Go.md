@@ -1,6 +1,6 @@
 ---
 date: 2010-01-20 07:34
-tags: go bittorrent Taipei-Torrent
+tags: go bittorrent taipei-torrent
 title: "A Taipei-Torrent postmortem: Writing a BitTorrent client in Go"
 ---
 

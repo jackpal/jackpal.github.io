@@ -1,6 +1,6 @@
 ---
 date: 2007-12-23 11:13
-tags: Lisp Science_Fiction
+tags: lisp science_fiction
 title: Lisp Hacking and Science Fiction
 ---
 

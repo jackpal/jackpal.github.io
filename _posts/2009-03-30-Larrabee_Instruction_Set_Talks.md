@@ -1,6 +1,6 @@
 ---
 date: 2009-03-30 09:53
-tags: 3d_graphics Larrabee
+tags: 3d_graphics larrabee
 title: Larrabee Instruction Set Talks
 ---
 

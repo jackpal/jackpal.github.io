@@ -1,6 +1,6 @@
 ---
 date: 2007-12-29 18:32
-tags: Hardware_design GPUs Nintendo_64 Gamecube PS3 Cell Xbox_360
+tags: hardware_design gpus nintendo_64 gamecube ps3 cell xbox_360
 title: Hot Chips Conference archives
 ---
 

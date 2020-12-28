@@ -1,6 +1,6 @@
 ---
 date: 2009-11-25 08:33
-tags: JavaScript
+tags: javascript
 title: Two very good talks on ECMAScript 4, 5, and 6
 ---
 

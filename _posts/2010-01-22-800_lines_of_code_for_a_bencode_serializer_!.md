@@ -1,6 +1,6 @@
 ---
 date: 2010-01-22 10:55
-tags: go bittorrent Taipei-Torrent
+tags: go bittorrent taipei-torrent
 title: 800 lines of code for a bencode serializer?!
 ---
 

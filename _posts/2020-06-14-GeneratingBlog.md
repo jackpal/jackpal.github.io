@@ -1,7 +1,7 @@
 ---
 date: 2020-06-14 12:03
 description: Static site generation using John Sundell's Publish Site Generator.
-tags: Swift Web
+tags: swift web
 title: Publish Swift-based Site Generator
 ---
 

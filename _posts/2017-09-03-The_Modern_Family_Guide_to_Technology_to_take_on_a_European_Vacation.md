@@ -1,7 +1,7 @@
 ---
 date: 2017-09-03 05:13
 image: IMG_4574.JPG
-tags: Trip_report Home_computing iPhone Android Europe Travel
+tags: trip_report home_computing iphone android europe travel
 title: The Modern Family's Guide to Technology to take on a European Vacation
 ---
 

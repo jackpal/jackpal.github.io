@@ -1,6 +1,6 @@
 ---
 date: 2008-04-18 16:49
-tags: Larrabee
+tags: larrabee
 title: Tom Forsyth on Larrabee
 ---
 

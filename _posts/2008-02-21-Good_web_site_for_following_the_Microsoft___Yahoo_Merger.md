@@ -1,6 +1,6 @@
 ---
 date: 2008-02-21 16:44
-tags: Microsoft Yahoo
+tags: microsoft yahoo
 title: Good web site for following the Microsoft / Yahoo Merger
 ---
 

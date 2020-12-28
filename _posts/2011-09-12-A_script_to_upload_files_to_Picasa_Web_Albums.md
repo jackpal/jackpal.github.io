@@ -1,6 +1,6 @@
 ---
 date: 2011-09-12 04:10
-tags: Picasa_Web_Albums Google+ Python
+tags: picasa_web_albums google+ python
 title: A script to upload files to Picasa Web Albums
 ---
 

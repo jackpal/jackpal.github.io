@@ -1,6 +1,6 @@
 ---
 date: 2018-11-22 18:50
-tags: Swift Games Botanicula
+tags: swift games botanicula
 title: Solving the anemone puzzle in Botanicula
 ---
 

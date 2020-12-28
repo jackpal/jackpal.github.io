@@ -1,6 +1,6 @@
 ---
 date: 2008-01-25 05:36
-tags: Python Boo Erlang Typed_Scheme
+tags: python boo erlang typed_scheme
 title: Languages that look interesting
 ---
 

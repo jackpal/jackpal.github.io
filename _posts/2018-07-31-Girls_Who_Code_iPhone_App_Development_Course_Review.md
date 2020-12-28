@@ -1,6 +1,6 @@
 ---
 date: 2018-07-31 18:24
-tags: Education Girls_Who_Code iPhone
+tags: education girls_who_code iphone
 title: Girls Who Code iPhone App Development Course Review
 ---
 

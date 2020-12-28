@@ -1,6 +1,6 @@
 ---
 date: 2007-11-12 11:34
-tags: games Wii
+tags: games wii
 title: My initial Wii impressions
 ---
 

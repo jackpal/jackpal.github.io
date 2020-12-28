@@ -1,6 +1,6 @@
 ---
 date: 2007-10-22 04:01
-tags: Linux Doctors
+tags: linux doctors
 title: Never trust a Doctor on how easy it is to use Linux
 ---
 

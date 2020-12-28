@@ -1,6 +1,6 @@
 ---
 date: 2008-12-26 02:51
-tags: Larrabee 3d
+tags: larrabee 3d
 title: Larrabee papers from SIGGRAPH Asia 2008
 ---
 

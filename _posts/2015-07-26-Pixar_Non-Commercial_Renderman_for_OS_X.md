@@ -2,7 +2,7 @@
 date: 2015-07-26 15:58
 description: Fun with a classic 3D renderer.
 image: elephant.jpg
-tags: Renderman 3D macOS
+tags: renderman 3d macos
 title: Pixar Non-Commercial Renderman for OS X
 ---
 

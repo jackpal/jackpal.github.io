@@ -1,6 +1,6 @@
 ---
 date: 2008-03-12 22:53
-tags: Carmack 3d
+tags: carmack 3d
 title: Carmack speaks on real next-gen graphics
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: 2008-03-16 05:03
-tags: 3D DX_10 prediction
+tags: 3d dx_10 prediction
 title: Tim Sweeney Too - DX 10 last relevant graphics API
 ---
 

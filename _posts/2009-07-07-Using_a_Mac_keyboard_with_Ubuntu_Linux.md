@@ -1,6 +1,6 @@
 ---
 date: 2009-07-07 18:31
-tags: Ubuntu Linux Mac
+tags: ubuntu linux mac
 title: Using a Mac keyboard with Ubuntu Linux
 ---
 

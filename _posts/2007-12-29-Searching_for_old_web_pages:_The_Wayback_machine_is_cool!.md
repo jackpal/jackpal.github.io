@@ -1,6 +1,6 @@
 ---
 date: 2007-12-29 17:28
-tags: Wayback_Machine souce_code_repos
+tags: wayback_machine souce_code_repos
 title: "Searching for old web pages: The Wayback machine is cool!"
 ---
 

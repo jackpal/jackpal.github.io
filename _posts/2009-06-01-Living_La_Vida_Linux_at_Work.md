@@ -1,6 +1,6 @@
 ---
 date: 2009-06-01 03:56
-tags: Ubuntu Linux OSX
+tags: ubuntu linux osx
 title: Living La Vida Linux at Work
 ---
 

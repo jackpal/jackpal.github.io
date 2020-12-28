@@ -1,6 +1,6 @@
 ---
 date: 2015-03-27 18:48
-tags: Playstation 3D Crash_Bandicoot
+tags: playstation 3d crash_bandicoot
 title: Crash Bandicoot Dev on rendering techniques
 ---
 

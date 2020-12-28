@@ -4,7 +4,7 @@ description: This weekend I wrote a Javascript clone of the old Atari "Breakout"
 Thanks to the "Canvas" tag it was very easy to write, but I did run into a few
 problems...
 image: brickbreak.png
-tags: games JavaScript
+tags: games javascript
 title: Brick Break - a Javascript Breakout clone
 ---
 

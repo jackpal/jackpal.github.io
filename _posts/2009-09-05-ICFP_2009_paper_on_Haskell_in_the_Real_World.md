@@ -1,6 +1,6 @@
 ---
 date: 2009-09-05 17:05
-tags: Haskell Erlang Ruby
+tags: haskell erlang ruby
 title: ICFP 2009 paper on Haskell in the Real World
 ---
 

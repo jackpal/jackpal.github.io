@@ -1,6 +1,6 @@
 ---
 date: 2018-11-07 15:09
-tags: PC Laptop Mac Home_computing
+tags: pc laptop mac home_computing
 title: Trying to decide what personal computer to buy in 2018
 ---
 

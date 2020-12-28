@@ -1,6 +1,6 @@
 ---
 date: 2017-12-31 00:08
-tags: Year_in_Review
+tags: year_in_review
 title: What I learned in 2017
 ---
 

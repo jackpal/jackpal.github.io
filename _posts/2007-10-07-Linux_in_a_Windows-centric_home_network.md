@@ -1,6 +1,6 @@
 ---
 date: 2007-10-07 16:19
-tags: Linux
+tags: linux
 title: Linux in a Windows-centric home network
 ---
 

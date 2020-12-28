@@ -1,6 +1,6 @@
 ---
 date: 2009-03-06 18:50
-tags: Home_computing audio_streaming Linux
+tags: home_computing audio_streaming linux
 title: Listening to my home music at work with SqueezeCenter and Softsqueeze
 ---
 

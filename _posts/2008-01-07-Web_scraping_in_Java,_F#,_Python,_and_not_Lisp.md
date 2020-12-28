@@ -1,6 +1,6 @@
 ---
 date: 2008-01-07 14:13
-tags: Java F# Lisp Python Web_scraping
+tags: java f# lisp python web_scraping
 title: Web scraping in Java, F#, Python, and not Lisp
 ---
 

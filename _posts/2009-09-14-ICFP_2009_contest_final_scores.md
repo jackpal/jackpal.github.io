@@ -1,6 +1,6 @@
 ---
 date: 2009-09-14 14:44
-tags: ICFP Python
+tags: icfp python
 title: ICFP 2009 contest final scores
 ---
 
