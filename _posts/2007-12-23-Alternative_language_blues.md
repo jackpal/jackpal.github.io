@@ -1,6 +1,6 @@
 ---
 date: 2007-12-23 11:50
-tag: Alternative languages, productivity
+tags: alternative_languages productivity
 title: Alternative language blues
 ---
 
