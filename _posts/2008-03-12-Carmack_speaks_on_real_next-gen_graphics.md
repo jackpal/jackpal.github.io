@@ -1,4 +1,3 @@
-
 ---
 date: 2008-03-12 22:53
 tags: Carmack, 3d

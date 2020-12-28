@@ -1,4 +1,3 @@
-
 ---
 date: 2009-11-25 03:20
 tags: games,Computer history

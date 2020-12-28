@@ -1,4 +1,3 @@
-
 ---
 date: 2007-10-14 15:59
 tags: Apple, Laptops

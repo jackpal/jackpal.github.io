@@ -1,4 +1,3 @@
-
 ---
 date: 2008-01-25 05:36
 tags: Python,Boo,Erlang,Typed Scheme

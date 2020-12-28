@@ -1,4 +1,3 @@
-
 ---
 date: 2010-07-25 21:00
 tags: Trip report,Taiwan

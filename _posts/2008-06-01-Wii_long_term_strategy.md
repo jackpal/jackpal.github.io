@@ -1,4 +1,3 @@
-
 ---
 date: 2008-06-01 00:20
 tags: Wii,strategy

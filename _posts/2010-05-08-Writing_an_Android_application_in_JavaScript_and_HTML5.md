@@ -1,4 +1,3 @@
-
 ---
 date: 2010-05-08 02:56
 description: Happy Mother's Day everyone! This year I wrote an Android app

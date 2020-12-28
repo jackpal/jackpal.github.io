@@ -1,4 +1,3 @@
-
 ---
 date: 2016-08-07 15:34
 tags: Computer camps,DigiPen ProjectFun

@@ -1,4 +1,3 @@
-
 ---
 date: 2020-07-05 15:48
 description: Picking the right tool for the job. Helping my daughter write a model rocketry data collection app.

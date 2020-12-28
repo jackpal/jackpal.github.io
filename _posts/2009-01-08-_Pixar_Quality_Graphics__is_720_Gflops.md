@@ -1,4 +1,3 @@
-
 ---
 date: 2009-01-08 04:32
 tags: Renderman, Pixar,3d

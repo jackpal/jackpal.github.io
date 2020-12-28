@@ -1,4 +1,3 @@
-
 ---
 date: 2009-11-26 23:09
 tags: 3d graphics,android

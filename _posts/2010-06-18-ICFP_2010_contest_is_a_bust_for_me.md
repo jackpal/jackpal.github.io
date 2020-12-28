@@ -1,4 +1,3 @@
-
 ---
 date: 2010-06-18 12:54
 tags: ICFP,contest

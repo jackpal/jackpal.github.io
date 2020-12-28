@@ -1,4 +1,3 @@
-
 ---
 date: 2009-11-07 19:37
 tags: droid,android

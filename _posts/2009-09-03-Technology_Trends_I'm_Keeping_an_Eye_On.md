@@ -1,4 +1,3 @@
-
 ---
 date: 2009-09-03 02:31
 tags: planning

@@ -1,4 +1,3 @@
-
 ---
 date: 2007-12-29 18:32
 tags: Hardware design, GPUs, Nintendo 64, Gamecube, PS3, Cell, Xbox 360

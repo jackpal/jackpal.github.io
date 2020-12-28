@@ -1,4 +1,3 @@
-
 ---
 date: 2008-12-26 02:51
 tags: Larrabee,3d

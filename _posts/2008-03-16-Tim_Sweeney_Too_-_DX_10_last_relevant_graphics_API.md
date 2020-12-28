@@ -1,4 +1,3 @@
-
 ---
 date: 2008-03-16 05:03
 tags: 3D, DX 10, prediction

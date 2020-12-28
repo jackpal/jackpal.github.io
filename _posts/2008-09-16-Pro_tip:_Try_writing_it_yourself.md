@@ -1,4 +1,3 @@
-
 ---
 date: 2008-09-16 14:28
 tags: productivity

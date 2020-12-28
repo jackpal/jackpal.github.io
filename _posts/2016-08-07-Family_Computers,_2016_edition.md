@@ -1,4 +1,3 @@
-
 ---
 date: 2016-08-07 18:47
 tags: Home computing,planning,iPhone

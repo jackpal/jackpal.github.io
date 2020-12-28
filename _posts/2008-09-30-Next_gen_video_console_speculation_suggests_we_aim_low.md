@@ -1,4 +1,3 @@
-
 ---
 date: 2008-09-30 17:01
 tags: game consoles, Playstation 4, Xbox 4, Wii 2

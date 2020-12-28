@@ -1,4 +1,3 @@
-
 ---
 date: 2015-01-05 06:08
 description: There are a total of 3 draw calls and 2 textures in this scene.

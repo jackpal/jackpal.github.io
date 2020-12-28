@@ -1,4 +1,3 @@
-
 ---
 date: 2008-09-19 14:01
 tags: mobile phones,android,predictions

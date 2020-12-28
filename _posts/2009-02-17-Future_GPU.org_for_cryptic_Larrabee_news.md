@@ -1,4 +1,3 @@
-
 ---
 date: 2009-02-17 05:25
 tags: Larrabee

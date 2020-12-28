@@ -1,4 +1,3 @@
-
 ---
 date: 2018-05-20 18:19
 tags: Home computing, Machine Learning, Collab

@@ -1,4 +1,3 @@
-
 ---
 date: 2008-07-09 10:47
 tags: ICFP,contest,Blue Iris

@@ -1,4 +1,3 @@
-
 ---
 date: 2015-01-02 22:27
 tags: strategy,predictions,mobile,iOS,Android

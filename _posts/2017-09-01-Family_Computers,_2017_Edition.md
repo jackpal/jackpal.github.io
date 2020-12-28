@@ -1,4 +1,3 @@
-
 ---
 date: 2017-09-01 22:51
 tags: Home computing, iPhone, Windows, Planning

@@ -1,4 +1,3 @@
-
 ---
 date: 2007-10-21 18:58
 tags: Linux, Macbook

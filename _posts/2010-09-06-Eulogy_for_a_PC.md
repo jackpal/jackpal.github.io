@@ -1,4 +1,3 @@
-
 ---
 date: 2010-09-06 02:42
 tags: pc,Home computing, decluttering

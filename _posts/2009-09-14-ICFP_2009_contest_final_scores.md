@@ -1,4 +1,3 @@
-
 ---
 date: 2009-09-14 14:44
 tags: ICFP,Python

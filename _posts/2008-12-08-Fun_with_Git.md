@@ -1,4 +1,3 @@
-
 ---
 date: 2008-12-08 18:35
 tags: git,hobby programming

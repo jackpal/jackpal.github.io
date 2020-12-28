@@ -1,4 +1,3 @@
-
 ---
 date: 2008-06-08 03:14
 tags: Space Wars,retro gaming,gaming,PDP-1

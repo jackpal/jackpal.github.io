@@ -1,4 +1,3 @@
-
 ---
 date: 2015-01-02 23:03
 description: At my house we are trending towards having N+1 laptops for N people.

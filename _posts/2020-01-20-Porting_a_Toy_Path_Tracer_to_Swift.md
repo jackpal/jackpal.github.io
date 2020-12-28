@@ -1,4 +1,3 @@
-
 ---
 date: 2020-01-20 20:36
 image: toy-path-tracer.jpg

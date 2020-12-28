@@ -1,4 +1,3 @@
-
 ---
 date: 2015-07-26 17:38
 tags: Home computing,planning

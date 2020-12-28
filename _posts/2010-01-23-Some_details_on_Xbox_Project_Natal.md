@@ -1,4 +1,3 @@
-
 ---
 date: 2010-01-23 02:17
 tags: 3d graphics,Xbox 360,Project Natal

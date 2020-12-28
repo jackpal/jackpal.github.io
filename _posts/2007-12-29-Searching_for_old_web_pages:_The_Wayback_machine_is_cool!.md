@@ -1,4 +1,3 @@
-
 ---
 date: 2007-12-29 17:28
 tags: Wayback Machine, souce code repos

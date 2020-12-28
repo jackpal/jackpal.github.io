@@ -1,4 +1,3 @@
-
 ---
 date: 2008-05-14 07:04
 title: OS X will hang if your VPN connection is flakey

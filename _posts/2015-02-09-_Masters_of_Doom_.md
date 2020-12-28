@@ -1,4 +1,3 @@
-
 ---
 date: 2015-02-09 03:52
 tags: games,Carmack,3D,Doom

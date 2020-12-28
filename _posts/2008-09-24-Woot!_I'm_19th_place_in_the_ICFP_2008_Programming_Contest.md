@@ -1,4 +1,3 @@
-
 ---
 date: 2008-09-24 14:46
 tags: ICFP,Contest,Python,Team Blue Iris

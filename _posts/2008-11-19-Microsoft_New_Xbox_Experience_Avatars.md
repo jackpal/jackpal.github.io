@@ -1,4 +1,3 @@
-
 ---
 date: 2008-11-19 18:17
 tags: Xbox 360,Avatars

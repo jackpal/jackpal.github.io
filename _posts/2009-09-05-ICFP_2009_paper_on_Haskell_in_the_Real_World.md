@@ -1,4 +1,3 @@
-
 ---
 date: 2009-09-05 17:05
 tags: Haskell, Erlang, Ruby

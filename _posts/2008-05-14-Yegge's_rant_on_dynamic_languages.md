@@ -1,4 +1,3 @@
-
 ---
 date: 2008-05-14 03:29
 tags: dynamic languages,Yegge,rants

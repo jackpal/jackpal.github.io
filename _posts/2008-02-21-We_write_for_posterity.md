@@ -1,4 +1,3 @@
-
 ---
 date: 2008-02-21 14:38
 tags: introspection

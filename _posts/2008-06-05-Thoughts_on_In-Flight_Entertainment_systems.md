@@ -1,4 +1,3 @@
-
 ---
 date: 2008-06-05 20:34
 tags: Hardware review,Linux

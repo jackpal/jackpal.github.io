@@ -1,4 +1,3 @@
-
 ---
 date: 2011-09-12 04:10
 tags: Picasa Web Albums,Google+,Python

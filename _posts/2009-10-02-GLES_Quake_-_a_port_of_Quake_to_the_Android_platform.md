@@ -1,4 +1,3 @@
-
 ---
 date: 2009-10-02 02:48
 tags: opengl es,quake,opengl,android

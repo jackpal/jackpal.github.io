@@ -1,4 +1,3 @@
-
 ---
 date: 2015-07-26 15:58
 description: Fun with a classic 3D renderer.

@@ -1,4 +1,3 @@
-
 ---
 date: 2007-12-23 11:57
 tag: Mac, Windows, Home computing

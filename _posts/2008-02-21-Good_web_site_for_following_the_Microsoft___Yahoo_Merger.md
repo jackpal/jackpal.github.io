@@ -1,4 +1,3 @@
-
 ---
 date: 2008-02-21 16:44
 tags: Microsoft, Yahoo

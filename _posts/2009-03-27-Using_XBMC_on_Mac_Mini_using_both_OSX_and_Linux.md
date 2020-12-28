@@ -1,4 +1,3 @@
-
 ---
 date: 2009-03-27 15:23
 tags: xbmc,Linux,Mac

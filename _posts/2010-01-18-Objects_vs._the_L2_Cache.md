@@ -1,4 +1,3 @@
-
 ---
 date: 2010-01-18 06:18
 tags: 3d graphics

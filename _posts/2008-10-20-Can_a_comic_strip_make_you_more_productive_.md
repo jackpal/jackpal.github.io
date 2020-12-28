@@ -1,4 +1,3 @@
-
 ---
 date: 2008-10-20 07:54
 tags: productivity,xkcd

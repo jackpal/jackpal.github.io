@@ -1,4 +1,3 @@
-
 ---
 date: 2009-06-15 14:17
 description: This weekend I wrote a JavaScript version of my old Atari 800 game Dandy.

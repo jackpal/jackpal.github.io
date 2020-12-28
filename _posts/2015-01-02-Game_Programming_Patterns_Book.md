@@ -1,4 +1,3 @@
-
 ---
 date: 2015-01-02 20:39
 tags: Book review,game development

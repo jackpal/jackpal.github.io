@@ -1,4 +1,3 @@
-
 ---
 date: 2009-12-18 06:33
 tags: Larrabee,3d graphics

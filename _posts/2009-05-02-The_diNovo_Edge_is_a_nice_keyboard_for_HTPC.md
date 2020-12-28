@@ -1,4 +1,3 @@
-
 ---
 date: 2009-05-02 14:21
 tags: Linux,Mac,htpc,hardware review

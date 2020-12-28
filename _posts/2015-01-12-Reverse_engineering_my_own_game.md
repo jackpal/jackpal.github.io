@@ -1,4 +1,3 @@
-
 ---
 date: 2015-01-12 05:55
 description: Using an emulator to remember details of my old Atari game Dandy.

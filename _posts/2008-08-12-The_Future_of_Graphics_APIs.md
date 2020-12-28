@@ -1,4 +1,3 @@
-
 ---
 date: 2008-08-12 14:48
 tags: 3d,OpenGL,game consoles,predictions

@@ -1,4 +1,3 @@
-
 ---
 date: 2008-04-18 16:53
 tags: Hardware, Sony

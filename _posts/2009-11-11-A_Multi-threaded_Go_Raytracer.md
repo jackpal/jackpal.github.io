@@ -1,4 +1,3 @@
-
 ---
 date: 2009-11-11 03:44
 description: I ported a tiny multi-threaded raytracer example from F# to Go.

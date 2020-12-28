@@ -1,4 +1,3 @@
-
 ---
 date: 2017-12-31 00:08
 tags: Year in Review

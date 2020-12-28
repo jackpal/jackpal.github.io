@@ -1,4 +1,3 @@
-
 ---
 date: 2015-04-15 14:46
 tags: Android,Android Terminal Emulator,decluttering

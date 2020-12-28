@@ -1,4 +1,3 @@
-
 ---
 date: 2008-03-18 16:44
 tags: GDC, open source

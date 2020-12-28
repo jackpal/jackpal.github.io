@@ -1,4 +1,3 @@
-
 ---
 date: 2007-12-04 16:31
 tags: ebay, craigslist, economics

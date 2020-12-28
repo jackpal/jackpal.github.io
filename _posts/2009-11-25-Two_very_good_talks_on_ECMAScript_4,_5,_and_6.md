@@ -1,4 +1,3 @@
-
 ---
 date: 2009-11-25 08:33
 tags: JavaScript

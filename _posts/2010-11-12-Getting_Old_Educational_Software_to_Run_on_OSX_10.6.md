@@ -1,4 +1,3 @@
-
 ---
 date: 2010-11-12 23:25
 tags: pc,educational,OSX
