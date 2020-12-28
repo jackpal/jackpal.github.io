@@ -24,8 +24,10 @@ a regular Mac or PC.
 This works because Jekyll support is built in to Github.io web pages. Whenever a new
 commit is made, Github's servers automatically run the Jekyll app to regenerate my blog.
  
-There is one big disadvantages of this approach:
+There are some disadvantages of this approach:
 
+- I haven't figured out how to spell-check my iPad posts, leading to many uncorrected
+spelling mistakes and typos.
 - There's no preview. I have to push a commit to view the resulting blog post.
 
 But overall I think this is a good approach.
