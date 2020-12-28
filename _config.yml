@@ -3,7 +3,8 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            GrammerJack
+                  # Note: There is a zero-width space between Grammer and Jack:
+title:            Grammer​Jack
 tagline:          'A mind forever voyaging'
 description:      "Another damn programmer's blog."
 url:              "https://jackpal.github.io"
