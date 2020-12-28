@@ -3,7 +3,7 @@ date: 2019-09-04 03:53
 description: A prescient comic from the early days of modern computers.
 image: detail.png
 tags: Science Fiction, Dynabook, MIT
-title: Dropping a Dynabook\: A comic that turned from Science Fiction to Science Fact
+title: Dropping a Dynabook:\ A comic that turned from Science Fiction to Science Fact
 ---
 
 Some time around 1982, I saw an amazing comic on the wall of a [Xerox
