@@ -1,6 +1,6 @@
 ---
 date: 2009-06-01 03:43
-tags:Linux
+tags: Linux
 ---
 
 # See, this is why we can't have nice things (Ubuntu 9.04 Intel Drivers)

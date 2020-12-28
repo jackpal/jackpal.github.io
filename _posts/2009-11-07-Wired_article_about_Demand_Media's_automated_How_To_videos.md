@@ -1,6 +1,6 @@
 ---
 date: 2009-11-07 19:23
-tags:Future Shock
+tags: Future Shock
 ---
 
 # Wired article about Demand Media's automated How To videos

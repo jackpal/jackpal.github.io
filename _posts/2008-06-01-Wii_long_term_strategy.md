@@ -1,6 +1,6 @@
 ---
 date: 2008-06-01 00:20
-tags:Wii,strategy
+tags: Wii,strategy
 ---
 
 # Wii long term strategy

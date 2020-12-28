@@ -1,6 +1,6 @@
 ---
 date: 2008-12-08 18:35
-tags:git,hobby programming
+tags: git,hobby programming
 ---
 
 # Fun with Git

@@ -1,6 +1,6 @@
 ---
 date: 2009-09-04 03:04
-tags:Linux
+tags: Linux
 ---
 
 # Back to gnome

@@ -1,6 +1,6 @@
 ---
 date: 2008-06-28 19:03
-tags:NAS,Linux,Home computing
+tags: NAS,Linux,Home computing
 ---
 
 # Network Attached Storage Notes

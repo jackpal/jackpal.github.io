@@ -1,6 +1,6 @@
 ---
 date: 2016-12-21 17:43
-tags:Home computing,Scooter Computer,hardware trouble
+tags: Home computing,Scooter Computer,hardware trouble
 ---
 
 # Overheating fanless Scooter Computer

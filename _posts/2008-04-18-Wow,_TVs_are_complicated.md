@@ -1,6 +1,6 @@
 ---
 date: 2008-04-18 16:53
-tags:Hardware, Sony
+tags: Hardware, Sony
 ---
 
 # Wow, TVs are complicated

@@ -1,6 +1,6 @@
 ---
 date: 2008-11-19 13:24
-tags:Java,Hardware,Azul Systems
+tags: Java,Hardware,Azul Systems
 ---
 
 # Internals of the Azul Systems Multi-core Java processor

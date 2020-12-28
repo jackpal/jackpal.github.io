@@ -1,6 +1,6 @@
 ---
 date: 2019-05-13 03:17
-tags:Home computing,iPhone,iMessage,bugs
+tags: Home computing,iPhone,iMessage,bugs
 ---
 
 # The way I solved my daughter's "iMessage Activation" error

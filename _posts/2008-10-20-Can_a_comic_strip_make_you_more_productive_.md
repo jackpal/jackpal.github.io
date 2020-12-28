@@ -1,6 +1,6 @@
 ---
 date: 2008-10-20 07:54
-tags:productivity,xkcd
+tags: productivity,xkcd
 ---
 
 # Can a comic strip make you more productive?

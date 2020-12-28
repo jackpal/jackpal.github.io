@@ -1,6 +1,6 @@
 ---
 date: 2010-12-20 15:08
-tags:node.js
+tags: node.js
 ---
 
 # Asynchronous directory tree walk in node.js

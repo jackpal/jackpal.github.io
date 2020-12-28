@@ -2,7 +2,7 @@
 date: 2015-01-05 06:08
 description: There are a total of 3 draw calls and 2 textures in this scene.
 image: DandyiPad.png
-tags:iPhone,3d,Dandy,games,Metal
+tags: iPhone,3d,Dandy,games,Metal
 ---
 
 # Fun with shaders

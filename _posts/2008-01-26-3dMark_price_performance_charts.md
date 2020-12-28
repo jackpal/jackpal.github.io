@@ -1,6 +1,6 @@
 ---
 date: 2008-01-26 02:54
-tags:PC hardware
+tags: PC hardware
 ---
 
 # 3dMark price/performance charts

@@ -1,6 +1,6 @@
 ---
 date: 2009-09-03 02:31
-tags:planning
+tags: planning
 ---
 
 # Technology Trends I'm Keeping an Eye On
