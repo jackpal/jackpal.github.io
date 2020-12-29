@@ -6,6 +6,7 @@ title: Web Scraping with SwiftSoup
 
 * TOC
 {:toc}
+# Introduction
 In this tutorial we'll use the open-source
 [Swift Soup](https://github.com/scinfu/SwiftSoup) library to scrape
 open-source houseplant data
@@ -36,10 +37,10 @@ In order to scrape the data, we need to understand the structure of two types of
 2. The individual [Houseplant genus](https://en.wikipedia.org/wiki/Aglaonema)
 pages.
 
-Note: The process of studying a web page to understand how it is structured is called
+The process of studying a web page to understand how it is structured is called
 "reverse engineering". You are reversing the process that was used to create the web page.
 
-## The houseplant page
+## The Houseplant page
 
 1. Use the Chrome web browser to visit the [Houseplant](https://en.wikipedia.org/wiki/Houseplant) page.
 2. Choose View > Developer > View Source
@@ -77,7 +78,7 @@ Houseplants page looked like this:
 </ul>
 ```
 
-Given this structure, we can use find the houseplant links on this page by this algorithm:
+Given this structure, we can find the houseplant links on this page as follows:
 
 1. Find the h2 (second level headline) tag with the id "List_of_common_houseplants"
 2. Find the series of h3 (third level headling) tags to get the categories.
@@ -109,16 +110,15 @@ Analyzing a typical houseplant species web page shows us that its structure is
 
 Given this structure, we can find the houseplant species description text by:
 
-1. Search for a h2 tag with id "Description":
+1. Search for a h2 tag with id="Description":
 2. Collect the text of all the following p (Paragraph) tage, until the next h2 tag.
-
 
 # Time to Code
 
-Scraping can be broken into the following steps:
+The process of scraping can be broken into the following steps:
 
-1. Scrape the top-level houseplant page and collect links to genera pages.
-2. Scrape each genera page.
+1. Scrape the top-level houseplant page and collect links to individual houseplant info pages.
+2. Scrape each houseplant info page.
 3. Save the extracted data.
 
 ## Create a project
@@ -139,10 +139,9 @@ a project by:
 7. Tap Next
 8. Use the file dialog to Create the project where you like. (Typically in ~/Developer/)
 
+## Scraping a houseplant info page
 
-## Scraping a houseplant genus page
-
-Let's start by scraping a houseplant genus page, because it's a simpler task.
+Let's start by scraping a houseplant info page, because it's a simpler task.
 
 Open the main.swift file, delete all the existing contents, and type the following:
 
