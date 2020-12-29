@@ -9,7 +9,8 @@ In this tutorial we'll use the open-source
 open-source houseplant data
 from the [Wikipedia houseplants](https://en.wikipedia.org/wiki/Houseplant) page.
 
-Our program will scrape this URL: https://en.wikipedia.org/wiki/Houseplant
+Our program will scrape this URL:
+[https://en.wikipedia.org/wiki/Houseplant](https://en.wikipedia.org/wiki/Houseplant)
 
 Our program will produce a JSON object containing the scraped data.
 It will look something like this:
@@ -40,7 +41,7 @@ The process of studying a web page to understand how it is structured is called
 ## The Houseplant page
 
 1. Use the Chrome web browser to visit the [Houseplant](https://en.wikipedia.org/wiki/Houseplant) page.
-2. Choose View > Developer > View Source
+2. Right click on the web page and choose View Page Source from the pop-up menu.
 3. Start reading the document to figure out how it's structured.
 
 The structure of web pages changes over time, so this information may be out of date by the
@@ -108,7 +109,7 @@ Analyzing a typical houseplant species web page shows us that its structure is
 Given this structure, we can find the houseplant species description text by:
 
 1. Search for a h2 tag with id="Description":
-2. Collect the text of all the following p (Paragraph) tage, until the next h2 tag.
+2. Collect the text of all the following p (Paragraph) tag, until the next h2 tag.
 
 # Time to Code
 
@@ -317,6 +318,7 @@ func scrapeHouseplant(url: URL)throws {
      }
      element = sibling
    }
+}
 
 let url = URL(string:"https://en.wikipedia.org/wiki/Houseplant")!
 try scrapeHouseplant(url:url)
