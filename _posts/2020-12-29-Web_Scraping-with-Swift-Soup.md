@@ -28,7 +28,7 @@ It will look something like this:
     …
 }
 ```
-
+<!--more-->
 # Reverse engineering the web pages
 
 In order to scrape the data, we need to understand the structure of two types of web pages:
