@@ -158,8 +158,6 @@ Use Command-R to build and run the code.
 If all goes well, you will see the following text in the debug console.
 
 ```html
-…a bunch of debugging information, followed by…
-
 <!DOCTYPE html>
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
@@ -512,27 +510,6 @@ func scrapeHouseplantSpecies(url: URL) throws -> String {
 As it stands, the program produces unstructured text output. Let's store it in a set of
 nested swift dictionaries:
 
-
-```swift
-
-struct HouseplantInfo : Codable {
-  var description: String
-}
-
-// The key is a houseplant name.
-typealias HouseplantInfoDictionary = [String:HouseplantInfo]
-
-// The key is a category name.
-struct Houseplants {
-    var categories: [String:HouseplantInfoDictionary]
-}
-
-// An example of use
-let description = houseplants["Tropical and subtropical"]!["Aglaonema (Chinese evergreen)"]!
-```
-
-It's just a slight modification of our code to use these objects instead of printing strings:
-
 ```swift
 import Foundation
 import SwiftSoup
@@ -578,6 +555,11 @@ func scrapeHouseplantInfo(url: URL) throws -> HouseplantInfo {
   return HouseplantInfo(description: description)
 }
 
+// Remove […] or (…) text from a string.
+func clean(name: String)-> String {
+  name.replacingOccurrences(of: #"(\s*\[.*]|\s*\(.*\))"#, with: "", options: .regularExpression)
+}
+
 func scrapeHouseplants(url: URL)throws -> HouseplantCategoryDictionary {
   let html = try String(contentsOf: url)
   let document = try SwiftSoup.parse(html)
@@ -593,19 +575,20 @@ func scrapeHouseplants(url: URL)throws -> HouseplantCategoryDictionary {
     guard let sibling = try element.nextElementSibling() else { break }
     switch sibling.tagName() {
     case "h2":
-      break
+      // We know the first h2 comes after the end of the categories.
+      return categories
     case "h3":
       // If there's an existing category name, add it to the
-      categoryName = try sibling.children().first()!.text()
+      categoryName = clean(name: try sibling.text())
       categories[categoryName] = HouseplantInfoDictionary()
     case "ul":
       for child in sibling.children() {
-        let plantName = try child.text()
+        let plantName = clean(name: try child.text())
         let a = try child.getElementsByTag("a").first()!
         let href = try a.attr("href")
-
-        let speciesURL = URL(string:href, relativeTo:url)!
-        categories[categoryName]![plantName] = (try scrapeHouseplantInfo(url: speciesURL))
+        let infoURL = URL(string:href, relativeTo:url)!
+        categories[categoryName]![plantName] =
+          (try scrapeHouseplantInfo(url: infoURL))
       }
     default:
       break
@@ -619,10 +602,26 @@ let url = URL(string:"https://en.wikipedia.org/wiki/Houseplant")!
 let houseplants = try scrapeHouseplants(url:url)
 
 let encoder = JSONEncoder()
-let json = try encoder.encode(houseplants)
 encoder.outputFormatting = .prettyPrinted
+let json = try encoder.encode(houseplants)
 let jsonString = String(decoding: json, as: UTF8.self)
 print(jsonString)
+
+let outputFile = URL(fileURLWithPath: "/Users/jackpal/Desktop/houseplants.json")
+try jsonString.write(to: outputFile, atomically: true, encoding: String.Encoding.utf8)
 ```
 
+# Fetching in parallel
+
+Our code fetches over a hundred web pages. Each page may be take a short time to fetch, but even
+short times add up. We can speed up our scraper by taking advangage of Grand Central Dispatch.
+
+
+This tutorial shows how to scrape web pages using SwiftSoup. It's just a starting point.
+Some possible additions include:
+
++ Extract additional information, such as plant care instructions.
++ Use
+Web pages are often "dirty". You should always check the quality of the data that you scr, which means the scraped data needs to be reviewed for accuracy.
+When errors are found, sometimes it's easier to fix them manually.
 
