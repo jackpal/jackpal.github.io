@@ -611,17 +611,14 @@ let outputFile = URL(fileURLWithPath: "/Users/jackpal/Desktop/houseplants.json")
 try jsonString.write(to: outputFile, atomically: true, encoding: String.Encoding.utf8)
 ```
 
-# Fetching in parallel
+# Directions for future work
 
-Our code fetches over a hundred web pages. Each page may be take a short time to fetch, but even
-short times add up. We can speed up our scraper by taking advangage of Grand Central Dispatch.
+This code works, but it could be improved:
 
++ Our code fetches pages sequentially. Each page takes only a short time to download, but
+over a hundred web pages are fetched. We can speed up our scraper by fetching web pages in
+parallel, perhaps by using
+[DispatchQueue.concurrentPerform](https://developer.apple.com/documentation/dispatch/dispatchqueue/2016088-concurrentperform).
 
-This tutorial shows how to scrape web pages using SwiftSoup. It's just a starting point.
-Some possible additions include:
-
-+ Extract additional information, such as plant care instructions.
-+ Use
-Web pages are often "dirty". You should always check the quality of the data that you scr, which means the scraped data needs to be reviewed for accuracy.
-When errors are found, sometimes it's easier to fix them manually.
-
++ Extract additional information, such as photos and/or plant care instructions.
++ Clean up the scraped text to remove any malformed or extraneous text.
