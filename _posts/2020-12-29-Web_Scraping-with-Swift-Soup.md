@@ -3,9 +3,6 @@ date: 2020-12-29
 tags: swift tutorial web_scraping
 title: Web Scraping with SwiftSoup
 ---
-
-* TOC
-{:toc}
 # Introduction
 In this tutorial we'll use the open-source
 [Swift Soup](https://github.com/scinfu/SwiftSoup) library to scrape
