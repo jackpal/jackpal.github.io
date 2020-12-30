@@ -6,7 +6,7 @@ title: Speeding up Web Scraping
 # Introduction
 In this tutorial we'll use Swift concurrency primitives to speed up our toy web scraper.
 
-Original scraping time: 18 seconds
+Original scraping time: 17.7 seconds
 
 Optimized scraping time: 0.6 seconds
 
@@ -15,18 +15,18 @@ Optimized scraping time: 0.6 seconds
 
 Our toy web scraping problem can be divided into three steps:
 
-1) Fetch the master web page that contains a list of houseplants.
-2) For each houseplant, fetch its web page.
-3) Combine the information from the first 2 steps into a data structure, and write that to disk.
+1. Fetch the master web page that contains a list of houseplants.
+2. For each houseplant, fetch its web page.
+3. Combine the information from the first 2 steps into a data structure, and write that to disk.
 
 The second phase can be done in parallel.
 
 ## Measuring performance
 
-Starting with the existing web scraper, let's add a simple performance benchmark:
+Starting with the existing web scraper, let's add a simple time benchmark function:
 
 ```swift
-func measure<Result>(name: String = "",
+func time<Result>(name: String = "",
                      warmup: Bool = false,
                      repeatCount: Int = 1,
                      _ callback:  @autoclosure () throws-> Result)
@@ -44,13 +44,13 @@ rethrows-> Result {
   return result!
 }
 
-let houseplants = try measure(name:"Scrape", scrapeHouseplants(url:url))
+let houseplants = try time(name:"Scrape", scrapeHouseplants(url:url))
 ```
 
-When I measured the code, it took about 17.73 seconds to run
-each iteration, with a variation of about 0.3 seconds between runs.
+On my machine, it took about 17.73 seconds to run, with a variation of about 0.3 seconds between
+runs.
 
-## Parallelising code in Swift
+## Parallelising scrapeHouseplants
 
 We need to split our existing scrapeHouseplants function into three functions:
 
@@ -356,7 +356,7 @@ final class ThreadSafe<A> {
 }
 
 extension Array {
-  
+
   // Adapted from https://talk.objc.io/episodes/S01E90-concurrent-map
   func concurrentMap<B>(_ transform: (Element) throws -> B) rethrows -> [B] {
     let result = ThreadSafe(Array<B?>(repeating: nil, count: count))
@@ -427,8 +427,7 @@ func scrapeHouseplants(url: URL) -> HouseplantCategoryDictionary {
   return result!
 }
 
-/// A toy performance measuring wrapper.
-func measure<Result>(name: String = "",
+func time<Result>(name: String = "",
                      warmup: Bool = false,
                      repeatCount: Int = 1,
                      _ callback:  @autoclosure () throws-> Result)
@@ -447,7 +446,7 @@ rethrows-> Result {
 }
 
 let url = URL(string:"https://en.wikipedia.org/wiki/Houseplant")!
-let houseplants = measure(scrapeHouseplants(url:url))
+let houseplants = time(scrapeHouseplants(url:url))
 
 let encoder = JSONEncoder()
 encoder.outputFormatting = .prettyPrinted
