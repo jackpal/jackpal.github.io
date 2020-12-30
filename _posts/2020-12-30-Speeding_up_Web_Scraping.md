@@ -66,7 +66,7 @@ It looks like we could use both parallelism and asynchronous network fetches.
 
 We need to split our existing scrapeHouseplants function into three functions:
 
-1. scrapeListOfHousePlants: A function that scrapes the main houseplants page and produces a list
+1. scrapeListOfHouseplants: A function that scrapes the main houseplants page and produces a list
 of individual houseplants.
 2. reduceHouseplantInfos: A function that combines a list of HouseplantInfos into the final
 HouseplantCategoryDictionary
@@ -124,10 +124,10 @@ func clean(name: String)-> String {
   name.replacingOccurrences(of: #"(\s*\[.*]|\s*\(.*\))"#, with: "", options: .regularExpression)
 }
 
-typealias HousePlantKey = (category:String, name: String)
-typealias HousePlantTicket = (key: HousePlantKey, url:URL)
+typealias HouseplantKey = (category:String, name: String)
+typealias HouseplantTicket = (key: HouseplantKey, url:URL)
 
-func scrapeListOfHousePlants(url: URL, html:String) throws -> [HousePlantTicket] {
+func scrapeListOfHouseplants(url: URL, html:String) throws -> [HouseplantTicket] {
   let document = try SwiftSoup.parse(html)
 
   let span = try document.select("#List_of_common_houseplants").first()!
@@ -161,7 +161,7 @@ func scrapeListOfHousePlants(url: URL, html:String) throws -> [HousePlantTicket]
   return results
 }
 
-func reduceHouseplantInfos(infos:[(HousePlantKey, HouseplantInfo)]) -> HouseplantCategoryDictionary {
+func reduceHouseplantInfos(infos:[(HouseplantKey, HouseplantInfo)]) -> HouseplantCategoryDictionary {
   var result = HouseplantCategoryDictionary()
   for (key,info) in infos {
     if result[key.category] == nil {
@@ -174,7 +174,7 @@ func reduceHouseplantInfos(infos:[(HousePlantKey, HouseplantInfo)]) -> Houseplan
 
 func scrapeHouseplants(url: URL) throws -> HouseplantCategoryDictionary {
   try reduceHouseplantInfos(
-    infos: scrapeListOfHousePlants(url: url, html: try String(contentsOf: url))
+    infos: scrapeListOfHouseplants(url: url, html: try String(contentsOf: url))
       .map { ticket in
         (ticket.key, try scrapeHouseplantInfo(url: ticket.url,
                                               html:try String(contentsOf: ticket.url)))
@@ -223,7 +223,7 @@ extension Array {
 
 func scrapeHouseplants(url: URL) throws -> HouseplantCategoryDictionary {
   try reduceHouseplantInfos(
-    infos: scrapeListOfHousePlants(url: url, html: try String(contentsOf: url))
+    infos: scrapeListOfHouseplants(url: url, html: try String(contentsOf: url))
       .concurrentMap { ticket in
         (ticket.key, try scrapeHouseplantInfo(url: ticket.url,
                                               html:try String(contentsOf: ticket.url)))
@@ -258,7 +258,7 @@ func fetch(url: URL)-> String {
 
 func scrapeHouseplants(url: URL) throws -> HouseplantCategoryDictionary {
   return try reduceHouseplantInfos(
-    infos: scrapeListOfHousePlants(url: url, html: fetch(url: url))
+    infos: scrapeListOfHouseplants(url: url, html: fetch(url: url))
       .concurrentMap { ticket in
         (ticket.key, try scrapeHouseplantInfo(url: ticket.url,
                                               html:fetch(url: ticket.url)))
@@ -323,10 +323,10 @@ func clean(name: String)-> String {
   name.replacingOccurrences(of: #"(\s*\[.*]|\s*\(.*\))"#, with: "", options: .regularExpression)
 }
 
-typealias HousePlantKey = (category:String, name: String)
-typealias HousePlantTicket = (key: HousePlantKey, url:URL)
+typealias HouseplantKey = (category:String, name: String)
+typealias HouseplantTicket = (key: HouseplantKey, url:URL)
 
-func scrapeListOfHousePlants(url: URL, html:String) throws -> [HousePlantTicket] {
+func scrapeListOfHouseplants(url: URL, html:String) throws -> [HouseplantTicket] {
   let document = try SwiftSoup.parse(html)
 
   let span = try document.select("#List_of_common_houseplants").first()!
@@ -360,7 +360,7 @@ func scrapeListOfHousePlants(url: URL, html:String) throws -> [HousePlantTicket]
   return results
 }
 
-func reduceHouseplantInfos(infos:[(HousePlantKey, HouseplantInfo)]) -> HouseplantCategoryDictionary {
+func reduceHouseplantInfos(infos:[(HouseplantKey, HouseplantInfo)]) -> HouseplantCategoryDictionary {
   var result = HouseplantCategoryDictionary()
   for (key,info) in infos {
     if result[key.category] == nil {
@@ -422,7 +422,7 @@ func fetch(url: URL)-> String {
 
 func scrapeHouseplants(url: URL) throws -> HouseplantCategoryDictionary {
   return try reduceHouseplantInfos(
-    infos: scrapeListOfHousePlants(url: url, html: fetch(url: url))
+    infos: scrapeListOfHouseplants(url: url, html: fetch(url: url))
       .concurrentMap { ticket in
         (ticket.key, try scrapeHouseplantInfo(url: ticket.url,
                                               html:fetch(url: ticket.url)))
