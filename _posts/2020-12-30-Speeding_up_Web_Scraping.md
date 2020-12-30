@@ -6,9 +6,12 @@ title: Speeding up Web Scraping
 # Introduction
 In this tutorial we'll use Swift concurrency primitives to speed up our toy web scraper.
 
-Original scraping time: 17.7 seconds
-
-Optimized scraping time: 0.6 seconds
+| Program Version                 | Time (s) |
+| ------------------------------- | -------: |
+| Original                        |     17.7 |
+| Release                         |      4.7 |
+| DispatchQueue.concurrentPerform |      1.1 |
+| URLSession                      |      0.6 |
 
 <!--more-->
 # Web Scraping is an Embarrassingly Parallel Problem
@@ -49,6 +52,15 @@ let houseplants = try time(name:"Scrape", scrapeHouseplants(url:url))
 
 On my machine, it took about 17.73 seconds to run, with a variation of about 0.3 seconds between
 runs.
+
+First off, let's turn on optimization. By default Xcode builds projects using non-optimized "Debug"
+mode. Editing the active scheme to specify that we run with a Release build configuration
+brings the time down to 4.7 seconds.
+
+Using the Instruments tool shows that CPU utilization is low. The process is using just one
+thread, and that thread is spending much of its time waiting for the network.
+
+It looks like we could use both parallelism and asynchronous network fetches.
 
 ## Parallelising scrapeHouseplants
 
@@ -220,21 +232,45 @@ func scrapeHouseplants(url: URL) throws -> HouseplantCategoryDictionary {
 }
 ```
 
-That improves our time to 4.7 seconds. While it's a great improvement, it's
-much less of an improvement than we expected. What's going on?
+That improves our time to 1.06 seconds.
 
-Instruments shows that we're CPU bound parsing the documents. By default Xcode builds projects using
-non-optimized "Debug" mode.
+Instruments shows that we are using up to 6 threads. I believe parallelism is being limited to 6
+threads due to `String(contentsOf: url)` being limited to fetching no more than 6 simultaneous
+requests from a single host.
 
-Editing the configuration to specify a Release build brings the total time down to 1 second.
+We can refactor `scrapeHouseplants` to use URLSession:
 
-But we can do even better. We're fetching web pages using `URL(contents:)`, which runs
-synchronously. This limits the number of simultaneous fetches to the number of active threads.
-`DispatchQueue.concurrentPerform` limits the number of threads to match the number of hardware
-threads. Some Macs have as few as 4 hardware threads.
+```swift
+func fetch(url: URL)-> String {
+  var result: String?
+  let semaphore = DispatchSemaphore(value: 0)
+  DispatchQueue.global(qos: .userInitiated).async {
+    let session = URLSession.shared
+    let task = session.dataTask(with: url){data, response, error in
+      result = String(decoding: data!, as: UTF8.self)
+      semaphore.signal()
+    }
+    task.resume()
+  }
+  semaphore.wait()
+  return result!
+}
 
-Refactoring `scrapeHouseplants` to use NSURLSession to fetch URLs asynchronously reduces the total
-time to 0.6 seconds.
+func scrapeHouseplants(url: URL) throws -> HouseplantCategoryDictionary {
+  return try reduceHouseplantInfos(
+    infos: scrapeListOfHousePlants(url: url, html: fetch(url: url))
+      .concurrentMap { ticket in
+        (ticket.key, try scrapeHouseplantInfo(url: ticket.url,
+                                              html:fetch(url: ticket.url)))
+      }
+  )
+}
+```
+
+This reduces the time to 0.58 seconds.
+
+Instruments shows that that CPU utilization peaks at 28 threads, which is close to the 36 threads
+that are available on my iMac Pro.
 
 The final code looks like this:
 
@@ -324,9 +360,7 @@ func scrapeListOfHousePlants(url: URL, html:String) throws -> [HousePlantTicket]
   return results
 }
 
-typealias HouseplantInfos = [(HousePlantKey, HouseplantInfo)]
-
-func reduceHouseplantInfos(infos:HouseplantInfos) -> HouseplantCategoryDictionary {
+func reduceHouseplantInfos(infos:[(HousePlantKey, HouseplantInfo)]) -> HouseplantCategoryDictionary {
   var result = HouseplantCategoryDictionary()
   for (key,info) in infos {
     if result[key.category] == nil {
@@ -337,7 +371,8 @@ func reduceHouseplantInfos(infos:HouseplantInfos) -> HouseplantCategoryDictionar
   return result
 }
 
-// Adapted from https://talk.objc.io/episodes/S01E90-concurrent-map
+// ThreadSafe and concurrentMap code from https://talk.objc.io/episodes/S01E90-concurrent-map
+
 final class ThreadSafe<A> {
   private var _value: A
   private let queue = DispatchQueue(label: "ThreadSafe")
@@ -356,8 +391,6 @@ final class ThreadSafe<A> {
 }
 
 extension Array {
-
-  // Adapted from https://talk.objc.io/episodes/S01E90-concurrent-map
   func concurrentMap<B>(_ transform: (Element) throws -> B) rethrows -> [B] {
     let result = ThreadSafe(Array<B?>(repeating: nil, count: count))
     DispatchQueue.concurrentPerform(iterations: count) { idx in
@@ -370,61 +403,31 @@ extension Array {
     }
     return result.value.map { $0! }
   }
-
-  func asyncMap<B>(_ transform: @escaping (Element, @escaping (B)->Void)-> Void,
-                   callback:@escaping ([B]) -> Void) {
-    let result = ThreadSafe(Array<B?>(repeating: nil, count: count))
-    DispatchQueue.global(qos: .userInitiated).async {
-      let group = DispatchGroup()
-      enumerated().forEach { idx, element in
-        group.enter()
-        transform(element) { transformed in
-          result.atomically {
-            $0[idx] = transformed
-          }
-          group.leave()
-        }
-      }
-      group.wait()
-      callback(result.value.map { $0! })
-    }
-  }
-
 }
 
-typealias FetchedHouseplantHTML = (ticket:HousePlantTicket, html:String)
-
-func asyncScrapeHouseplants(url: URL, callback:@escaping (HouseplantCategoryDictionary)->Void) {
-  let session = URLSession.shared
-  let dataTask = session.dataTask(with: url) { data, response, error in
-    let tickets = try! scrapeListOfHousePlants(url: url, html: String(decoding: data!, as: UTF8.self))
-    tickets.asyncMap( {(ticket, callback: @escaping (FetchedHouseplantHTML)->Void) in
-      let dataTask = session.dataTask(with: ticket.url){ data, response, error -> Void in
-        callback(FetchedHouseplantHTML(ticket:ticket, html:String(decoding: data!, as: UTF8.self)))
-      }
-      dataTask.resume()
-    }, callback: { fetchedDocs in
-      let houseplantInfos = fetchedDocs.concurrentMap {fetchedDoc in
-        (fetchedDoc.ticket.key, try! scrapeHouseplantInfo(url: fetchedDoc.ticket.url, html:fetchedDoc.1))
-      }
-      callback(reduceHouseplantInfos(infos:houseplantInfos))
-    })
-  }
-  dataTask.resume()
-}
-
-func scrapeHouseplants(url: URL) -> HouseplantCategoryDictionary {
-  var result: HouseplantCategoryDictionary?
-  DispatchQueue.global(qos: .userInitiated).sync {
-    let group = DispatchGroup()
-    group.enter()
-    asyncScrapeHouseplants(url: url) {
-      result = $0
-      group.leave()
+func fetch(url: URL)-> String {
+  var result: String?
+  let semaphore = DispatchSemaphore(value: 0)
+  DispatchQueue.global(qos: .userInitiated).async {
+    let session = URLSession.shared
+    let task = session.dataTask(with: url){data, response, error in
+      result = String(decoding: data!, as: UTF8.self)
+      semaphore.signal()
     }
-    group.wait()
+    task.resume()
   }
+  semaphore.wait()
   return result!
+}
+
+func scrapeHouseplants(url: URL) throws -> HouseplantCategoryDictionary {
+  return try reduceHouseplantInfos(
+    infos: scrapeListOfHousePlants(url: url, html: fetch(url: url))
+      .concurrentMap { ticket in
+        (ticket.key, try scrapeHouseplantInfo(url: ticket.url,
+                                              html:fetch(url: ticket.url)))
+      }
+  )
 }
 
 func time<Result>(name: String = "",
@@ -446,13 +449,12 @@ rethrows-> Result {
 }
 
 let url = URL(string:"https://en.wikipedia.org/wiki/Houseplant")!
-let houseplants = time(scrapeHouseplants(url:url))
+let houseplants = try time(scrapeHouseplants(url:url))
 
 let encoder = JSONEncoder()
 encoder.outputFormatting = .prettyPrinted
 let json = try encoder.encode(houseplants)
 let jsonString = String(decoding: json, as: UTF8.self)
-
 let outputFile = URL(fileURLWithPath: "/Users/jackpal/Desktop/houseplants.json")
 try jsonString.write(to: outputFile, atomically: true, encoding: String.Encoding.utf8)
 ```
