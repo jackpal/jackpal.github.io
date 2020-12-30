@@ -4,7 +4,8 @@ tags: parallelism swift tutorial web_scraping
 title: Speeding up Web Scraping
 ---
 # Introduction
-In this tutorial we'll use Swift concurrency primitives to speed up our toy web scraper.
+In this tutorial we'll use Swift concurrency primitives to speed up our
+[toy web scraper](https://jackpal.github.io/2020/12/29/Web_Scraping-with-Swift-Soup.html).
 
 | Program Version                 | Time (s) |
 | ------------------------------- | -------: |
@@ -60,11 +61,10 @@ brings the time down to 4.7 seconds.
 Using the Instruments tool shows that CPU utilization is low. The process is using just one
 thread, and that thread is spending much of its time waiting for the network.
 
-It looks like we could use both parallelism and asynchronous network fetches.
-
 ## Parallelising scrapeHouseplants
 
-We need to split our existing scrapeHouseplants function into three functions:
+In order to provide opportunities for parallelism, we need to split our existing scrapeHouseplants
+function into three smaller functions:
 
 1. scrapeListOfHouseplants: A function that scrapes the main houseplants page and produces a list
 of individual houseplants.
@@ -72,8 +72,9 @@ of individual houseplants.
 HouseplantCategoryDictionary
 3. scrapeHouseplants: An overall function that coordinates the whole scraping process.
 
-While we're refactoring, we'll also change scrapeHouseplantInfo to pass in the html content, rather
-than fetching it inside the scrapeHouseplantInfo function. This separation will come in handy later.
+While we're refactoring, we'll also change scrapeHouseplantInfo to pass in the html content as a
+string, rather than fetching it inside the scrapeHouseplantInfo function. This separation will come
+in handy later, when we want to change the way we fetch data.
 
 ```swift
 import Foundation
@@ -184,7 +185,7 @@ func scrapeHouseplants(url: URL) throws -> HouseplantCategoryDictionary {
 ```
 
 This new code runs in the same amount of time as before. To make it run faster, we need to change
-the scrapeHouseplants implementation to use a `concurrentMap` instead of `map`:
+the scrapeHouseplants implementation to use `concurrentMap` instead of `map`:
 
 ```swift
 // ThreadSafe and concurrentMap code from https://talk.objc.io/episodes/S01E90-concurrent-map
@@ -234,11 +235,12 @@ func scrapeHouseplants(url: URL) throws -> HouseplantCategoryDictionary {
 
 That improves our time to 1.06 seconds.
 
-Instruments shows that we are using up to 6 threads. I believe parallelism is being limited to 6
-threads due to `String(contentsOf: url)` being limited to fetching no more than 6 simultaneous
-requests from a single host.
+Instruments shows that we are using up to 6 threads. That's puzzling because my iMac Pro has 36
+hardware threads. I believe parallelism is being limited to 6 threads due to
+`String(contentsOf: url)` being limited to fetching no more than 6 simultaneous requests from a
+single host.
 
-We can refactor `scrapeHouseplants` to use URLSession:
+We can refactor `scrapeHouseplants` to use URLSession directly:
 
 ```swift
 func fetch(url: URL)-> String {
