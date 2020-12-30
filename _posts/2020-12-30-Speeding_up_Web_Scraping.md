@@ -4,13 +4,13 @@ tags: parallelism swift tutorial web_scraping
 title: Speeding up Web Scraping
 ---
 # Introduction
-In this tutorial we'll use Swift concurrency primitives to speed up our
+In this tutorial we'll use a variety of techniques to speed up our
 [toy web scraper](https://jackpal.github.io/2020/12/29/Web_Scraping-with-Swift-Soup.html).
 
 | Program Version                 | Time (s) |
 | ------------------------------- | -------: |
 | Original                        |     17.7 |
-| Release                         |      4.7 |
+| Release mode                    |      4.7 |
 | DispatchQueue.concurrentPerform |      1.1 |
 | URLSession                      |      0.6 |
 
