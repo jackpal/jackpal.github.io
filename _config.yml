@@ -43,3 +43,5 @@ excerpt_separator: <!--more-->
 
 # Google analytics
 google_analytics: G-Y67THFBR7B
+
+timezone: America/Los_Angeles
