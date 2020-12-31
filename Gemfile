@@ -15,3 +15,7 @@ gem 'github-pages', versions['github-pages']
 ## Optional setup for Travis-CI
 #gem 'html-proofer'       # useful for Travis-CI
 #gem 'scss_lint'          # useful for Travis-CI
+
+# Google sitemap generator.
+
+gem 'jekyll-sitemap'
