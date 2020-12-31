@@ -20,6 +20,3 @@ gem 'github-pages', versions['github-pages']
 
 gem 'jekyll-sitemap'
 
-# Google analytics
-
-gem 'jekyll-analytics'

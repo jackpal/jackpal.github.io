@@ -24,7 +24,6 @@ paginate:         10
                     # Or '/blog/page:num' if you want to move your index pages
 
 plugins:
-  - jekyll-analytics
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
@@ -42,6 +41,5 @@ remote_theme: fongandrew/hydeout
 
 excerpt_separator: <!--more-->
 
-jekyll_analytics:
-  GoogleAnalytics:          # Add, if you want to track with Google Analytics
-    id: G-Y67THFBR7B        # Required - replace with your tracking id
+# Google analytics
+google_analytics: G-Y67THFBR7B
