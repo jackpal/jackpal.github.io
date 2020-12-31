@@ -19,3 +19,7 @@ gem 'github-pages', versions['github-pages']
 # Google sitemap generator.
 
 gem 'jekyll-sitemap'
+
+# Google analytics
+
+gem 'jekyll-analytics'
