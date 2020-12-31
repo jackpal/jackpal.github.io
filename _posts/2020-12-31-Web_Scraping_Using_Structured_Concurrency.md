@@ -8,6 +8,17 @@ In this tutorial we'll modify our
 [toy web scraper](https://jackpal.github.io/2020/12/30/Speeding_up_Web_Scraping.html) to use
 the newly proposed Swift async/await and Structured Concurrency APIs.
 
+```swift
+func scrapeHouseplants(url: URL) async throws -> HouseplantCategoryDictionary {
+  return try reduceHouseplantInfos(
+    infos: await scrapeListOfHouseplants(url: url, html: fetch(url: url))
+      .asyncMap { ticket in
+        (ticket.key, try scrapeHouseplantInfo(url: ticket.url,
+                                              html:await fetch(url: ticket.url)))
+      }
+  )
+}
+```
 
 <!--more-->
 # Swift async/await and Structured Concurrency
@@ -47,6 +58,9 @@ extension Array {
 }
 
 func fetch(url: URL)async -> String {
+  // This is how you can adapt existing asynchronous APIs to the new async/await framework.
+  // Swift provides automatic wrappers for completionHandler-based APIs that return void,
+  // but we have to write custom code when the API returns something besides void.
   await withUnsafeContinuation { continuation in
     let session = URLSession.shared
     let task = session.dataTask(with: url) { data, response, error in
@@ -85,6 +99,8 @@ It's less code than before, requires less specialized knowledge, and it runs at 
 speed. I look forward to using async/await and Structured Concurrency more as the features evolve
 and hopefully ship in future versions of Xcode.
 
-Thanks to [Eneko Alonso](https://www.enekoalonso.com/2020/12/06/getting-started-with-async-await-in-swift.html) for showing that this experimentation is even possible, and to the members of the
+Thanks to
+[Eneko Alonso](https://www.enekoalonso.com/2020/12/06/getting-started-with-async-await-in-swift.html)
+for showing that this experimentation is even possible, and to the members of the
 [Swift Evolution Forum](https://forums.swift.org/t/pitch-2-structured-concurrency/43452/41)
-for answering my questions on how to use Structured concurrency.
+for answering my questions on how to use Structured Concurrency.
