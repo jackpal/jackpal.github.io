@@ -67,6 +67,7 @@ struct SmoothAsyncImage<Content>: View where Content: View {
           }
         }
     }
+    .id(url) // The view's identity is defined by the URL.
   }
 }
 
