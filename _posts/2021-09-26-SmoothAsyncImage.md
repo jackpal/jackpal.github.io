@@ -1,7 +1,7 @@
 ---
 date: 2021-09-26
 tags: xcode_13 jank swiftui swift
-title: SmoothAsyncImage
+title: A Smooth AsyncImage Replacement
 ---
 
 iOS 15.0 introduced a AsyncImage SwiftUI view to enable asynchronously loading URL-based images.
