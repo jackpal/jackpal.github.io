@@ -17,6 +17,8 @@ cause slow rendering and excessive memory use when displaying large images.
 
 Here's a replacement, SmoothAsyncImage, that fixes these two problems.
 
+<!--more-->
+
 This replacement only provides the most general initializer for AsyncImage. Implementing the
 other initializers is left as an exercise for the reader.
 
