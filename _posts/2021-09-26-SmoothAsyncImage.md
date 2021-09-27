@@ -8,19 +8,23 @@ iOS 15.0 introduced a AsyncImage SwiftUI view to enable asynchronously loading U
 
 AsyncImage works well for many scenarios, but has several limitations:
 
-1. AsyncImage doesn't provide a mechanism for "inflating" the view before drawing it. This means
+1. AsyncImage doesn't provide a mechanism for "inflating" the image before drawing it. This means
 that large images will take a long time to render the first time that they are drawn. This can
-cause  "hitches" or "jank" when scrolling.
+cause "hitches" or "jank" when scrolling.
 
-2. AsyncImage doesn't provide a mechanism for scaling large UIImages. This can
-cause slow rendering and excessive memory use when displaying large images.
+2. AsyncImage doesn't provide a mechanism for pre-scaling large UIImages down to screen size.
+This can cause slow rendering and excessive memory use when displaying large images.
 
 Here's a replacement, SmoothAsyncImage, that fixes these two problems.
 
 <!--more-->
 
-This replacement only provides the most general initializer for AsyncImage. Implementing the
-other initializers is left as an exercise for the reader.
+Limitations:
+
+- Unlike AsyncImage, does not work on macOS.
+
+- Only provides the most powerful / general initializer. Implementing the
+convenience initializers is left as an exercise for the reader.
 
 ``` swift
 import SwiftUI
