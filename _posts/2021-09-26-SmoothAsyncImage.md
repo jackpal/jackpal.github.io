@@ -4,26 +4,25 @@ tags: xcode_13 jank swiftui swift
 title: A Smooth AsyncImage Replacement
 ---
 
-iOS 15.0 introduced a AsyncImage SwiftUI view to enable asynchronously loading URL-based images.
-
+iOS 15.0 introduced an AsyncImage SwiftUI view to enable asynchronously loading URL-based images.
 AsyncImage works well for many scenarios, but has several limitations:
 
-1. AsyncImage doesn't provide a mechanism for "inflating" the image before drawing it. This means
-that large images will take a long time to render the first time that they are drawn. This can
+1. AsyncImage doesn't provide a mechanism for "inflating" an image before drawing it. This means
+that large images can take a long time to render the first time that they are drawn. This can
 cause "hitches" or "jank" when scrolling.
 
 2. AsyncImage doesn't provide a mechanism for pre-scaling large UIImages down to screen size.
 This can cause slow rendering and excessive memory use when displaying large images.
 
-Here's a replacement, SmoothAsyncImage, that fixes these two problems.
+Here's a replacement view, SmoothAsyncImage, that fixes these two problems.
 
 <!--more-->
 
 Limitations:
 
-- Unlike AsyncImage, does not work on macOS.
+- Unlike AsyncImage, SmoothAsyncImage does not work on macOS.
 
-- Only provides the most powerful / general initializer. Implementing the
+- SmoothAsyncImage only provides the most powerful / general initializer. Implementing the
 convenience initializers is left as an exercise for the reader.
 
 ``` swift
