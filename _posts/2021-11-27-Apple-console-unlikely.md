@@ -6,7 +6,7 @@ title: Why Apple is Unlikely to Create a Game Console
 
 # Why Apple is Unlikely to Create a Game Console
 
-Apple's new M1 Max SOC has good graphics performance. Some people are speculating that this would enable Apple to create a competitive video game console. I think that's unlikely.
+Apple's new M1 Max SOC has [good graphics performance. Some people are speculating that this would enable Apple to create a competitive video game console. I think that's unlikely.
 
 The bull case for Apple making a video game console is:
 
@@ -24,7 +24,7 @@ In this blog post I explain why the video game console market is shaped the way 
 
 <!--more-->
 
-Here's why video game consoles are cheap, & hot:
+Here's why video game consoles are cheap & hot:
 
 + People have a wide variety of choices in how they play games. Most people will play the best games available out of the possible choices.
 + Everyone has a smart phone, with an endless supply of pretty good games. This limits the video game console market to game experiences that are not possible or not enjoyable on phones.
