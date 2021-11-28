@@ -3,9 +3,6 @@ date: 2021-11-27
 tags: Apple M1 console
 title: Why Apple is Unlikely to Create a Game Console
 ---
-
-# Why Apple is Unlikely to Create a Game Console
-
 Apple's new M1 Max SOC has good graphics performance. Some people are speculating that this would enable Apple to create a competitive video game console. I think that's unlikely.
 
 The bull case for Apple making a video game console is:
