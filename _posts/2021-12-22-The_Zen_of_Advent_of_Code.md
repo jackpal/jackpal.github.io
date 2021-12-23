@@ -18,6 +18,8 @@ The puzzles are designed to be solved by an ordinary developer within a few hour
 tends to be on figuring out a good algorithm, and the problems are usually solvable using under a
 hundred lines of code in standard Python.
 
+<!--more-->
+
 Although Python is the focus of the contest, you can use any language you want, and for the most
 part the problems can be solved using any language. The typical pitfals of using a language
 besides Python are:
