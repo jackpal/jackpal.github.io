@@ -1,5 +1,5 @@
 ---
-date: 2021-12-22 15:48
+date: 2021-12-22
 description: Notes on participating in the Advent of Code programming puzzle contest.
 tags: advent_of_code programming_contests Python Swift
 title: The Zen of Advent of Code
