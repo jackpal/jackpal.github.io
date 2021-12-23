@@ -1,6 +1,6 @@
 ---
 date: 2009-09-08
-tags: games javascript
+tags: games javascript brick_break breakout
 title: Brick Break - a Javascript Breakout clone
 ---
 
