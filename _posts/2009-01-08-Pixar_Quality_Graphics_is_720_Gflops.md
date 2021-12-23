@@ -1,6 +1,6 @@
 ---
 date: 2009-01-08
-tags: renderman pixar
+tags: renderman pixar 3d
 title: Pixar Quality Graphics is 720 Gflops
 ---
 
