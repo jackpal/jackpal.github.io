@@ -21,11 +21,11 @@ hundred lines of code in standard Python.
 <!--more-->
 
 Although Python is the focus of the contest, you can use any language you want, and for the most
-part the problems can be solved using any language. The typical pitfals of using a language
+part the problems can be solved using any language. The typical pitfalls of using a language
 besides Python are:
 
   + Some problems require processing large integers. You may need to find or implement a "BigNum"
-    libray for your language. (Although usually 64 bit ints are enough.)
+    library for your language. (Although usually 64 bit ints are enough.)
 
   + Some problems are easily solved by using standard data structures (like a priority queue)
     that you will have to find or implement for your language.
@@ -44,7 +44,7 @@ ideas.
 Anyway, here are my tips for having an enjoyable time participating in the contest:
 
 1. Depending on where you live, the puzzles may be released the day before their date. For
-   example, on the West Coast of the US, the first day's puzzle will becom available at
+   example, on the West Coast of the US, the first day's puzzle will become available at
    9 pm on November 30th.
 
 2. Don't worry about your leaderboard position. I myself have never placed higher than 490 on
@@ -81,7 +81,7 @@ Anyway, here are my tips for having an enjoyable time participating in the conte
     + Generally you won't need numpy or related libraries.
       - The puzzle author is aware of scipy, numpy, networkx, etc, and tends to add "twists" to the puzzle that make it difficult to solve the puzzle simply by
         calling a pre-built function of one of these libraries.
-    + Python plotting libraries are useful for making visualizations of your data for debugging and or creating Redit posts or blog posts.
+    + Python plotting libraries are useful for making visualizations of your data for debugging and or creating Reddit posts or blog posts.
 
 8. Swift-specific advice:
     - Swift string processing is verbose. Do yourself a favor and write Swift versions of Python's "split", "join", and enumerate-by-character functions before the
@@ -107,5 +107,5 @@ Anyway, here are my tips for having an enjoyable time participating in the conte
 11. Try finding someone to be a contest buddy. In the past two years I've been doing the contest
     with my kids (who are high school and college age).
     It's been fun discussing the problems and comparing implementations. My son's recently gotten faster than me at solving the problems. I try to be
-    philisophical about being surpassed.
+    philosophical about being surpassed.
 
