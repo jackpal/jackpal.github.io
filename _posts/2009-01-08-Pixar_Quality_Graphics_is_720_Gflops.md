@@ -1,7 +1,7 @@
 ---
 date: 2009-01-08
 tags: renderman pixar 3d
-title: "Pixar Quality Graphics" is 720 Gflops
+title: Pixar Quality Graphics is 720 Gflops
 ---
 
 For at least 10 years GPU vendors have been talking about "Pixar Quality"
