@@ -42,45 +42,42 @@ Anyyway, here are my tips for having an enjoyable time participating in the cont
    solving the problem. All the problems so far have been solvable in normal Python, using normal data structures like list, dictionary, set, and tuple.
 
 5. That being said, a few Python libraries and data structures have proven helpful in many problems:
-
-  + Counter
-  + heapq
-  + deque
+    + Counter
+    + heapq
+    + deque
 
 6. Python-specific advice:
-
-  + Don't bother with regular expressions. Unless you know regular expression like the back of your hand, it's almost always faster and easier to parse the
-    puzzle input using "split" and "int".
-  + Intentionally avoid programming practices that are good for larger programs, because they will slow you down for tiny programs like these:
-      - Don't parse the input into an intermediate data structure. Instead, parse as you go about solving the puzzle.
-      - For the most part, don't define subroutines.
-      - For the most part, don't define classes. You can get really far with tuples, lists, sets and dicts.
-      - Use short variable names.
-      - Use "for" loops instead of comprehensions.
-  + Generally you won't need numpy or related libraries.
-     - The puzzle author is aware of scipy, numpy, networkx, etc, and tends to add "twists" to the puzzle that make it difficult to solve the puzzle simply by
-       calling a pre-built function of one of these libraries.
-  + Python plotting libraries are useful for making visualizations of your data for debugging and or creating Redit posts or blog posts.
+    + Don't bother with regular expressions. Unless you know regular expression like the back of your hand, it's almost always faster and easier to parse the
+      puzzle input using "split" and "int".
+    + Intentionally avoid programming practices that are good for larger programs, because they will slow you down for tiny programs like these:
+        - Don't parse the input into an intermediate data structure. Instead, parse as you go about solving the puzzle.
+        - For the most part, don't define subroutines.
+        - For the most part, don't define classes. You can get really far with tuples, lists, sets and dicts.
+        - Use short variable names.
+        - Use "for" loops instead of comprehensions.
+    + Generally you won't need numpy or related libraries.
+      - The puzzle author is aware of scipy, numpy, networkx, etc, and tends to add "twists" to the puzzle that make it difficult to solve the puzzle simply by
+        calling a pre-built function of one of these libraries.
+    + Python plotting libraries are useful for making visualizations of your data for debugging and or creating Redit posts or blog posts.
 
 7. Swift-specific advice:
-
-  - Swift string processing is verbose. Do yourself a favor and write Swift versions of Python's "split", "join", and enumerate-by-character functions before the
-    contest starts.
-  - Swift lacks some useful collection classes. Write or find your own version of priority queue and counted set.
-  - Swift's fancy map/reduce methods work, but simple for loops are often faster and easier to write.
+    - Swift string processing is verbose. Do yourself a favor and write Swift versions of Python's "split", "join", and enumerate-by-character functions before the
+      contest starts.
+    - Swift lacks some useful collection classes. Write or find your own version of priority queue and counted set.
+    - Swift's fancy map/reduce methods work, but simple for loops are often faster and easier to write.
 
 8. Many years have had problems related to the following topics, so it's worth reading about them ahead of time:
-  + Chinese Remainder Theorem.
-  + Ring buffers
-  + Searching graphs for optimal routes.
-  + Cellular automata.
-  + One year had many problems related to writing an interpreter for a simple computer. However, this was so difficult for many contestants that I am not sure
-    we'll see any more puzzles on this topic. 
+    + Chinese Remainder Theorem.
+    + Ring buffers
+    + Searching graphs for optimal routes.
+    + Cellular automata.
+    + One year had many problems related to writing an interpreter for a simple computer. However, this was so difficult for many contestants that I am not sure
+      we'll see any more puzzles on this topic. 
 
 9. The Reddit community [r/adventofcode](https://www.reddit.com/r/adventofcode/) is a wonderful resource of support and ideas related to the contest.
 
-  - If you get stuck on a problem, I recommend visiting the corresponding r/adventofcode solution thread and reading through the highest-rated solutions.
-     - There is no shame in doing this. Some of the problems are very difficult to solve if you're not familiar with a particular obscure algorithm or technique.
+    - If you get stuck on a problem, I recommend visiting the corresponding r/adventofcode solution thread and reading through the highest-rated solutions.
+      - There is no shame in doing this. Some of the problems are very difficult to solve if you're not familiar with a particular obscure algorithm or technique.
 
 10. Try finding someone to be a contest buddy. In the past two years I've been doing the contest with my kids (who are high school and college age).
     It's been fun discussing the problems and comparing implementations. My son's recently gotten faster than me at solving the problems. I try to be
