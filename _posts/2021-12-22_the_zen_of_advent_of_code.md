@@ -80,7 +80,7 @@ Anyyway, here are my tips for having an enjoyable time participating in the cont
 9. The Reddit community [r/adventofcode](https://www.reddit.com/r/adventofcode/) is a wonderful resource of support and ideas related to the contest.
 
   - If you get stuck on a problem, I recommend visiting the corresponding r/adventofcode solution thread and reading through the highest-rated solutions.
-     - There is no shame in doing this. Some of the problems are very difficult to solve if you're not familiar with a particular obscure algorithm or techniques.
+     - There is no shame in doing this. Some of the problems are very difficult to solve if you're not familiar with a particular obscure algorithm or technique.
 
 10. Try finding someone to be a contest buddy. In the past two years I've been doing the contest with my kids (who are high school and college age).
     It's been fun discussing the problems and comparing implementations. My son's recently gotten faster than me at solving the problems. I try to be
