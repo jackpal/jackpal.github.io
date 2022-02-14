@@ -1,5 +1,5 @@
 ---
-date: 2022-02-14
+date: 2022-02-13
 description: Using Tailscale to bootstrap remote access to a Tablo DVR.
 tags: Tablo Tailscale Debian Superbowl
 title: Tailscale and Tablo
