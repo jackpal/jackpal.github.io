@@ -7,7 +7,7 @@ title: Tailscale and Tablo
 
 My son's away at college, without a TV. He wanted to watch the Superbowl. We
 realized that one way to do that would be for him to access our family's
-[TabloTV](https://www.tablotv.com/) DVR remotely. Tablo supports remote access,
+[Tablo DVR](https://www.tablotv.com/) remotely. Tablo supports remote access,
 but there's a catch: The client software has to be set up while the Tablo device 
 and the client machine are on the same local network.
 
@@ -103,4 +103,4 @@ Things that did not go so well:
 - The Tailscale Debian installation instructions omit the step of running `sudo systemctl start tailscaled` after installing Tailscale.
 
 Overall my son and I give Tailscale two thumbs up! It enabled us to set up the Tablo DVR application remotely,
-so that we could co-watch the Superbowl even though we were 1400 miles apart. Thanks Tailscale!
+so that we could co-watch the Superbowl even though we were 1400 miles apart. Thanks Tablo and Tailscale!
