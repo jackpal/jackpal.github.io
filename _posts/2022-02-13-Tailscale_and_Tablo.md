@@ -40,7 +40,7 @@ uses the Mac for several steps where other people would probably use Windows.
 To create a temporary Linux Tailscale subnet router, I did the following:
 
 1. Downloaded a [Debian Live CD image](https://debian.org/CD/live/) to my Mac.
-2. Used the [Etcher](https://www.balena.io/etcher/) app to create a bootable USB drive.
+2. Used the [Balena Etcher](https://www.balena.io/etcher/) app to create a bootable USB drive.
 3. Reconfigured the PC's BIOS to boot from the USB drive.
 4. Went through the Debian Live CD configuration process.
 5. Speed-ran the Tailscale installation for a Linux box:
@@ -105,4 +105,4 @@ Things that did not go so well:
 - The Tailscale Debian installation instructions omit the step of running `sudo systemctl start tailscaled` after installing Tailscale.
 
 Overall my son and I give Tailscale two thumbs up! It enabled us to set up the Tablo DVR application remotely,
-so that we could co-watch the Superbowl even though we were 1400 miles apart. Thanks Debian, Tablo, and Tailscale!
+so that we could co-watch the Superbowl even though we were 1400 miles apart. Thanks Balena, Debian, Tablo, and Tailscale!
