@@ -42,7 +42,8 @@ To create a temporary Linux Tailscale subnet router, I did the following:
 1. Downloaded a [Debian Live CD image](https://debian.org/CD/live/) to my Mac.
 2. Used the [Etcher](https://www.balena.io/etcher/) app to create a bootable USB drive.
 3. Reconfigured the PC's BIOS to boot from the USB drive.
-4. Speed-ran the Tailscale installation for a Linux box:
+4. Went through the Debian Live CD configuration process.
+5. Speed-ran the Tailscale installation for a Linux box:
 
 ```bash
 # The first two lines are specific to Debian bullseye, see Tailscale docs for other releases:
