@@ -18,23 +18,24 @@ private network. And therein lies a tale.
 
 <!--more-->
 
-If, like me, you've been following the Tailscale company, you probably expected me
-to report that it took only a few minutes to set up Tailscale, and that everything went
-super smoothly. Unfortunately, while everything worked out fine in the end, it took
-longer than the typical Tailscale success story.
+If, like me, you've been [following the Tailscale company on Twitter](https://twitter.com/tailscale),
+you probably expected me to report that it took only a few minutes to set up Tailscale,
+and that everything went super smoothly. Unfortunately, while everything worked out
+fine in the end, it took longer than the typical Tailscale success story.
 
 The initial Tailscale enrollment went super smoothly, as everyone reports. But I soon
-identified an issue: The Tablo does not allow for third party software installation.
+identified an issue: The Tablo DVR does not allow for third party software installation.
 Therefore, in order to give my son access to it, I would need to configure a Tailscale
 [subnet router](https://tailscale.com/kb/1019/subnets). And currently that feature
-only works on Linux.
+only works on a Linux host.
 
-I don't currently run any Linux devices. But I do have a Windows PC.
+I don't currently run any Linux devices that are capable of installing Tailscale.
+But I do have a Windows PC.
 
-I decided to temporarily repurpose the Windows PC into a Linux box.
+I decided to temporarily (just for the Superbowl) repurpose the Windows PC into a Linux box.
 
-(These day's I'm more comfortable with Mac / Linux than with Windows, so the following
-uses the Mac for several steps where other people would probably use Windows.)
+These day's I'm more comfortable with Mac / Linux than with Windows, so the following
+uses the Mac for several steps where other people would probably use Windows.
 
 To create a temporary Linux Tailscale subnet router, I did the following:
 
@@ -42,7 +43,6 @@ To create a temporary Linux Tailscale subnet router, I did the following:
 2. Used the [Etcher](https://www.balena.io/etcher/) app to create a bootable USB drive.
 3. Reconfigured the PC's BIOS to boot from the USB drive.
 4. Speed-ran the Tailscale installation for a Linux box:
-
 
 ```bash
 # The first two lines are specific to Debian bullseye, see Tailscale docs for other releases:
@@ -102,5 +102,5 @@ Things that did not go so well:
 - I had to install Linux just to run a Tailscale subnet router.
 - The Tailscale Debian installation instructions omit the step of running `sudo systemctl start tailscaled` after installing Tailscale.
 
-Overall I  give Tailscale two thumbs up. It enabled my son and I to set up the Tablo DVR application remotely, so that we could
-co-watch the Superbowl even though we were 1400 miles apart.
+Overall my son and I give Tailscale two thumbs up! It enabled us to set up the Tablo DVR application remotely,
+so that we could co-watch the Superbowl even though we were 1400 miles apart. Thanks Tailscale!
