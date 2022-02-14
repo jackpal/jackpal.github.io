@@ -96,7 +96,8 @@ Things that went well:
 + The Tailscale admin console was amazingly clear and responsive.
 + The Tailscale app error messages were excellent. They held my hand through the installation process.
   (Things like explaining that I needed to enable port forwarding, and giving the commands to use.)
-+ Once configured, the Tablo remote streaming software worked well.
++ The Debian Live CD recognized all the hardware necessary to connect to the Internet.
++ Once configured, the Tablo remote connect streaming software worked well.
 
 Things that did not go so well:
 
@@ -104,4 +105,4 @@ Things that did not go so well:
 - The Tailscale Debian installation instructions omit the step of running `sudo systemctl start tailscaled` after installing Tailscale.
 
 Overall my son and I give Tailscale two thumbs up! It enabled us to set up the Tablo DVR application remotely,
-so that we could co-watch the Superbowl even though we were 1400 miles apart. Thanks Tablo and Tailscale!
+so that we could co-watch the Superbowl even though we were 1400 miles apart. Thanks Debian, Tablo, and Tailscale!
