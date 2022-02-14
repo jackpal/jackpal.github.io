@@ -29,7 +29,9 @@ extension Path {
   
   /// Returns the position for a point on the path with the given
   /// fractional path value between 0 and 1.
-  func evaluate(at: CGFloat, epsilon: CGFloat = defaultEpsilon, closed: Bool = false) -> CGPoint {
+  func evaluate(at: CGFloat,
+      epsilon: CGFloat = defaultEpsilon,
+      closed: Bool = false) -> CGPoint {
     // Make sure a and b don't go outside the bounds 0 ... 1.0
     var a = at
     var b = at + epsilon
@@ -51,8 +53,9 @@ extension Path {
   /// The tangent angle ranges from -π to π.
   /// An angle of 0 means the curve is pointing in the positive X direction.
   /// The angle increases in the clockwise direction.
-  func evaluateTangent(at: CGFloat, lookAhead: CGFloat = defaultEpsilon, closed: Bool = false)
-      -> CGFloat {
+  func evaluateTangent(at: CGFloat,
+     lookAhead: CGFloat = defaultEpsilon,
+     closed: Bool = false) -> CGFloat {
     var a = at
     var b = at + lookAhead
     if closed {
@@ -110,14 +113,19 @@ struct ContentView: View {
     var body: some View {
       TimelineView(.animation(minimumInterval: 1.0 / 120)) { timeline in
         let elapsed = timeline.date.timeIntervalSince(startDate)
-        let animationProgress = elapsed.truncatingRemainder(dividingBy: animationDuration) / animationDuration
+        let animationProgress =
+            elapsed.truncatingRemainder(dividingBy: animationDuration)
+            / animationDuration
         Canvas { context, size in
           context.stroke(path, with:.color(.green))
           let pos = path.evaluate(at:animationProgress)
           // Use a lookAhead to have the car smoothly animate around sharp corners
-          let tangentAngle = path.evaluateTangent(at: animationProgress, lookAhead:0.01)
+          let tangentAngle =
+              path.evaluateTangent(at: animationProgress, lookAhead:0.01)
           let oldTransform = context.transform
-          context.transform = oldTransform.translatedBy(x: pos.x, y: pos.y).rotated(by:tangentAngle)
+          context.transform = oldTransform
+              .translatedBy(x: pos.x, y: pos.y)
+              .rotated(by:tangentAngle)
           context.draw(Text("car"), at: CGPoint(x:0, y:-8))
           context.transform = oldTransform
         }
