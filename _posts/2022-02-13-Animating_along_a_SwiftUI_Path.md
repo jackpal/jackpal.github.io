@@ -5,7 +5,7 @@ tags: Swift Swift_UI Geometry 2D Animation Path Curve
 title: Animating along a SwiftUI Path
 ---
 
-We can use  trigonometry and finite differences to animate rigid objects along a SwiftUI path.
+We can use trigonometry and finite differences to animate rigid objects along a SwiftUI path.
 
 The SwiftUI Path class is missing several useful methods for evaluating properties of a path:
 
