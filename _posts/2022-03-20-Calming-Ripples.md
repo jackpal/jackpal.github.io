@@ -22,13 +22,14 @@ You could use the techniques in this project to create a 2D game.
 
 # General app architecture
 
-The  app architecture is:
+The app architecture is:
 
-+ Model structs and classes that contain the data that's going to be animated.
++ Model structs and classes:
+  - contain the data that's going to be animated.
 + View structs:
- - That display the model data.
- - That animate the model data.
- - That interpret user gestures to modify the model data.
+  - display the model data.
+  - animate the model data.
+  - interpret user gestures to modify the model data.
 
 ## Model Data
 
