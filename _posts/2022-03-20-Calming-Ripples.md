@@ -30,7 +30,7 @@ The  app architecture is:
 
 ## Model Data
 
-For this application, the model is made up of ripples. The model contains an array of ripples.
+For this application, the model is just an array of ripples.
 
 ### struct Ripple
 
