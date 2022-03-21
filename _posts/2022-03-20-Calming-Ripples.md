@@ -1,5 +1,5 @@
 ---
-date: 2022-02-13
+date: 2022-03-20
 description: Architecture of a SwiftUI 2D animation app.
 tags: SwiftUI Canvas TimelineView
 title: Calming Ripples App
@@ -15,6 +15,8 @@ Calming Ripples is an iOS app that lets you draw animated ripples.
 + Use the onChanged() view method to create a dynamically changing animation.
 
 You could use the techniques in this project to create a 2D game.
+
+![Screenshot of Calming Ripples App](/assets/posts/2022-03-20-Ripples.png)
 
 <!--more-->
 
