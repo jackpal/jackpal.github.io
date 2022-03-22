@@ -5,7 +5,9 @@ tags: SwiftUI Canvas TimelineView
 title: Calming Ripples App
 ---
 
-Calming Ripples is an iOS app that lets you draw animated ripples.
+Calming Ripples is a SwiftUI app that lets you draw animated ripples.
+
+[Available for iOS, iPadOS and macOS.](https://apps.apple.com/us/app/calming-ripples/id1615302570)
 
 [Study the source code](https://github.com/jackpal/Ripples) to learn these techniques:
 
