@@ -1,8 +1,8 @@
 ---
 date: 2022-04-29
 description: A level solver for Hitman Go style puzzle games.
-tags: Swift SwiftUI Puzzle HitmanGo iOS A-Star AI
-title: A Spy Puzzle Level Solver
+tags: Swift SwiftUI Puzzle Hitman_Go iOS A-Star AI
+title: A Solver for Hitman Go Levels
 ---
 
 I wrote a solver for [Hitman Go](https://en.wikipedia.org/wiki/Hitman_Go)
