@@ -5,7 +5,7 @@ tags: admissions cs advice computer_science parenting
 title: CS admissions, Fall 2022
 ---
 
-tl/dr advice to kids and parents aiming for admission to a top-20 undergraduate CS program in 2022-2023:
+tl/dr advice to kids and parents aiming for admission to a good undergraduate CS program in 2022-2023:
 
 + Research what your target schools are looking for.
 + Calculate the cost/benefit ratio.
