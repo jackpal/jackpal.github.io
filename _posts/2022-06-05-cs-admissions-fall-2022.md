@@ -60,14 +60,14 @@ If your situation is different, keep that in mind. (But also note that many scho
 ## Things we should have done, but didn't
 
 - Apply to _all_ the UC schools, not just the most desirable ones.
-- The UC system lets you apply to multiple schools with the same application.
-- There is no drawback to applying to all of them.
+  - The UC system lets you apply to multiple schools with the same application.
+  - There is no drawback to applying to all of them.
 
 - Start the admissions process early.
 
 - Spend a _lot_ of time on essays. Think of your essay writing time as paying $10K per hour, because it probably has that much of an effect on your potential future earnings.
 
-- Brag like crazy. Our family culture encourages being humble, and this did _not_ serve us well in writing essays. Your essay is competing against people who are straight-up exaggerating their accomplishments. Do not give them any advantage by being modest.
+- Brag like crazy on your essay. Our family culture encourages being humble, and this did _not_ serve us well in writing essays. Your essay is competing against people who are straight-up exaggerating their accomplishments. Do not give them any advantage by being modest.
 
 ## Things we didn't do, because they didn't matter
 
@@ -77,25 +77,25 @@ If your situation is different, keep that in mind. (But also note that many scho
 
 Each of my kids was accepted at several schools. In deciding which school to attend, they considered the following, from most important to least important:
 
-1. Whether they were admitted to the CS department, and if not, what were the realistic chances of being admitted in the future.
+1. Whether they were directly admitted to the CS department, and if not, what were the realistic chances of being admitted in the future.
 2. The school's CS department ranking.
 3. The school's over-all academic ranking.
 4. Location relative to US tech hubs.
 5. Cost, including travel and housing.
 6. Quality of life.
 
-One child chose to attend the second-best school that accepted them because:
-- The higher-ranked school did not curve grades.
-  - Attending that school would have likely resulted in a lower GPA which could have made transferring to a different school, getting an internship, job, or attending graduate school more difficult.
-- The higher-ranked school was further from home.
-- The higher-ranked school was further from tech hubs.
-- The higher-ranked school was in a rural area.
+One child chose to attend the second-best school that accepted them because the higher-ranked school:
+  -  did not curve grades.
+     - Attending that school would have likely resulted in a lower GPA which could have made transferring to a different school, getting an internship, job, or attending graduate school more difficult.
+  - was further from home.
+  - was further from tech hubs.
+  - was in a rural area.
 
 ## CS vs. CS-adjacent degrees
 
 Two of my kids had to decide between a CS degree at a less desirable school vs. a non-CS degree at a more desirable school.
 
-Many schools with over-subscribed CS departments offer a variety of CS-adjacent degrees, such as Math, Electrical Engineering, Human Computer Interaction, and Data Science. Some of these CS-adjacent degrees allow you to take beginning CS department courses, providing you a basic CS education.
+Many schools with over-subscribed CS departments offer a variety of CS-adjacent degrees, such as Math, Electrical Engineering, Human Computer Interaction, and Data Science. Some of these CS-adjacent degrees allow you to take beginning CS department courses, providing you with a basic CS education.
 
 We spent a lot of time considering the pros and cons.
 
