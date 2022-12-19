@@ -4,6 +4,7 @@ description: A tutorial on how to create an Advent Calendar iOS 16 Locks Screen 
 tags: Lockscreen_Widgets,SwiftUI,Xcode,iOS,tutorial
 title: Advent Calendar
 ---
+
 ### iPhone Lock Screen Widget
 # Advent Calendar
 ### Jack Palevich
