@@ -1,8 +1,8 @@
 ---
-date:2022-12-11 13:48:57.256754
-description:A tutorial on how to create an Advent Calendar iOS 16 Locks Screen widget.
-tags:Lockscreen_Widgets,SwiftUI,Xcode,iOS,tutorial
-title:Advent Calendar
+date: 2022-12-11 13:48:57.256754
+description: A tutorial on how to create an Advent Calendar iOS 16 Locks Screen widget.
+tags: Lockscreen_Widgets,SwiftUI,Xcode,iOS,tutorial
+title: Advent Calendar
 ---
 ### iPhone Lock Screen Widget
 # Advent Calendar
