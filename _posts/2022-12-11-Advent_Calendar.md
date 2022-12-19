@@ -1,5 +1,8 @@
 ---
-front_matter
+date:2022-12-11 13:48:57.256754
+description:A tutorial on how to create an Advent Calendar iOS 16 Locks Screen widget.
+tags:Lockscreen_Widgets,SwiftUI,Xcode,iOS,tutorial
+title:Advent Calendar
 ---
 ### iPhone Lock Screen Widget
 # Advent Calendar
@@ -13,15 +16,15 @@ You'll need Xcode 14.0 or later for this project.
 
 Choose "File > New Project", or click on the "Create a new Xcode Project" button.
  
-![Welcome_to_Xcode.png](assets/posts/2022-12-11-Advent_Calendar/Welcome_to_Xcode.png)
+![Welcome to Xcode](/assets/posts/2022-12-11-Advent_Calendar/Welcome_to_Xcode.png)
 
 
 
-![Create_App.png](assets/posts/2022-12-11-Advent_Calendar/Create_App.png)
+![Create App](/assets/posts/2022-12-11-Advent_Calendar/Create_App.png)
 
 
 
-![Project_settings.png](assets/posts/2022-12-11-Advent_Calendar/Project_settings.png)
+![Project settings](/assets/posts/2022-12-11-Advent_Calendar/Project_settings.png)
 
 
 
@@ -32,12 +35,12 @@ Use the "File > Add Target" menu item to add a "Widget target".
 
 
 
-![Add_Widget_Target.png](assets/posts/2022-12-11-Advent_Calendar/Add_Widget_Target.png)
+![Add Widget Target](/assets/posts/2022-12-11-Advent_Calendar/Add_Widget_Target.png)
 
 
 
 
-![Widget_Target_Options.png](assets/posts/2022-12-11-Advent_Calendar/Widget_Target_Options.png)
+![Widget Target Options](/assets/posts/2022-12-11-Advent_Calendar/Widget_Target_Options.png)
 
 You don't need a Live Activity. You might want a Configuration intent.
 
@@ -45,7 +48,7 @@ You don't need a Live Activity. You might want a Configuration intent.
 
 
 
-![Activate_Widget_Scheme.png](assets/posts/2022-12-11-Advent_Calendar/Activate_Widget_Scheme.png)
+![Activate Widget Scheme](/assets/posts/2022-12-11-Advent_Calendar/Activate_Widget_Scheme.png)
 
 
 
@@ -54,7 +57,7 @@ You don't need a Live Activity. You might want a Configuration intent.
 # Change the preview widget family to .accessoryRectangular
 
 
-![Preview_family.png](assets/posts/2022-12-11-Advent_Calendar/Preview_family.png)
+![Preview family](/assets/posts/2022-12-11-Advent_Calendar/Preview_family.png)
 
 
 # Draw the widget
@@ -62,7 +65,7 @@ You don't need a Live Activity. You might want a Configuration intent.
 Lock Screen widgets render in xxx mode. This limits you to using alpha and transparency.
 
 
-![Draw_Christmas.png](assets/posts/2022-12-11-Advent_Calendar/Draw_Christmas.png)
+![Draw Christmas](/assets/posts/2022-12-11-Advent_Calendar/Draw_Christmas.png)
 
 
 
@@ -70,7 +73,7 @@ Lock Screen widgets render in xxx mode. This limits you to using alpha and trans
 
 
 
-![Set_Widget_Metadat.png](assets/posts/2022-12-11-Advent_Calendar/Set_Widget_Metadat.png)
+![Set Widget Metadat](/assets/posts/2022-12-11-Advent_Calendar/Set_Widget_Metadat.png)
 
 
 
@@ -80,46 +83,46 @@ Lock Screen widgets render in xxx mode. This limits you to using alpha and trans
 
 Command-R to start running the app on the simulator.
 
-![Running_app.png](assets/posts/2022-12-11-Advent_Calendar/Running_app.png)
+![Running app](/assets/posts/2022-12-11-Advent_Calendar/Running_app.png)
 
 
 
 # Lock the screen
 ### ⌘-L or Device > Lock Screen
 
-![Lock_screen.png](assets/posts/2022-12-11-Advent_Calendar/Lock_screen.png)
+![Lock screen](/assets/posts/2022-12-11-Advent_Calendar/Lock_screen.png)
 
 
 
 # Long press to customize
 
-![Customize_step_1.png](assets/posts/2022-12-11-Advent_Calendar/Customize_step_1.png)
+![Customize step 1](/assets/posts/2022-12-11-Advent_Calendar/Customize_step_1.png)
 
 
 # Choose Lock Screen
 
-![Customize_step_2.png](assets/posts/2022-12-11-Advent_Calendar/Customize_step_2.png)
+![Customize step 2](/assets/posts/2022-12-11-Advent_Calendar/Customize_step_2.png)
 
 
 
 # Tap Add Widgets
 
-![Customize_step_3.png](assets/posts/2022-12-11-Advent_Calendar/Customize_step_3.png)
+![Customize step 3](/assets/posts/2022-12-11-Advent_Calendar/Customize_step_3.png)
 
 
 # Choose Advent Calendar
 
-![Add_Widgets.png](assets/posts/2022-12-11-Advent_Calendar/Add_Widgets.png)
+![Add Widgets](/assets/posts/2022-12-11-Advent_Calendar/Add_Widgets.png)
 
 
 # Choose the Shape
 
-![Choose_widget_size.png](assets/posts/2022-12-11-Advent_Calendar/Choose_widget_size.png)
+![Choose widget size](/assets/posts/2022-12-11-Advent_Calendar/Choose_widget_size.png)
 
 
 # Final result
 
-![Final.png](assets/posts/2022-12-11-Advent_Calendar/Final.png)
+![Final](/assets/posts/2022-12-11-Advent_Calendar/Final.png)
 
 
 # Next steps
