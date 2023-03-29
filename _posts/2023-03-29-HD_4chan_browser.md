@@ -5,8 +5,8 @@ tags: 4chan,SwiftUI,Xcode,iOS,iPhone,iPad
 title: The HD 4chan Browser
 ---
 
-I wrote [HD](https://github.com/jackpal/HD), a small SwiftUI app to browse the 4chan image
-board on an iPhone or iPad.
+I wrote [HD](https://github.com/jackpal/HD), a small SwiftUI app to browse the
+4chan image board on an iPhone or iPad.
 
 I'm proud of how nice the app is to use, and how fast it displays images, animations and videos.
 
