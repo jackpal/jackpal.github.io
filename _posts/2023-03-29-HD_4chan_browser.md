@@ -6,7 +6,7 @@ title: The HD 4chan Browser
 ---
 
 I wrote [HD](https://jackpal.github.com/HD), a small SwiftUI app to browse the 4chan image
-board on an iPhone or iPad:
+board on an iPhone or iPad.
 
 I'm proud of how nice the app is to use, and how fast it displays images, animations and videos.
 
@@ -17,23 +17,27 @@ build it yourself.
 
 ## Implementation details
 
-The app source is small, only about 1000 lines of code. It makes extensive use of
-SwiftUI and of open source Swift Packages.
+The app source is small: only about 1000 lines of code. It makes extensive use of
+SwiftUI and open source Swift Packages.
 
 The app requires Xcode 14 and iOS 16.0 / iPadOS 16.0.
 
-Swift Packages are still a little rough to use. I had to fork vlckit-spm just to change
+I used [Draw Things](https://apps.apple.com/us/app/draw-things-ai-generation/id6444050820) to create the app
+icon. Pretty good for "programmer art".
+
+Swift Packages are still a little rough to use. For example, I had to fork
+the vlckit-spm package just to change
 its version number to something compatible with Xcode:
 
-Name | Description
----- | -----------
-[FourChan api](https://github.com/jackpal/FourChanAPI) | 4Chan content API.
-[HTMLString](https://github.com/jackpal/HTMLString) | Convert HTML content to AttributedString and/or String
-[Introspect](https://github.com/siteline/SwiftUI-Introspect) | Access the UIKit views that implement SwiftUI views.
-[Nuke](https://github.com/kean/Nuke) | Fast asynchronous image loader.
-[SwiftSoup](https://github.com/scinfu/SwiftSoup) | HTML parser.
-[SwiftyGIF](https://github.com/kirualex/SwiftyGif) | GIF image loader.
-[vlckit-spm](https://github.com/tylerjonesio/vlckit-spm) | VLC webm player.
+| Name                                                         | Description                                            |
+| ------------------------------------------------------------ | ------------------------------------------------------ |
+| [FourChan api](https://github.com/jackpal/FourChanAPI)       | 4Chan content API.                                     |
+| [HTMLString](https://github.com/jackpal/HTMLString)          | Convert HTML content to AttributedString and/or String |
+| [Introspect](https://github.com/siteline/SwiftUI-Introspect) | Access the UIKit views that implement SwiftUI views.   |
+| [Nuke](https://github.com/kean/Nuke)                         | Fast asynchronous image loader.                        |
+| [SwiftSoup](https://github.com/scinfu/SwiftSoup)             | HTML parser.                                           |
+| [SwiftyGIF](https://github.com/kirualex/SwiftyGif)           | GIF image loader.                                      |
+| [vlckit-spm](https://github.com/tylerjonesio/vlckit-spm)     | VLC webm player.                                       |
 
 ## Disclaimer
 
