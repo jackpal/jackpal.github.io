@@ -1,7 +1,7 @@
 ---
 date: 2023-04-21 21:00:00
 description: iA Presenter Review.
-tags: iA Presenter,Markdown,macOS
+tags: iA_Presenter Markdown macOS
 title: iA Presenter Micro-Review
 ---
 
@@ -15,9 +15,9 @@ enhanced version of Markdown.
 
 Why I liked it:
 
-+ Delightfully easy to use.
-+ Gorgeous presentation defaults.
-+ Opinionated tutorial, teaches you to make better presentations.
++ Delightfully easy to use
++ Gorgeous presentation defaults
++ Opinionated tutorial, teaches you to make better presentations
 
 Why it's not for me:
 
