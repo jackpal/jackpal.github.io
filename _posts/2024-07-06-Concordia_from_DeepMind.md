@@ -1,8 +1,8 @@
 ---
 date: 2024-07-06 13:00:00
 description: A LLM agent framework.
-tags: ML, AI, DeepMind, LLM, Gemma
-title: Concordi from DeepMind
+tags: ML, AI, DeepMind, LLM, Gemma_2, Mixtral, Agents
+title: Concordia from DeepMind
 ---
 
 I tried out the [Concordia](https://github.com/google-deepmind/concordia) LLM-driven agent framework.
