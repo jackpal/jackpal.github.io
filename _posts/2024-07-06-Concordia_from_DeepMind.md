@@ -1,5 +1,5 @@
 ---
-date: 2024-07-06 21:00:00
+date: 2024-07-06 13:00:00
 description: A LLM agent framework.
 tags: ML, AI, DeepMind, LLM, Gemma
 title: Concordi from DeepMind
