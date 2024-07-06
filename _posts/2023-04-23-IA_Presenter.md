@@ -29,3 +29,8 @@ Why it's not for me:
 
 Anyway, I had fun using it, and I wish iA well in
 their launch and in their future endeavors.
+
+## Update June 2024
+
+I went ahead and bought it, to do a work presentation. Expensive, but worth it.
+
