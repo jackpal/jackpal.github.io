@@ -2,10 +2,8 @@
 date: 2024-07-27 15:34:00
 description: A LLM agent framework.
 tags: sqlite, FTS5, Flask, Python
-title: Searching Text Files With SQLite FTS5 and Flask
+title: Searching 20,000 Text Files With SQLite FTS5 and Flask
 ---
-
-**Searching 20,000 Text Files**
 
 I recently needed to search through a collection of 20,000 text files. After trying basic tools like `find` and `grep`, I decided to give [sqlite3](https://sqlite.org/) a try.
 
