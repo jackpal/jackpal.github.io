@@ -34,23 +34,24 @@ I wrote a detailed spec for a program that would:
          puzzle test results when they need to be regenerated.
 
 I constrained the design by requiring that:
-    + The programs must be written in Python.
-    + The test results must be stored in a SQLite3 database
-    + The web server must use the Flask framework.
-    + I provided a library with API functions to:
-      + scrape puzzle descriptions
-      + asking Gemini models to generate programs using the puzzle descriptions
-      + run the generated programs to produce an answer
-      + ask the AdventOfCode website to verify the answers.
-      + I used the excellent [Advent of Code Data](https://pypi.org/project/advent-of-code-data/)
-        package to scrape the puzzle descriptions and verify the answers. AOCD
-        implements local caching of descriptions and answers, so I didn't have
-        to implement that feature myself.
+
+  + The programs must be written in Python.
+  + The test results must be stored in a SQLite3 database
+  + The web server must use the Flask framework.
+  + I provided a library with API functions to:
+    + scrape puzzle descriptions
+    + asking Gemini models to generate programs using the puzzle descriptions
+    + run the generated programs to produce an answer
+    + ask the AdventOfCode website to verify the answers.
++ I used the excellent [Advent of Code Data](https://pypi.org/project/advent-of-code-data/)
+      package to scrape the puzzle descriptions and verify the answers. AOCD
+      implements local caching of descriptions and answers, so I didn't have
+      to implement that feature myself.
 
 The process of implementing the program proceeded iteratively:
 
 1. Write a detailed spec.
-2. Generate the code using [AI Studio](aistudio.google.com).
+2. Paste the spec into [AI Studio](aistudio.google.com).
 3. Paste the code into a Visual Studio Code project.
 4. Debug the code under the Visual Studio Code Python Debugger.
 5. Report errors and incorrect behavior to Gemini.
@@ -81,7 +82,7 @@ rethinking my design. Then I would update my design and regenerate the code.
 The next time I do a project like this, I think I will try asking Gemini for
 help with my design document.
 
-The puzzle runner source code is here [github.com/jackpal/aocllmtest](https://github.com/jackpal/aocllmtest)
+The puzzle runner source code is here: [github.com/jackpal/aocllmtest](https://github.com/jackpal/aocllmtest)
 
 It will probably take another few days to complete the project, but I think
 from now on it's mostly a matter of waiting for quota to regenerate, followed
