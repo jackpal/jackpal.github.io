@@ -21,16 +21,17 @@ I wrote a suite of Python programs to help me answer those questions.
 As you probably guessed, I used Gemini to help me wrote these programs.
 
 I wrote a detailed spec for a program that would:
-      + Maintain a database of which puzzles had been solved by which model.
-      + Pick which puzzle to solve next, using which model.
-      + Use the model to generate a program to solve the puzzle.
-      + Run the program.
-      + Compare the program's output to the correct answer, and update the puzzle
-            database.
-      + Run a web server to show the results as a web page.
-      + Have the ability to generate reports as markdown or csv.
-      + Have the ability to perform simple database edits. For example, to remove
-            puzzle test results when they need to be regenerated.
+
+   + Maintain a database of which puzzles had been solved by which model.
+   + Pick which puzzle to solve next, using which model.
+   + Use the model to generate a program to solve the puzzle.
+   + Run the program.
+   + Compare the program's output to the correct answer, and update the puzzle
+         database.
+   + Run a web server to show the results as a web page.
+   + Have the ability to generate reports as markdown or csv.
+   + Have the ability to perform simple database edits. For example, to remove
+         puzzle test results when they need to be regenerated.
 
 I constrained the design by requiring that:
     + The programs must be written in Python.
