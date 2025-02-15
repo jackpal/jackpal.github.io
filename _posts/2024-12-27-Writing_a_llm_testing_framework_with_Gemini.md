@@ -82,8 +82,6 @@ rethinking my design. Then I would update my design and regenerate the code.
 The next time I do a project like this, I think I will try asking Gemini for
 help with my design document.
 
-The puzzle runner source code is here: [github.com/jackpal/aocllmtest](https://github.com/jackpal/aocllmtest)
-
 It will probably take another few days to complete the project, but I think
 from now on it's mostly a matter of waiting for quota to regenerate, followed
 by some statistic analysis of the collected data.
