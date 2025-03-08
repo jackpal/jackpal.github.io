@@ -19,7 +19,7 @@ import os
 import argparse
 
 LANG_MAPPING = {
-".c": "c",
+    ".c": "c",
     ".cc": "cpp",
     ".cpp": "cpp",
     ".cs": "csharp",
