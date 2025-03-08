@@ -34,6 +34,7 @@ LANG_MAPPING = {
     ".kt": "kotlin",
     ".lua": "lua",
     ".m": "objectivec",
+    ".md": "markdown",
     ".mm": "objectivec",
     ".php": "php",
     ".pl": "perl",
@@ -75,7 +76,9 @@ def create_system_prompt(root_dir, output_file, prompt_text):
 
                     f.write(f"{relative_filepath}\n")
                     lang = LANG_MAPPING[ext]
-                    f.write(f"```{lang}\n")
+                    # Markdown only requires 3 back-quotes. Using 5 back-quotes allows
+                    # 3 back-quotes and 4 back-quotes to appear in the quoted document.
+                    f.write(f"`````{lang}\n")
 
                     try:
                         with open(filepath, "r") as source_file:
@@ -87,7 +90,7 @@ def create_system_prompt(root_dir, output_file, prompt_text):
                     except Exception as e:
                         f.write(f"--- ERROR: Could not read file content: {e} ---\n")
 
-                    f.write("\n```\n\n")
+                    f.write("\n`````\n\n")
 
 
 if __name__ == "__main__":
