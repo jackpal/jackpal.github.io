@@ -11,6 +11,8 @@ Paste the result into a LLM chatbot system prompt. Then ask your questions.
 
 This is better than manually pasting source code because it provides more context (such as the file names and directory structure).
 
+And it's better than most LLM Code IDE extensions because it sends all your source code at once, rather than just sending a few files. (Of course this only works with large-context LLMs like Gemini.)
+
 source_tree_to_markdown.py
 ```python
 #!/usr/bin/env python3
