@@ -28,6 +28,7 @@ LANG_MAPPING = {
     ".go": "go",
     ".h": "cpp",
     ".hpp": "cpp",
+    ".html": "html",
     ".java": "java",
     ".js": "javascript",
     ".jsx": "javascript",
