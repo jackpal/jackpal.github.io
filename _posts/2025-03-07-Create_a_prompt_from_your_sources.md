@@ -65,6 +65,9 @@ def create_system_prompt(root_dir, output_file, prompt_text):
         f.write(f"{prompt_text}\n\n")
 
         for root, dirs, files in os.walk(root_dir):
+            # Iterate in lexical order.
+            dirs.sort()
+            files.sort()
             # Modify dirs in-place to prevent os.walk from recursing into directories starting with '.'.
             # I'm looking at you, .git and .venv. Although, TBH .vscode might be handy to send.
             dirs[:] = [d for d in dirs if not d.startswith(".")]
