@@ -6,6 +6,8 @@ This is the source for the blog [https://jackpal.github.io/](https://jackpal.git
 
 This is a professional blog for an experienced developer. The blog posts are clear, optimistic, and useful to the reader.
 
+Be brief. Be direct. Use the active voice. Be respectful of the users time and intelligence.
+
 # Posting details
 
 Posts are stored in `_posts/`, prefixed by the date the post was created.
