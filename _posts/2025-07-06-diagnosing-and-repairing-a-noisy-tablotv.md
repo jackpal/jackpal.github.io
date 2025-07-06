@@ -2,6 +2,8 @@
 layout: post
 title: "Fixing My Noisy TabloTV"
 date: 2025-07-06
+description: "A step-by-step guide to diagnosing and fixing a faulty TabloTV, from repairing the filesystem to replacing the hard drive and power adapter."
+tags: tablotv chirping coil_whine repair fsck ddrescue ssd
 ---
 
 A few weeks ago, my [TabloTV](https://support.tablotv.com/hc/en-us/articles/202083158-Legacy-2-Tuner-and-4-Tuner-Tablo-Quick-Start-Guide), which I use to record over-the-air TV, started making strange noises. I could hear the hard drive seeking constantly and a separate chirping sound. Eventually, it failed completely. The UI showed a "No Storage" error, and I couldn't watch any of my recordings.
