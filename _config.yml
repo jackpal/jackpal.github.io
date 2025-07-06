@@ -6,7 +6,7 @@ highlighter:      rouge
                   # Note: There is a zero-width space between Grammer and Jack:
 title:            Grammer​Jack
 tagline:          'A mind forever voyaging'
-description:      "Essays and epigrams."
+description:      "Essays and epigrams"
 url:              "https://jackpal.github.io"
 # baseurl:          '/hydeout'
                   # the optional subpath of your site, e.g. "/blog"
