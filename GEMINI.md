@@ -8,13 +8,21 @@ This is a professional blog for an experienced developer. The blog posts are cle
 
 Be brief. Be direct. Use the active voice. Be respectful of the users time and intelligence.
 
-Posts should have a `tags:` metadata line with around 5 tags related to the content of the post:
+# Metadata
+
+Posts have a `date:` metadata line with the date and time that the post was created:
+
+```yaml
+date: 2025-03-29 09:45:00
+```
+
+Posts have a `tags:` metadata line with around 5 tags related to the content of the post:
 
 ```yaml
 tags: apple iPhone android think_different
 ```
 
-Posts should have a "description:" metadata line with a one-sentence summary of the content of the post.
+Posts have a "description:" metadata line with a one-sentence summary of the content of the post.
 
 ```yaml
 description: A detailed look at the current state of the mobile phone marketplace.

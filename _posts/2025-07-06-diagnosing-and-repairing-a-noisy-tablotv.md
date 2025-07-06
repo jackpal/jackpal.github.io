@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fixing My Noisy TabloTV"
-date: 2025-07-06
+date: 2025-07-06 13:00:00
 description: "A step-by-step guide to diagnosing and fixing a faulty TabloTV, from repairing the filesystem to replacing the hard drive and power adapter."
 tags: tablotv chirping coil_whine repair fsck ddrescue ssd
 ---
