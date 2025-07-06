@@ -48,6 +48,6 @@ I went back to the forums and found that a faulty power adapter can cause this. 
 
 That fixed it. The chirping noise was  gone.
 
-### Success
+### Conclusion
 
-It turned out my TabloTV had a software problem: a corrupted hard drive, and a hardware problem: a bad power adapter. Replacing the drive was probably unnecessary. It would probably have been sufficient to fsck the drive and to replace the power supply. But it's nice to have the complete silence and the faster user interface provided by the SSD.
+My TabloTV had two problems: a corrupted filesystem and a bad power adapter. I fixed the filesystem with `fsck` and the noise by swapping the power adapter. I probably didn't need to replace the hard drive, but the new SSD made the TabloTV silent and faster.
