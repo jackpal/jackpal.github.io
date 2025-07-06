@@ -38,7 +38,7 @@ I used `diskutil list` to find the drive names. For my setup, the old drive was 
 sudo ddrescue -f -v -c 262144 /dev/rdisk20 /dev/rdisk21 ddrescue.logfile
 ```
 
-The cloning process took 36 hours. It completed with no errors. I installed the new SSD in the TabloTV. The seeking noises were gone, and the TabloTV's UI felt faster.
+The cloning process took 36 hours. To prevent the Mac from sleeping, I used the `caffeinate -is` command. The whole disk copy completed with no errors. I installed the new SSD in the TabloTV. The seeking noises were gone, and the TabloTV's UI felt faster.
 
 ### Problem 3: The Chirping Noise
 
